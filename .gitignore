@@ -8,3 +8,4 @@
 */.env.test.local
 */.env.production.local
 ui/.eslintcache
+functions/firebase-debug.log
