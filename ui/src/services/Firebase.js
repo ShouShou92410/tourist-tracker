@@ -27,8 +27,10 @@ class Firebase {
 		return Firebase.singleton;
 	}
 
-	isInitialized() {
-		return !!Firebase.singleton;
+	onAuthStateChanged() {
+		return new Promise((resolve) => {
+			this.auth.onAuthStateChanged(resolve);
+		});
 	}
 
 	signInWithGoogle() {
@@ -53,6 +55,10 @@ class Firebase {
 	// Retrieves user information from the database, returns null if not found
 	async getUser(id = null) {
 		if (id === null) {
+			if (this.auth.currentUser === null) {
+				return null;
+			}
+
 			id = this.auth.currentUser.uid;
 		}
 

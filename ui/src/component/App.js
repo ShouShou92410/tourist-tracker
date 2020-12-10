@@ -8,21 +8,19 @@ import firebase from '../services/Firebase';
 function App() {
 	const [currentUser, setCurrentUser] = useState(null);
 
-	const [firebaseCreated, setFirebaseCreated] = useState(false);
-
 	useEffect(() => {
-		setFirebaseCreated(firebase.isInitialized());
-	});
+		firebase.onAuthStateChanged().then(async (val) => {
+			setCurrentUser(await firebase.getUser());
+		});
+	}, []);
 
 	return (
-		firebaseCreated && (
-			<UserContext.Provider value={currentUser}>
-				<BrowserRouter>
-					<MenuBar setCurrentUser={setCurrentUser} />
-					<Dashboard />
-				</BrowserRouter>
-			</UserContext.Provider>
-		)
+		<UserContext.Provider value={currentUser}>
+			<BrowserRouter>
+				<MenuBar setCurrentUser={setCurrentUser} />
+				<Dashboard />
+			</BrowserRouter>
+		</UserContext.Provider>
 	);
 }
 
