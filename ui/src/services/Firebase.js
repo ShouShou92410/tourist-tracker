@@ -1,4 +1,4 @@
-import firebase from 'firebase/app';
+import app from 'firebase/app';
 import 'firebase/database';
 import 'firebase/auth';
 
@@ -11,36 +11,62 @@ const firebaseConfig = {
 	appId: process.env.REACT_APP_FIREBASE_APP_ID,
 	measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
 };
-const provider = new firebase.auth.GoogleAuthProvider();
 
-firebase.initializeApp(firebaseConfig);
+class Firebase {
+	constructor() {
+		if (Firebase.singleton) {
+			return Firebase.singleton;
+		}
 
-export { firebase };
+		app.initializeApp(firebaseConfig);
+		this.auth = app.auth();
+		this.db = app.database();
+		this.provider = new app.auth.GoogleAuthProvider();
+		Firebase.singleton = this;
 
-export const signInWithGoogle = () => {
-	firebase
-		.auth()
-		.signInWithPopup(provider)
-		.then(function (result) {
-			// This gives you a Google Access Token. You can use it to access the Google API.
-			var token = result.credential.accessToken;
-			// The signed-in user info.
-			var user = result.user;
-			// ...
-		})
-		.catch(function (error) {
-			// Handle Errors here.
-			var errorCode = error.code;
-			var errorMessage = error.message;
-			// The email of the user's account used.
-			var email = error.email;
-			// The firebase.auth.AuthCredential type that was used.
-			var credential = error.credential;
-			// ...
-			console.log(error);
+		return Firebase.singleton;
+	}
+
+	onAuthStateChanged() {
+		return new Promise((resolve) => {
+			this.auth.onAuthStateChanged(resolve);
 		});
-};
+	}
 
-export const signOut = () => {
-	firebase.auth().signOut();
-};
+	signInWithGoogle() {
+		return this.auth.signInWithPopup(this.provider);
+	}
+
+	signOut() {
+		return this.auth.signOut();
+	}
+
+	async register(registrationForm) {
+		const newUser = {
+			name: this.auth.currentUser.displayName,
+			type: registrationForm.UserType,
+		};
+
+		await this.db.ref(`/Users/${this.auth.currentUser.uid}`).set(newUser);
+
+		return newUser;
+	}
+
+	// Retrieves user information from the database, returns null if not found
+	async getUser(id = null) {
+		if (id === null) {
+			if (this.auth.currentUser === null) {
+				return null;
+			}
+
+			id = this.auth.currentUser.uid;
+		}
+
+		const res = await this.db.ref(`/Users/${id}`).once('value');
+		const user = res.val();
+
+		return user;
+	}
+}
+
+export default new Firebase();

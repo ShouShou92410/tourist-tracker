@@ -1,18 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import firebase from '../../services/Firebase';
 
-function RegistrationModal({ setCurrentUser }) {
-	const [show, setShow] = useState(false);
-
-	const handleClose = () => setShow(false);
-	const handleSubmit = (e) => {
+function RegistrationModal({ show, handleClose, handleSetCurrentUser }) {
+	const handleSubmit = async (e) => {
 		e.preventDefault();
 
 		const formData = new FormData(e.target);
-		const result = Object.fromEntries(formData.entries());
-		console.log(result);
+		const registrationForm = Object.fromEntries(formData.entries());
+		console.log(registrationForm);
+
+		const user = await firebase.register(registrationForm);
+		handleSetCurrentUser(user);
 
 		handleClose();
 	};

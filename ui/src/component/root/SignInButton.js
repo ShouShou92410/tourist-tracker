@@ -1,35 +1,67 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useContext } from 'react';
 import Button from 'react-bootstrap/Button';
 import Spinnger from 'react-bootstrap/Spinner';
-import { firebase, signInWithGoogle, signOut } from '../../services/Firebase';
+import firebase from '../../services/Firebase';
 import { UserContext } from '../utility/Context';
 import RegistrationModal from './RegistrationModal';
 
 function SignInButton({ setCurrentUser }) {
 	const currentUser = useContext(UserContext);
 	const [authorizing, setAuthorizing] = useState(false);
+	const [showRegistrationModal, setShowRegistrationModal] = useState(false);
+
+	const handleClose = () => {
+		setShowRegistrationModal(false);
+		setAuthorizing(false);
+	};
+
+	const handleSetCurrentUser = (user) => {
+		if (user === null) {
+			setCurrentUser(null);
+		} else {
+			setCurrentUser(user);
+			console.log(user);
+		}
+		setAuthorizing(false);
+	};
 
 	const handleSignIn = () => {
 		setAuthorizing(true);
-		signInWithGoogle();
+		firebase
+			.signInWithGoogle()
+			.then(async (res) => {
+				const user = await firebase.getUser(); // do await here
+				if (user) {
+					handleSetCurrentUser(user);
+				} else {
+					setShowRegistrationModal(true);
+				}
+			})
+			.catch((err) => {
+				setAuthorizing(false);
+				console.error(err);
+			});
 	};
 	const handleSignOut = () => {
 		setAuthorizing(true);
-		signOut();
+		firebase
+			.signOut()
+			.then((res) => {
+				handleSetCurrentUser(null);
+			})
+			.catch((err) => {
+				setAuthorizing(false);
+				console.error(err);
+			});
 	};
-
-	useEffect(() => {
-		firebase.auth().onAuthStateChanged((user) => {
-			console.log(user);
-			if (user) setCurrentUser({ name: user.displayName });
-			else setCurrentUser(null);
-			setAuthorizing(false);
-		});
-	}, [setCurrentUser]);
 
 	return (
 		<>
-			<RegistrationModal setCurrentUser={setCurrentUser} />
+			<RegistrationModal
+				show={showRegistrationModal}
+				handleClose={handleClose}
+				handleSetCurrentUser={handleSetCurrentUser}
+			/>
 			{currentUser === null ? (
 				<Button variant="primary" disabled={authorizing} onClick={handleSignIn}>
 					{authorizing && <Spinnger animation="border" size="sm" />}
