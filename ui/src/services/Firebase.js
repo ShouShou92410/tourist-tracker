@@ -37,6 +37,15 @@ class Firebase {
 	signOut() {
 		return this.auth.signOut();
 	}
+
+	get(id) {
+		return null;
+		return { ...this.auth.currentUser, type: 'traveller' };
+	}
+
+	register(type) {
+		return { ...this.auth.currentUser, type };
+	}
 }
 
 export default new Firebase();

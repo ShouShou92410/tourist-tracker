@@ -8,14 +8,34 @@ import RegistrationModal from './RegistrationModal';
 function SignInButton({ setCurrentUser }) {
 	const currentUser = useContext(UserContext);
 	const [authorizing, setAuthorizing] = useState(false);
+	const [showRegistrationModal, setShowRegistrationModal] = useState(false);
+
+	const handleClose = () => {
+		setShowRegistrationModal(false);
+		setAuthorizing(false);
+	};
+
+	const handleSetCurrentUser = (user) => {
+		if (user === null) {
+			setCurrentUser(null);
+		} else {
+			setCurrentUser({ name: user.displayName, type: user.type });
+			console.log({ name: user.displayName, type: user.type });
+		}
+		setAuthorizing(false);
+	};
 
 	const handleSignIn = () => {
 		setAuthorizing(true);
 		firebase
 			.signInWithGoogle()
 			.then((res) => {
-				setCurrentUser({ name: res.user.displayName });
-				setAuthorizing(false);
+				const user = firebase.get(123); // do await here
+				if (user) {
+					handleSetCurrentUser(user);
+				} else {
+					setShowRegistrationModal(true);
+				}
 			})
 			.catch((err) => {
 				setAuthorizing(false);
@@ -27,8 +47,7 @@ function SignInButton({ setCurrentUser }) {
 		firebase
 			.signOut()
 			.then((res) => {
-				setCurrentUser(null);
-				setAuthorizing(false);
+				handleSetCurrentUser(null);
 			})
 			.catch((err) => {
 				setAuthorizing(false);
@@ -38,7 +57,11 @@ function SignInButton({ setCurrentUser }) {
 
 	return (
 		<>
-			<RegistrationModal setCurrentUser={setCurrentUser} />
+			<RegistrationModal
+				show={showRegistrationModal}
+				handleClose={handleClose}
+				handleSetCurrentUser={handleSetCurrentUser}
+			/>
 			{currentUser === null ? (
 				<Button variant="primary" disabled={authorizing} onClick={handleSignIn}>
 					{authorizing && <Spinnger animation="border" size="sm" />}
