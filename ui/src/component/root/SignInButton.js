@@ -19,8 +19,8 @@ function SignInButton({ setCurrentUser }) {
 		if (user === null) {
 			setCurrentUser(null);
 		} else {
-			setCurrentUser({ name: user.displayName, type: user.type });
-			console.log({ name: user.displayName, type: user.type });
+			setCurrentUser(user);
+			console.log(user);
 		}
 		setAuthorizing(false);
 	};
@@ -29,8 +29,8 @@ function SignInButton({ setCurrentUser }) {
 		setAuthorizing(true);
 		firebase
 			.signInWithGoogle()
-			.then((res) => {
-				const user = firebase.get(123); // do await here
+			.then(async (res) => {
+				const user = await firebase.getUser(); // do await here
 				if (user) {
 					handleSetCurrentUser(user);
 				} else {

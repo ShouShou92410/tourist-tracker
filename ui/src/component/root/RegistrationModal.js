@@ -5,14 +5,14 @@ import Form from 'react-bootstrap/Form';
 import firebase from '../../services/Firebase';
 
 function RegistrationModal({ show, handleClose, handleSetCurrentUser }) {
-	const handleSubmit = (e) => {
+	const handleSubmit = async (e) => {
 		e.preventDefault();
 
 		const formData = new FormData(e.target);
-		const result = Object.fromEntries(formData.entries());
-		console.log(result);
+		const registrationForm = Object.fromEntries(formData.entries());
+		console.log(registrationForm);
 
-		const user = firebase.register(result.UserType);
+		const user = await firebase.register(registrationForm);
 		handleSetCurrentUser(user);
 
 		handleClose();

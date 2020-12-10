@@ -20,6 +20,7 @@ class Firebase {
 
 		app.initializeApp(firebaseConfig);
 		this.auth = app.auth();
+		this.db = app.database();
 		this.provider = new app.auth.GoogleAuthProvider();
 		Firebase.singleton = this;
 
@@ -38,13 +39,27 @@ class Firebase {
 		return this.auth.signOut();
 	}
 
-	get(id) {
-		return null;
-		return { ...this.auth.currentUser, type: 'traveller' };
+	async register(registrationForm) {
+		const newUser = {
+			name: this.auth.currentUser.displayName,
+			type: registrationForm.UserType,
+		};
+
+		await this.db.ref(`/Users/${this.auth.currentUser.uid}`).set(newUser);
+
+		return newUser;
 	}
 
-	register(type) {
-		return { ...this.auth.currentUser, type };
+	// Retrieves user information from the database, returns null if not found
+	async getUser(id = null) {
+		if (id === null) {
+			id = this.auth.currentUser.uid;
+		}
+
+		const res = await this.db.ref(`/Users/${id}`).once('value');
+		const user = res.val();
+
+		return user;
 	}
 }
 
