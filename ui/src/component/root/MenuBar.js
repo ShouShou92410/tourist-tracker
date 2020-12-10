@@ -9,7 +9,9 @@ function MenuBar({ setCurrentUser }) {
 			<NavBar.Brand as={Link} to="/">
 				Home
 			</NavBar.Brand>
-			<SignInButton setCurrentUser={setCurrentUser} />
+			<NavBar.Collapse className="justify-content-end">
+				<SignInButton setCurrentUser={setCurrentUser} />
+			</NavBar.Collapse>
 		</NavBar>
 	);
 }
