@@ -1,7 +1,7 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useContext } from 'react';
 import Button from 'react-bootstrap/Button';
 import Spinnger from 'react-bootstrap/Spinner';
-import { firebase, signInWithGoogle, signOut } from '../../services/Firebase';
+import firebase from '../../services/Firebase';
 import { UserContext } from '../utility/Context';
 import RegistrationModal from './RegistrationModal';
 
@@ -11,21 +11,30 @@ function SignInButton({ setCurrentUser }) {
 
 	const handleSignIn = () => {
 		setAuthorizing(true);
-		signInWithGoogle();
+		firebase
+			.signInWithGoogle()
+			.then((res) => {
+				setCurrentUser({ name: res.user.displayName });
+				setAuthorizing(false);
+			})
+			.catch((err) => {
+				setAuthorizing(false);
+				console.error(err);
+			});
 	};
 	const handleSignOut = () => {
 		setAuthorizing(true);
-		signOut();
+		firebase
+			.signOut()
+			.then((res) => {
+				setCurrentUser(null);
+				setAuthorizing(false);
+			})
+			.catch((err) => {
+				setAuthorizing(false);
+				console.error(err);
+			});
 	};
-
-	useEffect(() => {
-		firebase.auth().onAuthStateChanged((user) => {
-			console.log(user);
-			if (user) setCurrentUser({ name: user.displayName });
-			else setCurrentUser(null);
-			setAuthorizing(false);
-		});
-	}, [setCurrentUser]);
 
 	return (
 		<>
