@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import SideBar from '../content/SideBar';
-import { UserContext } from '../utility/Context';
+import { UserContext } from '../../utility/Context';
 
 function Dashboard() {
 	const currentUser = useContext(UserContext);

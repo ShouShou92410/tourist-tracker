@@ -2,7 +2,7 @@ import React, { useState, useContext } from 'react';
 import Button from 'react-bootstrap/Button';
 import Spinnger from 'react-bootstrap/Spinner';
 import firebase from '../../services/Firebase';
-import { UserContext } from '../utility/Context';
+import { UserContext } from '../../utility/Context';
 import RegistrationModal from './RegistrationModal';
 
 function SignInButton({ setCurrentUser }) {
