@@ -1,4 +1,4 @@
-import firebase from 'firebase/app';
+import app from 'firebase/app';
 import 'firebase/database';
 import 'firebase/auth';
 
@@ -11,36 +11,46 @@ const firebaseConfig = {
 	appId: process.env.REACT_APP_FIREBASE_APP_ID,
 	measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
 };
-const provider = new firebase.auth.GoogleAuthProvider();
 
-firebase.initializeApp(firebaseConfig);
+class Firebase {
+	constructor() {
+		app.initializeApp(firebaseConfig);
+		this.auth = app.auth();
+		this.provider = new app.auth.GoogleAuthProvider();
+	}
 
-export { firebase };
-
-export const signInWithGoogle = () => {
-	firebase
-		.auth()
-		.signInWithPopup(provider)
-		.then(function (result) {
-			// This gives you a Google Access Token. You can use it to access the Google API.
-			var token = result.credential.accessToken;
-			// The signed-in user info.
-			var user = result.user;
-			// ...
-		})
-		.catch(function (error) {
-			// Handle Errors here.
-			var errorCode = error.code;
-			var errorMessage = error.message;
-			// The email of the user's account used.
-			var email = error.email;
-			// The firebase.auth.AuthCredential type that was used.
-			var credential = error.credential;
-			// ...
-			console.log(error);
+	isInitialized() {
+		return new Promise((resolve) => {
+			this.auth.onAuthStateChanged(resolve);
 		});
-};
+	}
 
-export const signOut = () => {
-	firebase.auth().signOut();
-};
+	signInWithGoogle() {
+		this.auth
+			.signInWithPopup(this.provider)
+			.then(function (result) {
+				// This gives you a Google Access Token. You can use it to access the Google API.
+				var token = result.credential.accessToken;
+				// The signed-in user info.
+				var user = result.user;
+				// ...
+			})
+			.catch(function (error) {
+				// Handle Errors here.
+				var errorCode = error.code;
+				var errorMessage = error.message;
+				// The email of the user's account used.
+				var email = error.email;
+				// The firebase.auth.AuthCredential type that was used.
+				var credential = error.credential;
+				// ...
+				console.log(error);
+			});
+	}
+
+	signOut() {
+		this.auth.signOut();
+	}
+}
+
+export default new Firebase();
