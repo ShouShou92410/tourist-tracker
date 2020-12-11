@@ -1,18 +1,22 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import NavBar from 'react-bootstrap/NavBar';
+import Navbar from 'react-bootstrap/Navbar';
 import SignInButton from './SignInButton';
+import { UserContext } from '../../utility/Context';
 
 function MenuBar({ setCurrentUser }) {
+	const currentUser = useContext(UserContext);
+
 	return (
-		<NavBar bg="dark" variant="dark">
-			<NavBar.Brand as={Link} to="/">
+		<Navbar bg="dark" variant="dark">
+			<Navbar.Brand as={Link} to="/">
 				Home
-			</NavBar.Brand>
-			<NavBar.Collapse className="justify-content-end">
+			</Navbar.Brand>
+			<Navbar.Collapse className="justify-content-end">
+				<Navbar.Text>{currentUser?.name}</Navbar.Text>
 				<SignInButton setCurrentUser={setCurrentUser} />
-			</NavBar.Collapse>
-		</NavBar>
+			</Navbar.Collapse>
+		</Navbar>
 	);
 }
 
