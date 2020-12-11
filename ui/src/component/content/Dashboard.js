@@ -3,18 +3,18 @@ import { Switch, Route } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import SideBar from '../content/SideBar';
+import SideBar from './SideBar';
 import { UserContext } from '../../utility/Context';
 import Enumeration from '../../utility/Enumeration';
-import TravellerDataEntry from '../content/traveller/TravellerDataEntry';
-import SiteOwnerDataEntry from '../content/siteOwner/SiteOwnerDataEntry';
-import TravellerRecommendation from '../content/traveller/TravellerRecommendation';
-import SiteOwnerRecommendation from '../content/siteOwner/SiteOwnerRecommendation';
+import TravellerDataEntry from './traveller/TravellerDataEntry';
+import SiteOwnerDataEntry from './siteOwner/SiteOwnerDataEntry';
+import TravellerRecommendation from './traveller/TravellerRecommendation';
+import SiteOwnerRecommendation from './siteOwner/SiteOwnerRecommendation';
 
 function Dashboard() {
 	const currentUser = useContext(UserContext);
 
-	const routeElement = () => {
+	const getRouteElement = () => {
 		switch (currentUser.type) {
 			case Enumeration.UserType.TRAVELLER:
 				return (
@@ -38,8 +38,6 @@ function Dashboard() {
 						</Route>
 					</Switch>
 				);
-			default:
-				break;
 		}
 	};
 
@@ -49,7 +47,7 @@ function Dashboard() {
 				<Col>
 					<SideBar />
 				</Col>
-				<Col>{routeElement()}</Col>
+				<Col>{getRouteElement()}</Col>
 			</Row>
 		</Container>
 	);

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import Dashboard from './root/Dashboard';
-import GuestDashboard from './root/GuestDashboard';
+import Dashboard from './content/Dashboard';
+import GuestDashboard from './content/GuestDashboard';
 import MenuBar from './root/MenuBar';
 import { UserContext } from '../utility/Context';
 import firebase from '../services/Firebase';
