@@ -44,10 +44,10 @@ class Firebase {
 	async register(registrationForm) {
 		const newUser = {
 			name: this.auth.currentUser.displayName,
-			type: registrationForm.UserType,
+			type: parseInt(registrationForm.UserType),
 		};
 
-		await this.db.ref(`/Users/${this.auth.currentUser.uid}`).set(newUser);
+		await this.db.ref(`/users/${this.auth.currentUser.uid}`).set(newUser);
 
 		return newUser;
 	}
@@ -62,7 +62,7 @@ class Firebase {
 			id = this.auth.currentUser.uid;
 		}
 
-		const res = await this.db.ref(`/Users/${id}`).once('value');
+		const res = await this.db.ref(`/users/${id}`).once('value');
 		const user = res.val();
 
 		return user;

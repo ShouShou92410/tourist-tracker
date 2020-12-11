@@ -3,6 +3,7 @@ import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import firebase from '../../services/Firebase';
+import Enumeration from '../../utility/Enumeration';
 
 function RegistrationModal({ show, handleClose, handleSetCurrentUser }) {
 	const handleSubmit = async (e) => {
@@ -10,7 +11,6 @@ function RegistrationModal({ show, handleClose, handleSetCurrentUser }) {
 
 		const formData = new FormData(e.target);
 		const registrationForm = Object.fromEntries(formData.entries());
-		console.log(registrationForm);
 
 		const user = await firebase.register(registrationForm);
 		handleSetCurrentUser(user);
@@ -32,7 +32,7 @@ function RegistrationModal({ show, handleClose, handleSetCurrentUser }) {
 							id="traveller"
 							name="UserType"
 							label="Traveller"
-							value="traveller"
+							value={Enumeration.UserType.TRAVELLER}
 							defaultChecked
 						/>
 						<Form.Check
@@ -40,7 +40,7 @@ function RegistrationModal({ show, handleClose, handleSetCurrentUser }) {
 							id="owner"
 							name="UserType"
 							label="Site Owner"
-							value="owner"
+							value={Enumeration.UserType.SITEOWNER}
 						/>
 					</Form.Group>
 				</Modal.Body>

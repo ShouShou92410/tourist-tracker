@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import Dashboard from './root/Dashboard';
 import MenuBar from './root/MenuBar';
-import { UserContext } from './utility/Context';
+import { UserContext } from '../utility/Context';
 import firebase from '../services/Firebase';
 
 function App() {
