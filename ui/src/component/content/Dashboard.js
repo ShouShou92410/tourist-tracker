@@ -10,6 +10,8 @@ import TravellerDataEntry from './traveller/TravellerDataEntry';
 import SiteOwnerDataEntry from './siteOwner/SiteOwnerDataEntry';
 import TravellerRecommendation from './traveller/TravellerRecommendation';
 import SiteOwnerRecommendation from './siteOwner/SiteOwnerRecommendation';
+import TravellerHistory from './traveller/TravellerHistory';
+import SiteOwnerHistory from './siteOwner/SiteOwnerHistory';
 
 function Dashboard() {
 	const currentUser = useContext(UserContext);
@@ -22,6 +24,12 @@ function Dashboard() {
 						<Route path="/recommendation">
 							<TravellerRecommendation />
 						</Route>
+						<Route path="/dataentry">
+							<TravellerDataEntry />
+						</Route>
+						<Route path="/history">
+							<TravellerHistory />
+						</Route>
 						<Route path="/">
 							<TravellerDataEntry />
 						</Route>
@@ -32,6 +40,12 @@ function Dashboard() {
 					<Switch>
 						<Route path="/recommendation">
 							<SiteOwnerRecommendation />
+						</Route>
+						<Route path="/dataentry">
+							<SiteOwnerDataEntry />
+						</Route>
+						<Route path="/history">
+							<SiteOwnerHistory />
 						</Route>
 						<Route path="/">
 							<SiteOwnerDataEntry />
