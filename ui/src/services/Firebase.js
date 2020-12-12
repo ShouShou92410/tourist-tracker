@@ -2,6 +2,10 @@ import app from 'firebase/app';
 import 'firebase/database';
 import 'firebase/auth';
 
+import axios from 'axios';
+
+axios.defaults.baseURL = 'http://localhost:8000';
+
 const firebaseConfig = {
 	apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
 	authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
@@ -66,6 +70,19 @@ class Firebase {
 		const user = res.val();
 
 		return user;
+	}
+
+	async getRecommendation() {
+		const currentUser = this.auth.currentUser;
+		const token = await currentUser.getIdToken();
+
+		const res = await axios.get('/recommendation', {
+			headers: {
+				Authorization: btoa(token),
+			},
+		});
+
+		return res.data;
 	}
 }
 
