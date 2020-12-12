@@ -26,34 +26,36 @@ function AuthorizationMiddleware(req, res, next) {
     });
 }
 
-app.get("/recommendation", AuthorizationMiddleware, async (req, res) => {
+app.get("/recommendation", AuthorizationMiddleware, (req, res) => {
   const currentUser = res.locals.currentUser;
-
-  let dbUser = await admin
+  admin
     .database()
     .ref(`/users/${currentUser.uid}`)
-    .once("value");
-  dbUser = dbUser.val();
+    .once("value")
+    .then((dbRes) => {
+      const dbUser = dbRes.val();
+      const result = {
+        ...dbUser,
+      };
+      // TODO: Replace with user type enumerations
+      switch (dbUser.type) {
+        case 1:
+          result.message = "Generate recommendation for traveller";
+          break;
+        case 2:
+          result.message = "Generate recommendation for site owner";
+          break;
+      }
 
-  const result = {
-    ...dbUser,
-  };
-
-  // TODO: Replace with user type enumerations
-  switch (dbUser.type) {
-    case 1:
-      result.message = "Generate recommendation for traveller";
-      break;
-    case 2:
-      result.message = "Generate recommendation for site owner";
-      break;
-  }
-
-  res.send(result);
+      res.send(result);
+    })
+    .catch((error) => {
+      console.error(error);
+    });
 });
 
-app.listen(8000, () => {
-  console.log("Server started at http://localhost:8000/");
-});
+// app.listen(8000, () => {
+//   console.log("Server started at http://localhost:8000/");
+// });
 
 exports.express = functions.https.onRequest(app);
