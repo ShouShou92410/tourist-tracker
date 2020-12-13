@@ -19,7 +19,9 @@ function App() {
 		<UserContext.Provider value={currentUser}>
 			<BrowserRouter>
 				<MenuBar setCurrentUser={setCurrentUser} />
-				{currentUser ? <Dashboard /> : <GuestDashboard />}
+				<div style={{ height: '92%' }}>
+					{currentUser ? <Dashboard /> : <GuestDashboard />}
+				</div>
 			</BrowserRouter>
 		</UserContext.Provider>
 	);

@@ -8,7 +8,7 @@ function MenuBar({ setCurrentUser }) {
 	const currentUser = useContext(UserContext);
 
 	return (
-		<Navbar bg="dark" variant="dark">
+		<Navbar className="sticky-nav" bg="dark" variant="dark">
 			<Navbar.Brand as={Link} to="/">
 				Home
 			</Navbar.Brand>

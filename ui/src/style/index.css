@@ -1,5 +1,10 @@
+#root {
+	height: 100vh;
+}
+
 .sticky-nav {
 	position: sticky;
 	top: 0;
 	z-index: 10;
+	height: 8%;
 }
