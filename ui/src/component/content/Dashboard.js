@@ -18,7 +18,7 @@ function Dashboard() {
 
 	const getRouteElement = () => {
 		switch (currentUser.type) {
-			case Enumeration.UserType.TRAVELLER:
+			case Enumeration.UserType.TRAVELLER.value:
 				return (
 					<Switch>
 						<Route path="/recommendation">
@@ -35,7 +35,7 @@ function Dashboard() {
 						</Route>
 					</Switch>
 				);
-			case Enumeration.UserType.SITEOWNER:
+			case Enumeration.UserType.SITEOWNER.value:
 				return (
 					<Switch>
 						<Route path="/recommendation">
