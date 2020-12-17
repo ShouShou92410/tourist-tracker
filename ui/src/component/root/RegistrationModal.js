@@ -29,18 +29,18 @@ function RegistrationModal({ show, handleClose, handleSetCurrentUser }) {
 						<Form.Label>Account Type</Form.Label>
 						<Form.Check
 							type="radio"
-							id="traveller"
+							id={Enumeration.UserType.TRAVELLER.value}
 							name="UserType"
-							label="Traveller"
-							value={Enumeration.UserType.TRAVELLER}
+							label={Enumeration.UserType.TRAVELLER.label}
+							value={Enumeration.UserType.TRAVELLER.value}
 							defaultChecked
 						/>
 						<Form.Check
 							type="radio"
-							id="owner"
+							id={Enumeration.UserType.SITEOWNER.value}
 							name="UserType"
-							label="Site Owner"
-							value={Enumeration.UserType.SITEOWNER}
+							label={Enumeration.UserType.SITEOWNER.label}
+							value={Enumeration.UserType.SITEOWNER.value}
 						/>
 					</Form.Group>
 				</Modal.Body>
