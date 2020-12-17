@@ -70,8 +70,9 @@ class Firebase {
 		return newSite;
 	}
 
-	async getSite(id) {
-		const res = await this.db.ref(`/sites/${id}`).once('value');
+	async getSite(id = null) {
+		const path = id !== null ? `/sites/${id}` : '/sites';
+		const res = await this.db.ref(path).once('value');
 		const site = res.val();
 
 		return site;
