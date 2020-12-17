@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Badge from 'react-bootstrap/Badge';
 import Form from 'react-bootstrap/Form';
@@ -8,6 +9,7 @@ import Enumeration from '../../../utility/Enumeration';
 import firebase from '../../../services/Firebase';
 
 function SiteOwnerDataEntry() {
+	const history = useHistory();
 	const [amenityForm, setAmenityForm] = useState({
 		...Array(Object.values(Enumeration.Amenity).length).fill(null),
 	});
@@ -37,8 +39,9 @@ function SiteOwnerDataEntry() {
 		};
 
 		const site = await firebase.updateSite(newSite);
-
 		console.log(site);
+
+		history.push('/history');
 	};
 	return (
 		<Container>
