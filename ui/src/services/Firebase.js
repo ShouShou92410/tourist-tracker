@@ -105,6 +105,21 @@ class Firebase {
 
 		return res.data;
 	}
+
+	async getVisitedSites() {
+		const currentUser = this.auth.currentUser;
+		const siteIdsRef = await this.db.ref(`/visitedSites/${currentUser?.uid}`).once('value');
+		//console.log(siteIdsRef.val());
+		const sites = await Promise.all(siteIdsRef.val().map(async (siteId) => {
+			//console.log(siteIdRef.val())
+			let siteRef = await this.db.ref(`/sites/${siteId}`).once('value');
+			console.log(siteRef.val());
+			return siteRef.val();
+			//console.log(sites);
+		}));
+		console.log(sites);
+		return sites;
+	}
 }
 
 export default new Firebase();
