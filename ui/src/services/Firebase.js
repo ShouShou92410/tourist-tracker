@@ -56,6 +56,20 @@ class Firebase {
 		return newUser;
 	}
 
+	async updateSite(newSite, id = null) {
+		let updates = {};
+
+		if (id === null) {
+			id = this.db.ref('sites').push().key;
+			updates[`/ownedSites/${this.auth.currentUser.uid}/${id}`] = true;
+		}
+		updates[`/sites/${id}`] = newSite;
+
+		await this.db.ref().update(updates);
+
+		return newSite;
+	}
+
 	// Retrieves user information from the database, returns null if not found
 	async getUser(id = null) {
 		if (id === null) {
