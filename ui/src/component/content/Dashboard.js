@@ -58,10 +58,10 @@ function Dashboard() {
 	return (
 		<Container>
 			<Row>
-				<Col>
+				<Col xs={3}>
 					<SideBar />
 				</Col>
-				<Col>{getRouteElement()}</Col>
+				<Col xs={9}>{getRouteElement()}</Col>
 			</Row>
 		</Container>
 	);
