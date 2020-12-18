@@ -20,7 +20,7 @@ function SiteOwnerHistory() {
 			<h3>Owned Sites</h3>
 			<CardColumns style={{ columnCount: 2 }}>
 				{sites.map((site) => (
-					<Card key={site.id} as={Link} to="/dataentry">
+					<Card key={site.id} as={Link} to={`/dataentry/${site.id}`}>
 						<Card.Img
 							variant="top"
 							src={`${process.env.PUBLIC_URL}/pexels-beach-tropical-scene-free-stock-photo.jpg`}
