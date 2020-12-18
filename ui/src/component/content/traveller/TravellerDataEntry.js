@@ -29,7 +29,7 @@ function TravellerDataEntry() {
 		const visitedSiteForm = Object.fromEntries(formData.entries());
 
 		await firebase.updateVisitedSite(visitedSiteForm.visitedSite, dateVisited.getTime());
-		history.push('/');
+		history.push('/history');
 	};
 
 	return (

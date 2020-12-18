@@ -8,30 +8,35 @@ function TravellerHistory() {
 	const [sites, setSites] = useState([]);
 	useEffect(() => {
 		const handleWait = async () => {
-			const test = await firebase.getVisitedSites();
-			console.log(test);
-			setSites(test);
-			//console.log(sites);
-			//sites.forEach((site) => {console.log('hi')});
+			const visitedSites = await firebase.getVisitedSites();
+			setSites(visitedSites);
 		};
 		handleWait();
 	}, []);
-	//console.log(sites);
 
 	return (
 		<Container>
-			<h3>TravellerHistory</h3>
-			<CardColumns>
-				{sites.map((site, i) => (
-					<Card>
+			<h3>Travel History</h3>
+			<CardColumns style={{ columnCount: 2 }}>
+				{sites.map((site) => (
+					<Card key={site.id}>
 						<Card.Img
 							variant="top"
 							src={`${process.env.PUBLIC_URL}/pexels-beach-tropical-scene-free-stock-photo.jpg`}
 						/>
 						<Card.Body>
 							<Card.Title>{site.name}</Card.Title>
-							<Card.Text>Address: {site.address}</Card.Text>
+							<Card.Text>
+								<i>{site.address}</i>
+								<br />
+								You have visited <b>{site.numberOfVisits}</b> times.
+							</Card.Text>
 						</Card.Body>
+						<Card.Footer>
+							<small className="text-muted">
+								Last visited on {site.latestDateVisited.toLocaleDateString()}
+							</small>
+						</Card.Footer>
 					</Card>
 				))}
 			</CardColumns>
