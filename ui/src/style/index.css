@@ -12,3 +12,7 @@
 .float-right {
 	float: right;
 }
+
+.react-datepicker-wrapper {
+	width: 100%;
+}

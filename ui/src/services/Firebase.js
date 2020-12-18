@@ -70,6 +70,35 @@ class Firebase {
 		return newSite;
 	}
 
+	async updateVisitedSite(id, dateVisited) {
+		let updates = {};
+		console.log(id, dateVisited);
+
+		let visitedSite = (
+			await this.db.ref(`/visitedSites/${this.auth.currentUser.uid}/${id}`).once('value')
+		).val();
+		const site = (await this.db.ref(`/sites/${id}`).once('value')).val();
+
+		if (visitedSite === null) {
+			updates[`/visitedSites/${this.auth.currentUser.uid}/${id}`] = {
+				latestDateVisited: dateVisited,
+				numberOfVisits: 1,
+			};
+		} else {
+			if (dateVisited > visitedSite.latestDateVisited) {
+				updates[
+					`/visitedSites/${this.auth.currentUser.uid}/${id}/latestDateVisited`
+				] = dateVisited;
+			}
+			updates[`/visitedSites/${this.auth.currentUser.uid}/${id}/numberOfVisits`] =
+				visitedSite.numberOfVisits + 1;
+		}
+
+		updates[`/sites/${id}/numberOfVisits`] = site.numberOfVisits + 1;
+
+		await this.db.ref().update(updates);
+	}
+
 	async getSite(id = null) {
 		const path = id !== null ? `/sites/${id}` : '/sites';
 		const res = await this.db.ref(path).once('value');

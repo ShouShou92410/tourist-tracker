@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import DatePicker from 'react-datepicker';
 import { useHistory } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
@@ -8,6 +9,7 @@ import firebase from '../../../services/Firebase';
 function TravellerDataEntry() {
 	const history = useHistory();
 	const [siteOptions, setSiteOptions] = useState([]);
+	const [dateVisited, setDateVisited] = useState(new Date());
 
 	useEffect(() => {
 		const fetchData = async () => {
@@ -24,9 +26,10 @@ function TravellerDataEntry() {
 		e.preventDefault();
 
 		const formData = new FormData(e.target);
-		const form = Object.fromEntries(formData.entries());
-		console.log(form);
-		history.push('/history');
+		const visitedSiteForm = Object.fromEntries(formData.entries());
+
+		await firebase.updateVisitedSite(visitedSiteForm.visitedSite, dateVisited.getTime());
+		history.push('/');
 	};
 
 	return (
@@ -38,9 +41,21 @@ function TravellerDataEntry() {
 					<Form.Label>Tourist Site</Form.Label>
 					<Form.Control as="select" name="visitedSite">
 						{siteOptions.map((x) => (
-							<option value={x.id}>{x.name}</option>
+							<option key={x.id} value={x.id}>
+								{x.name}
+							</option>
 						))}
 					</Form.Control>
+				</Form.Group>
+				<Form.Group>
+					<Form.Label>Date Visited</Form.Label>
+					<div>
+						<Form.Control
+							as={DatePicker}
+							selected={dateVisited}
+							onChange={(date) => setDateVisited(date)}
+						/>
+					</div>
 				</Form.Group>
 				<Button variant="primary" type="submit" className="float-right">
 					Submit
