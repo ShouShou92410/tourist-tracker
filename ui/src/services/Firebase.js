@@ -72,7 +72,6 @@ class Firebase {
 
 	async updateVisitedSite(id, dateVisited) {
 		let updates = {};
-		console.log(id, dateVisited);
 
 		let visitedSite = (
 			await this.db.ref(`/visitedSites/${this.auth.currentUser.uid}/${id}`).once('value')
