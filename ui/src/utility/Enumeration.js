@@ -10,7 +10,18 @@ const Enumeration = Object.freeze({
 		},
 	}),
 	Amenity: Object.freeze({
-		VIEW: {
+		TOILETS: {
+			label: 'Toilets',
+			value: 1
+		},
+		FREE_TOILETRIES: { 
+			label: 'Free Toiletries',
+			value: 2
+		}
+		PETS: {
+			label: 'Pets Allowed'
+		}
+		/*VIEW: {
 			label: 'View',
 			value: 1,
 		},
@@ -39,13 +50,13 @@ const Enumeration = Object.freeze({
 			value: 7,
 		},
 		MOVIETHEATER: {
-			label: 'Moive theater',
+			label: 'Movie theater',
 			value: 8,
 		},
 		KARAOKE: {
 			label: 'Karaoke',
 			value: 9,
-		},
+		},*/
 	}),
 });
 

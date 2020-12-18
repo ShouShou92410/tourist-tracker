@@ -1,0 +1,3907 @@
+[
+    [
+        {
+            "name": "HENX Inn Hostel",
+            "score": "7.2",
+            "price": " 88",
+            "link": "/hotel/gb/holiday-estates-39-s-nx-inn-hostel.en-gb.html?label=gen173nr-1FCAQoggJCH3NlYXJjaF9sb25kb24sIGdyZWF0ZXIgbG9uZG9uLCBICVgEaOQBiAEBmAEJuAEZyAEM2AEB6AEB-AEDiAIBqAIDuALIjLz8BcACAdICJDJhNWRhY2JjLWFmNjItNDIzYi05OWFkLTdiNGM1NTVmMGJlZtgCBeACAQ&sid=57d883c8ba8c254a98daca17712bc6b2&all_sr_blocks=674666207_277232643_1_0_0&checkin=2020-10-20&checkout=2020-10-21&dest_id=-2601889&dest_type=city&group_adults=1&group_children=0&hapos=1&highlighted_blocks=674666207_277232643_1_0_0&hpos=1&no_rooms=1&req_adults=1&req_children=0&room1=A&sr_order=price&sr_pri_blocks=674666207_277232643_1_0_0__854&srepoch=1603208777&srpvid=38036ee4ed9f0030&ucfs=1&from=searchresults;hptv=do",
+            "details": {
+                "latitude": "51.47579000",
+                "longitude": "-0.03716300",
+                "important_facilities": [
+                    "Free WiFi",
+                    "Free parking",
+                    "24-hour front desk",
+                    "Laundry"
+                ],
+                "neighborhood_structures": [],
+                "services_offered": [
+                    {
+                        "type": "Bathroom",
+                        "value": [
+                            "Toilet",
+                            "Shared bathroom",
+                            "Shower"
+                        ]
+                    },
+                    {
+                        "type": "Bedroom",
+                        "value": [
+                            "Linen"
+                        ]
+                    },
+                    {
+                        "type": "Room Amenities",
+                        "value": [
+                            "Socket near the bed"
+                        ]
+                    },
+                    {
+                        "type": "Pets",
+                        "value": [
+                            "Pets are not allowed."
+                        ]
+                    },
+                    {
+                        "type": "Activities",
+                        "value": [
+                            "Movie nights"
+                        ]
+                    },
+                    {
+                        "type": "Internet",
+                        "value": [
+                            "Free! WiFi is available in public areas and is free of charge."
+                        ]
+                    },
+                    {
+                        "type": "Parking",
+                        "value": [
+                            "Free! Free public parking is possible at a location nearby (reservation is not needed)."
+                        ]
+                    },
+                    {
+                        "type": "Services",
+                        "value": [
+                            "Daily housekeeping",
+                            "Fax/photocopying",
+                            "Currency exchange",
+                            "Laundry",
+                            "24-hour front desk"
+                        ]
+                    },
+                    {
+                        "type": "Reception services",
+                        "value": [
+                            "Invoice provided"
+                        ]
+                    },
+                    {
+                        "type": "Safety & security",
+                        "value": [
+                            "Fire extinguishers",
+                            "CCTV outside property",
+                            "CCTV in common areas"
+                        ]
+                    },
+                    {
+                        "type": "General",
+                        "value": [
+                            "Non-smoking throughout",
+                            "Heating"
+                        ]
+                    },
+                    {
+                        "type": "Safety features",
+                        "value": [
+                            "First aid kit available",
+                            "Hand sanitizer in guest accommodation and key areas",
+                            "Shared stationery such as printed menus, magazines, pens, and paper removed",
+                            "Staff follow all safety protocols as directed by local authorities"
+                        ]
+                    },
+                    {
+                        "type": "Physical distancing",
+                        "value": [
+                            "Cashless payment available",
+                            "Contactless check-in/check-out"
+                        ]
+                    },
+                    {
+                        "type": "Cleanliness & disinfecting",
+                        "value": [
+                            "Hand sanitiser"
+                        ]
+                    },
+                    {
+                        "type": "Languages spoken",
+                        "value": [
+                            "German",
+                            "English",
+                            "French",
+                            "Italian",
+                            "Polish",
+                            "Russian"
+                        ]
+                    }
+                ]
+            },
+            "thumbnail_image": "https://cf.bstatic.com/xdata/images/hotel/square200/268581011.jpg?k=783e2a650cef95e41703c60abf33ac8e8c5af78868695fe2e2d5ca0fb4b940cc&o="
+        },
+        {
+            "name": "Central Hotel",
+            "score": "6.0",
+            "price": " 92",
+            "link": "/hotel/gb/central-hostel.en-gb.html?label=gen173nr-1FCAQoggJCH3NlYXJjaF9sb25kb24sIGdyZWF0ZXIgbG9uZG9uLCBICVgEaOQBiAEBmAEJuAEZyAEM2AEB6AEB-AEDiAIBqAIDuALIjLz8BcACAdICJDJhNWRhY2JjLWFmNjItNDIzYi05OWFkLTdiNGM1NTVmMGJlZtgCBeACAQ&sid=57d883c8ba8c254a98daca17712bc6b2&all_sr_blocks=3830501_195544235_0_0_0&checkin=2020-10-20&checkout=2020-10-21&dest_id=-2601889&dest_type=city&group_adults=1&group_children=0&hapos=2&highlighted_blocks=3830501_195544235_0_0_0&hpos=2&no_rooms=1&req_adults=1&req_children=0&room1=A&sr_order=price&sr_pri_blocks=3830501_195544235_0_0_0__900&srepoch=1603208777&srpvid=38036ee4ed9f0030&ucfs=1&from=searchresults;hptv=do",
+            "details": {
+                "latitude": "51.51290741",
+                "longitude": "-0.19111142",
+                "important_facilities": [
+                    "Non-smoking rooms",
+                    "Free WiFi",
+                    "24-hour front desk",
+                    "Heating",
+                    "Daily housekeeping"
+                ],
+                "neighborhood_structures": [],
+                "services_offered": [
+                    {
+                        "type": "Kitchen",
+                        "value": [
+                            "Shared kitchen"
+                        ]
+                    },
+                    {
+                        "type": "Pets",
+                        "value": [
+                            "Pets are not allowed."
+                        ]
+                    },
+                    {
+                        "type": "Food & Drink",
+                        "value": [
+                            "Chocolate or cookies",
+                            "Bottle of water",
+                            "Snack bar"
+                        ]
+                    },
+                    {
+                        "type": "Internet",
+                        "value": [
+                            "Free! WiFi is available in public areas and is free of charge."
+                        ]
+                    },
+                    {
+                        "type": "Parking",
+                        "value": [
+                            "No parking available."
+                        ]
+                    },
+                    {
+                        "type": "Services",
+                        "value": [
+                            "Daily housekeeping",
+                            "Shared lounge/TV area",
+                            "Lockers",
+                            "Vending machine (snacks)",
+                            "Vending machine (drinks)",
+                            "Concierge service",
+                            "Luggage storage",
+                            "Fax/photocopying",
+                            "24-hour front desk"
+                        ]
+                    },
+                    {
+                        "type": "Safety & security",
+                        "value": [
+                            "Fire extinguishers",
+                            "CCTV outside property",
+                            "CCTV in common areas",
+                            "Smoke alarms",
+                            "24-hour security",
+                            "Safety deposit box"
+                        ]
+                    },
+                    {
+                        "type": "General",
+                        "value": [
+                            "Non-smoking throughout",
+                            "Heating",
+                            "Non-smoking rooms"
+                        ]
+                    },
+                    {
+                        "type": "Languages spoken",
+                        "value": [
+                            "English",
+                            "French"
+                        ]
+                    }
+                ]
+            },
+            "thumbnail_image": "https://cf.bstatic.com/xdata/images/hotel/square200/211694291.jpg?k=fd4474a82f6d46c94749b8ae43a5a355bf8ddde6ca249bd26c5c96b851ed83a8&o="
+        },
+        {
+            "name": "London Budget Guesthouse",
+            "score": "7.6",
+            "price": " 92",
+            "link": "/hotel/gb/double-room-in-a-hostel.en-gb.html?label=gen173nr-1FCAQoggJCH3NlYXJjaF9sb25kb24sIGdyZWF0ZXIgbG9uZG9uLCBICVgEaOQBiAEBmAEJuAEZyAEM2AEB6AEB-AEDiAIBqAIDuALIjLz8BcACAdICJDJhNWRhY2JjLWFmNjItNDIzYi05OWFkLTdiNGM1NTVmMGJlZtgCBeACAQ&sid=57d883c8ba8c254a98daca17712bc6b2&all_sr_blocks=292393502_215109463_0_1_0&checkin=2020-10-20&checkout=2020-10-21&dest_id=-2601889&dest_type=city&group_adults=1&group_children=0&hapos=3&highlighted_blocks=292393502_215109463_0_1_0&hpos=3&no_rooms=1&req_adults=1&req_children=0&room1=A&sr_order=price&sr_pri_blocks=292393502_215109463_0_1_0__900&srepoch=1603208777&srpvid=38036ee4ed9f0030&ucfs=1&from=searchresults;hptv=do",
+            "details": {
+                "latitude": "51.54146861",
+                "longitude": "0.03098473",
+                "important_facilities": [
+                    "Non-smoking rooms",
+                    "Free WiFi",
+                    "Garden",
+                    "Good breakfast"
+                ],
+                "neighborhood_structures": [],
+                "services_offered": [
+                    {
+                        "type": "Bathroom",
+                        "value": [
+                            "Toilet paper",
+                            "Towels",
+                            "Shared bathroom"
+                        ]
+                    },
+                    {
+                        "type": "Outdoors",
+                        "value": [
+                            "Garden"
+                        ]
+                    },
+                    {
+                        "type": "Room Amenities",
+                        "value": [
+                            "Clothes rack"
+                        ]
+                    },
+                    {
+                        "type": "Pets",
+                        "value": [
+                            "Pets are not allowed."
+                        ]
+                    },
+                    {
+                        "type": "Internet",
+                        "value": [
+                            "Free! WiFi is available in the hotel rooms and is free of charge."
+                        ]
+                    },
+                    {
+                        "type": "Parking",
+                        "value": [
+                            "No parking available."
+                        ]
+                    },
+                    {
+                        "type": "General",
+                        "value": [
+                            "Non-smoking throughout",
+                            "Carpeted",
+                            "Non-smoking rooms"
+                        ]
+                    }
+                ]
+            },
+            "thumbnail_image": "https://cf.bstatic.com/xdata/images/hotel/square200/237025111.jpg?k=96492ceb6a43d532f84d336983aa6ff62c61d859a362d87fa1f599defd3f33c9&o="
+        },
+        {
+            "name": "City Budget Guesthouse",
+            "score": "7.2",
+            "price": " 92",
+            "link": "/hotel/gb/city-budget-guesthouse.en-gb.html?label=gen173nr-1FCAQoggJCH3NlYXJjaF9sb25kb24sIGdyZWF0ZXIgbG9uZG9uLCBICVgEaOQBiAEBmAEJuAEZyAEM2AEB6AEB-AEDiAIBqAIDuALIjLz8BcACAdICJDJhNWRhY2JjLWFmNjItNDIzYi05OWFkLTdiNGM1NTVmMGJlZtgCBeACAQ&sid=57d883c8ba8c254a98daca17712bc6b2&all_sr_blocks=443523605_238338474_0_1_0&checkin=2020-10-20&checkout=2020-10-21&dest_id=-2601889&dest_type=city&group_adults=1&group_children=0&hapos=4&highlighted_blocks=443523605_238338474_0_1_0&hpos=4&no_rooms=1&req_adults=1&req_children=0&room1=A&sr_order=price&sr_pri_blocks=443523605_238338474_0_1_0__900&srepoch=1603208777&srpvid=38036ee4ed9f0030&ucfs=1&from=searchresults;hptv=do",
+            "details": {
+                "latitude": "51.51600593",
+                "longitude": "-0.06419937",
+                "important_facilities": [
+                    "Non-smoking rooms",
+                    "Free WiFi",
+                    "Breakfast"
+                ],
+                "neighborhood_structures": [],
+                "services_offered": [
+                    {
+                        "type": "Bathroom",
+                        "value": [
+                            "Toilet paper",
+                            "Towels",
+                            "Additional bathroom",
+                            "Additional toilet",
+                            "Bath or shower",
+                            "Shared toilet",
+                            "Toilet",
+                            "Free toiletries",
+                            "Shared bathroom",
+                            "Hairdryer",
+                            "Shower"
+                        ]
+                    },
+                    {
+                        "type": "Bedroom",
+                        "value": [
+                            "Linen"
+                        ]
+                    },
+                    {
+                        "type": "Kitchen",
+                        "value": [
+                            "Dining table",
+                            "Toaster",
+                            "Stovetop",
+                            "Oven",
+                            "Kitchen",
+                            "Microwave",
+                            "Refrigerator"
+                        ]
+                    },
+                    {
+                        "type": "Pets",
+                        "value": [
+                            "Pets are not allowed."
+                        ]
+                    },
+                    {
+                        "type": "Living Area",
+                        "value": [
+                            "Dining area"
+                        ]
+                    },
+                    {
+                        "type": "Internet",
+                        "value": [
+                            "Free! WiFi is available in public areas and is free of charge."
+                        ]
+                    },
+                    {
+                        "type": "Parking",
+                        "value": [
+                            "No parking available."
+                        ]
+                    },
+                    {
+                        "type": "General",
+                        "value": [
+                            "Non-smoking throughout",
+                            "Hardwood or parquet floors",
+                            "Private entrance",
+                            "Heating",
+                            "Non-smoking rooms"
+                        ]
+                    }
+                ]
+            },
+            "thumbnail_image": "https://cf.bstatic.com/xdata/images/hotel/square200/175943756.jpg?k=d072b9b64bbbd9153152cd626de7ce830e293a827748e5170230c7a12ab12c5c&o="
+        },
+        {
+            "name": "Kensal Green Backpackers 2",
+            "score": "5.8",
+            "price": " 92",
+            "link": "/hotel/gb/kensal-green-backpackers-2.en-gb.html?label=gen173nr-1FCAQoggJCH3NlYXJjaF9sb25kb24sIGdyZWF0ZXIgbG9uZG9uLCBICVgEaOQBiAEBmAEJuAEZyAEM2AEB6AEB-AEDiAIBqAIDuALIjLz8BcACAdICJDJhNWRhY2JjLWFmNjItNDIzYi05OWFkLTdiNGM1NTVmMGJlZtgCBeACAQ&sid=57d883c8ba8c254a98daca17712bc6b2&all_sr_blocks=209899904_95827804_0_0_0&checkin=2020-10-20&checkout=2020-10-21&dest_id=-2601889&dest_type=city&group_adults=1&group_children=0&hapos=5&highlighted_blocks=209899904_95827804_0_0_0&hpos=5&no_rooms=1&req_adults=1&req_children=0&room1=A&sr_order=price&sr_pri_blocks=209899904_95827804_0_0_0__900&srepoch=1603208777&srpvid=38036ee4ed9f0030&ucfs=1&from=searchresults;hptv=do",
+            "details": {
+                "latitude": "51.53014230",
+                "longitude": "-0.22558130",
+                "important_facilities": [
+                    "Non-smoking rooms",
+                    "Restaurant",
+                    "Free WiFi",
+                    "24-hour front desk",
+                    "Bar"
+                ],
+                "neighborhood_structures": [],
+                "services_offered": [
+                    {
+                        "type": "Kitchen",
+                        "value": [
+                            "Shared kitchen"
+                        ]
+                    },
+                    {
+                        "type": "Pets",
+                        "value": [
+                            "Pets are not allowed."
+                        ]
+                    },
+                    {
+                        "type": "Activities",
+                        "value": [
+                            "Live sport events (broadcast)",
+                            "Live music/performance",
+                            "Happy hour",
+                            "Evening entertainment",
+                            "Darts",
+                            "Table tennis",
+                            "Billiards",
+                            "Games room"
+                        ]
+                    },
+                    {
+                        "type": "Food & Drink",
+                        "value": [
+                            "On-site coffee house",
+                            "Bottle of water",
+                            "Wine/champagne",
+                            "Snack bar",
+                            "Bar",
+                            "Restaurant"
+                        ]
+                    },
+                    {
+                        "type": "Internet",
+                        "value": [
+                            "Free! WiFi is available in public areas and is free of charge."
+                        ]
+                    },
+                    {
+                        "type": "Parking",
+                        "value": [
+                            "Parking options available",
+                            "Street parking"
+                        ]
+                    },
+                    {
+                        "type": "Reception services",
+                        "value": [
+                            "Invoice provided",
+                            "Lockers",
+                            "ATM/cash machine on site",
+                            "Luggage storage",
+                            "Currency exchange",
+                            "Express check-in/check-out",
+                            "24-hour front desk"
+                        ]
+                    },
+                    {
+                        "type": "Entertainment and family services",
+                        "value": [
+                            "Books, DVDs, music for children",
+                            "Board games/puzzles"
+                        ]
+                    },
+                    {
+                        "type": "Cleaning services",
+                        "value": [
+                            "Daily housekeeping",
+                            "Ironing service",
+                            "Dry cleaning",
+                            "Laundry"
+                        ]
+                    },
+                    {
+                        "type": "Business facilities",
+                        "value": [
+                            "Fax/photocopying"
+                        ]
+                    },
+                    {
+                        "type": "Safety & security",
+                        "value": [
+                            "Fire extinguishers",
+                            "CCTV outside property",
+                            "CCTV in common areas",
+                            "Smoke alarms",
+                            "Security alarm",
+                            "24-hour security",
+                            "Safety deposit box"
+                        ]
+                    },
+                    {
+                        "type": "General",
+                        "value": [
+                            "Adult only",
+                            "Mini-market on site",
+                            "Shared lounge/TV area",
+                            "Vending machine (snacks)",
+                            "Vending machine (drinks)",
+                            "Non-smoking throughout",
+                            "Heating",
+                            "Packed lunches",
+                            "Carpeted",
+                            "Heating",
+                            "Non-smoking rooms"
+                        ]
+                    },
+                    {
+                        "type": "Safety features",
+                        "value": [
+                            "Face masks for guests available",
+                            "Thermometers for guests provided by property",
+                            "First aid kit available",
+                            "Process in place to check health of guests",
+                            "Hand sanitizer in guest accommodation and key areas",
+                            "Shared stationery such as printed menus, magazines, pens, and paper removed",
+                            "Staff follow all safety protocols as directed by local authorities"
+                        ]
+                    },
+                    {
+                        "type": "Physical distancing",
+                        "value": [
+                            "Screens or physical barriers placed between staff and guests in appropriate areas",
+                            "Physical distancing rules followed",
+                            "Cashless payment available",
+                            "Contactless check-in/check-out"
+                        ]
+                    },
+                    {
+                        "type": "Cleanliness & disinfecting",
+                        "value": [
+                            "Guests have the option to cancel any cleaning services for their accommodation during their stay",
+                            "Property is cleaned by professional cleaning companies",
+                            "Guest accommodation sealed after cleaning",
+                            "Guest accommodation is disinfected between stays",
+                            "Linens, towels and laundry washed in accordance with local authority guidelines",
+                            "Use of cleaning chemicals that are effective against Coronavirus"
+                        ]
+                    },
+                    {
+                        "type": "Food & drink safety",
+                        "value": [
+                            "Delivered food is securely covered",
+                            "All plates, cutlery, glasses and other tableware have been sanitized",
+                            "Food can be delivered to guest accommodation",
+                            "Physical distancing in dining areas"
+                        ]
+                    },
+                    {
+                        "type": "Languages spoken",
+                        "value": [
+                            "Berber",
+                            "Greek",
+                            "English",
+                            "Spanish",
+                            "Estonian",
+                            "French",
+                            "Croatian",
+                            "Hungarian",
+                            "Italian",
+                            "Portuguese",
+                            "Romanian",
+                            "Russian",
+                            "Zulu"
+                        ]
+                    }
+                ]
+            },
+            "thumbnail_image": "https://cf.bstatic.com/xdata/images/hotel/square200/107617291.jpg?k=0ac6c336f07cbc34e7caed80790f9a71d3ce8a8743d57d49856fb98a20fbcff1&o="
+        },
+        {
+            "name": "Kensal Green Backpackers",
+            "score": "5.6",
+            "price": " 102",
+            "link": "/hotel/gb/hostel-639.en-gb.html?label=gen173nr-1FCAQoggJCH3NlYXJjaF9sb25kb24sIGdyZWF0ZXIgbG9uZG9uLCBICVgEaOQBiAEBmAEJuAEZyAEM2AEB6AEB-AEDiAIBqAIDuALIjLz8BcACAdICJDJhNWRhY2JjLWFmNjItNDIzYi05OWFkLTdiNGM1NTVmMGJlZtgCBeACAQ&sid=57d883c8ba8c254a98daca17712bc6b2&all_sr_blocks=3802812_95161946_0_0_0&checkin=2020-10-20&checkout=2020-10-21&dest_id=-2601889&dest_type=city&group_adults=1&group_children=0&hapos=6&highlighted_blocks=3802812_95161946_0_0_0&hpos=6&no_rooms=1&req_adults=1&req_children=0&room1=A&sr_order=price&sr_pri_blocks=3802812_95161946_0_0_0__990&srepoch=1603208777&srpvid=38036ee4ed9f0030&ucfs=1&from=searchresults;hptv=do",
+            "details": {
+                "latitude": "51.53009568",
+                "longitude": "-0.22595465",
+                "important_facilities": [
+                    "Non-smoking rooms",
+                    "Restaurant",
+                    "Free WiFi",
+                    "Family rooms",
+                    "24-hour front desk",
+                    "Bar"
+                ],
+                "neighborhood_structures": [],
+                "services_offered": [
+                    {
+                        "type": "Bathroom",
+                        "value": [
+                            "Shared toilet",
+                            "Shared bathroom"
+                        ]
+                    },
+                    {
+                        "type": "Kitchen",
+                        "value": [
+                            "Shared kitchen"
+                        ]
+                    },
+                    {
+                        "type": "Pets",
+                        "value": [
+                            "Pets are not allowed."
+                        ]
+                    },
+                    {
+                        "type": "Activities",
+                        "value": [
+                            "Darts",
+                            "Karaoke",
+                            "Games room"
+                        ]
+                    },
+                    {
+                        "type": "Food & Drink",
+                        "value": [
+                            "Bar",
+                            "Restaurant"
+                        ]
+                    },
+                    {
+                        "type": "Internet",
+                        "value": [
+                            "Free! WiFi is available in all areas and is free of charge."
+                        ]
+                    },
+                    {
+                        "type": "Parking",
+                        "value": [
+                            "No parking available."
+                        ]
+                    },
+                    {
+                        "type": "Services",
+                        "value": [
+                            "Luggage storage",
+                            "Packed lunches",
+                            "Laundry",
+                            "24-hour front desk"
+                        ]
+                    },
+                    {
+                        "type": "Safety & security",
+                        "value": [
+                            "Safety deposit box"
+                        ]
+                    },
+                    {
+                        "type": "General",
+                        "value": [
+                            "Non-smoking throughout",
+                            "Heating",
+                            "Family rooms",
+                            "Non-smoking rooms"
+                        ]
+                    }
+                ]
+            },
+            "thumbnail_image": "https://cf.bstatic.com/xdata/images/hotel/square200/97799657.jpg?k=633d81ea69ed9d39f8f1dd555941aef809d528c99bff330ad46d46d95b640329&o="
+        },
+        {
+            "name": "The Queens Hostel",
+            "score": "7.7",
+            "price": " 103",
+            "link": "/hotel/gb/the-queens-hostel.en-gb.html?label=gen173nr-1FCAQoggJCH3NlYXJjaF9sb25kb24sIGdyZWF0ZXIgbG9uZG9uLCBICVgEaOQBiAEBmAEJuAEZyAEM2AEB6AEB-AEDiAIBqAIDuALIjLz8BcACAdICJDJhNWRhY2JjLWFmNjItNDIzYi05OWFkLTdiNGM1NTVmMGJlZtgCBeACAQ&sid=57d883c8ba8c254a98daca17712bc6b2&all_sr_blocks=188499117_131763459_0_0_0&checkin=2020-10-20&checkout=2020-10-21&dest_id=-2601889&dest_type=city&group_adults=1&group_children=0&hapos=7&highlighted_blocks=188499117_131763459_0_0_0&hpos=7&no_rooms=1&req_adults=1&req_children=0&room1=A&sr_order=price&sr_pri_blocks=188499117_131763459_0_0_0__1000&srepoch=1603208777&srpvid=38036ee4ed9f0030&ucfs=1&from=searchresults;hptv=do",
+            "details": {
+                "latitude": "51.51050766",
+                "longitude": "-0.23040310",
+                "important_facilities": [
+                    "Non-smoking rooms",
+                    "Private parking",
+                    "Pets allowed",
+                    "Free WiFi",
+                    "Parking"
+                ],
+                "neighborhood_structures": [],
+                "services_offered": [
+                    {
+                        "type": "Bathroom",
+                        "value": [
+                            "Toilet paper",
+                            "Towels/sheets (extra fee)",
+                            "Shared toilet",
+                            "Shared bathroom"
+                        ]
+                    },
+                    {
+                        "type": "Bedroom",
+                        "value": [
+                            "Linen"
+                        ]
+                    },
+                    {
+                        "type": "View",
+                        "value": [
+                            "View"
+                        ]
+                    },
+                    {
+                        "type": "Outdoors",
+                        "value": [
+                            "Outdoor furniture",
+                            "Sun terrace",
+                            "Terrace",
+                            "Garden"
+                        ]
+                    },
+                    {
+                        "type": "Kitchen",
+                        "value": [
+                            "Shared kitchen"
+                        ]
+                    },
+                    {
+                        "type": "Room Amenities",
+                        "value": [
+                            "Socket near the bed"
+                        ]
+                    },
+                    {
+                        "type": "Pets",
+                        "value": [
+                            "Free! Pets are allowed. No extra charges."
+                        ]
+                    },
+                    {
+                        "type": "Activities",
+                        "value": [
+                            "Darts",
+                            "Golf course (within 3 km)",
+                            "Tennis court"
+                        ]
+                    },
+                    {
+                        "type": "Internet",
+                        "value": [
+                            "Free! WiFi is available in the hotel rooms and is free of charge."
+                        ]
+                    },
+                    {
+                        "type": "Parking",
+                        "value": [
+                            "Private parking is possible on site (reservation is needed) and costs GBP 10 per day.",
+                            "Accessible parking"
+                        ]
+                    },
+                    {
+                        "type": "Services",
+                        "value": [
+                            "Daily housekeeping",
+                            "ATM/cash machine on site",
+                            "Luggage storage",
+                            "Fax/photocopying",
+                            "Ironing service"
+                        ]
+                    },
+                    {
+                        "type": "Safety & security",
+                        "value": [
+                            "Fire extinguishers",
+                            "CCTV outside property",
+                            "CCTV in common areas",
+                            "Smoke alarms",
+                            "Security alarm"
+                        ]
+                    },
+                    {
+                        "type": "General",
+                        "value": [
+                            "Designated smoking area",
+                            "Non-smoking throughout",
+                            "Shops (on site)",
+                            "Heating",
+                            "Non-smoking rooms"
+                        ]
+                    },
+                    {
+                        "type": "Accessibility",
+                        "value": [
+                            "Upper floors accessible by stairs only"
+                        ]
+                    }
+                ]
+            },
+            "thumbnail_image": "https://cf.bstatic.com/xdata/images/hotel/square200/126508984.jpg?k=792ff67c5952a1ff624f7a3c2d1daccb561eed0a8ec58a5adb35de331f3a7cf1&o="
+        },
+        {
+            "name": "Smart Hyde Park Inn Hostel",
+            "score": "7.0",
+            "price": " 105",
+            "link": "/hotel/gb/smart-hyde-park-inn.en-gb.html?label=gen173nr-1FCAQoggJCH3NlYXJjaF9sb25kb24sIGdyZWF0ZXIgbG9uZG9uLCBICVgEaOQBiAEBmAEJuAEZyAEM2AEB6AEB-AEDiAIBqAIDuALIjLz8BcACAdICJDJhNWRhY2JjLWFmNjItNDIzYi05OWFkLTdiNGM1NTVmMGJlZtgCBeACAQ&sid=57d883c8ba8c254a98daca17712bc6b2&all_sr_blocks=26275520_118336571_0_2_0&checkin=2020-10-20&checkout=2020-10-21&dest_id=-2601889&dest_type=city&group_adults=1&group_children=0&hapos=8&highlighted_blocks=26275520_118336571_0_2_0&hpos=8&no_rooms=1&req_adults=1&req_children=0&room1=A&sr_order=price&sr_pri_blocks=26275520_118336571_0_2_0__1023&srepoch=1603208777&srpvid=38036ee4ed9f0030&ucfs=1&from=searchresults;hptv=do;has_campaign_deals_traveloffer20_customer_label=1",
+            "details": {
+                "latitude": "51.51233318",
+                "longitude": "-0.18625796",
+                "important_facilities": [
+                    "Non-smoking rooms",
+                    "Free WiFi",
+                    "24-hour front desk",
+                    "Terrace",
+                    "Laundry",
+                    "Breakfast"
+                ],
+                "neighborhood_structures": [],
+                "services_offered": [
+                    {
+                        "type": "Bathroom",
+                        "value": [
+                            "Toilet paper",
+                            "Towels/sheets (extra fee)",
+                            "Toilet",
+                            "Shower"
+                        ]
+                    },
+                    {
+                        "type": "Bedroom",
+                        "value": [
+                            "Linen"
+                        ]
+                    },
+                    {
+                        "type": "Outdoors",
+                        "value": [
+                            "Outdoor furniture",
+                            "Terrace"
+                        ]
+                    },
+                    {
+                        "type": "Kitchen",
+                        "value": [
+                            "Shared kitchen"
+                        ]
+                    },
+                    {
+                        "type": "Room Amenities",
+                        "value": [
+                            "Socket near the bed"
+                        ]
+                    },
+                    {
+                        "type": "Services & Extras",
+                        "value": [
+                            "Tickets to attractions or shows"
+                        ]
+                    },
+                    {
+                        "type": "Pets",
+                        "value": [
+                            "Pets are not allowed."
+                        ]
+                    },
+                    {
+                        "type": "Activities",
+                        "value": [
+                            "Pub crawls"
+                        ]
+                    },
+                    {
+                        "type": "Internet",
+                        "value": [
+                            "Free! WiFi is available in all areas and is free of charge."
+                        ]
+                    },
+                    {
+                        "type": "Parking",
+                        "value": [
+                            "No parking available."
+                        ]
+                    },
+                    {
+                        "type": "Transport",
+                        "value": [
+                            "Public transport tickets"
+                        ]
+                    },
+                    {
+                        "type": "Reception services",
+                        "value": [
+                            "Lockers",
+                            "ATM/cash machine on site",
+                            "Luggage storage",
+                            "Ticket service",
+                            "Tour desk",
+                            "Currency exchange",
+                            "24-hour front desk"
+                        ]
+                    },
+                    {
+                        "type": "Cleaning services",
+                        "value": [
+                            "Daily housekeeping",
+                            "Laundry"
+                        ]
+                    },
+                    {
+                        "type": "Safety & security",
+                        "value": [
+                            "Fire extinguishers",
+                            "CCTV outside property",
+                            "CCTV in common areas",
+                            "Smoke alarms",
+                            "Security alarm",
+                            "Key card access",
+                            "24-hour security",
+                            "Safety deposit box"
+                        ]
+                    },
+                    {
+                        "type": "General",
+                        "value": [
+                            "Shared lounge/TV area",
+                            "Vending machine (snacks)",
+                            "Vending machine (drinks)",
+                            "Non-smoking throughout",
+                            "Heating",
+                            "Carpeted",
+                            "Heating",
+                            "Fan",
+                            "Non-smoking rooms"
+                        ]
+                    },
+                    {
+                        "type": "Accessibility",
+                        "value": [
+                            "Upper floors accessible by stairs only"
+                        ]
+                    },
+                    {
+                        "type": "Safety features",
+                        "value": [
+                            "Face masks for guests available",
+                            "Thermometers for guests provided by property",
+                            "First aid kit available",
+                            "Process in place to check health of guests",
+                            "Hand sanitizer in guest accommodation and key areas",
+                            "Shared stationery such as printed menus, magazines, pens, and paper removed",
+                            "Staff follow all safety protocols as directed by local authorities"
+                        ]
+                    },
+                    {
+                        "type": "Physical distancing",
+                        "value": [
+                            "Screens or physical barriers placed between staff and guests in appropriate areas",
+                            "Physical distancing rules followed",
+                            "Cashless payment available"
+                        ]
+                    },
+                    {
+                        "type": "Cleanliness & disinfecting",
+                        "value": [
+                            "Guests have the option to cancel any cleaning services for their accommodation during their stay",
+                            "Guest accommodation is disinfected between stays",
+                            "Linens, towels and laundry washed in accordance with local authority guidelines",
+                            "Use of cleaning chemicals that are effective against Coronavirus",
+                            "Hand sanitiser"
+                        ]
+                    },
+                    {
+                        "type": "Food & drink safety",
+                        "value": [
+                            "All plates, cutlery, glasses and other tableware have been sanitized",
+                            "Food can be delivered to guest accommodation",
+                            "Physical distancing in dining areas"
+                        ]
+                    },
+                    {
+                        "type": "Languages spoken",
+                        "value": [
+                            "Arabic",
+                            "German",
+                            "English",
+                            "Spanish",
+                            "French"
+                        ]
+                    }
+                ]
+            },
+            "thumbnail_image": "https://cf.bstatic.com/xdata/images/hotel/square200/35904037.jpg?k=7afa2e35fb69f492404daac344aa3807f570d08872f672953fcde6e3e43b7150&o="
+        },
+        {
+            "name": "Smart Hyde Park View Hostel",
+            "score": "7.3",
+            "price": " 105",
+            "link": "/hotel/gb/smart-hyde-park-view.en-gb.html?label=gen173nr-1FCAQoggJCH3NlYXJjaF9sb25kb24sIGdyZWF0ZXIgbG9uZG9uLCBICVgEaOQBiAEBmAEJuAEZyAEM2AEB6AEB-AEDiAIBqAIDuALIjLz8BcACAdICJDJhNWRhY2JjLWFmNjItNDIzYi05OWFkLTdiNGM1NTVmMGJlZtgCBeACAQ&sid=57d883c8ba8c254a98daca17712bc6b2&all_sr_blocks=26274302_171283511_0_2_0&checkin=2020-10-20&checkout=2020-10-21&dest_id=-2601889&dest_type=city&group_adults=1&group_children=0&hapos=9&highlighted_blocks=26274302_171283511_0_2_0&hpos=9&no_rooms=1&req_adults=1&req_children=0&room1=A&sr_order=price&sr_pri_blocks=26274302_171283511_0_2_0__1023&srepoch=1603208777&srpvid=38036ee4ed9f0030&ucfs=1&from=searchresults;hptv=do;has_campaign_deals_traveloffer20_customer_label=1",
+            "details": {
+                "latitude": "51.51167766",
+                "longitude": "-0.18298768",
+                "important_facilities": [
+                    "Non-smoking rooms",
+                    "Free WiFi",
+                    "24-hour front desk",
+                    "Terrace",
+                    "Lift",
+                    "Bar",
+                    "Breakfast"
+                ],
+                "neighborhood_structures": [],
+                "services_offered": [
+                    {
+                        "type": "Bathroom",
+                        "value": [
+                            "Toilet paper",
+                            "Additional toilet",
+                            "Bath or shower",
+                            "Private bathroom",
+                            "Toilet",
+                            "Free toiletries",
+                            "Hairdryer",
+                            "Bath",
+                            "Shower"
+                        ]
+                    },
+                    {
+                        "type": "Bedroom",
+                        "value": [
+                            "Linen"
+                        ]
+                    },
+                    {
+                        "type": "Outdoors",
+                        "value": [
+                            "Terrace"
+                        ]
+                    },
+                    {
+                        "type": "Kitchen",
+                        "value": [
+                            "Washing machine",
+                            "Microwave",
+                            "Refrigerator"
+                        ]
+                    },
+                    {
+                        "type": "Room Amenities",
+                        "value": [
+                            "Socket near the bed"
+                        ]
+                    },
+                    {
+                        "type": "Pets",
+                        "value": [
+                            "Pets are not allowed."
+                        ]
+                    },
+                    {
+                        "type": "Activities",
+                        "value": [
+                            "Walking tours",
+                            "Pub crawls"
+                        ]
+                    },
+                    {
+                        "type": "Living Area",
+                        "value": [
+                            "Dining area"
+                        ]
+                    },
+                    {
+                        "type": "Food & Drink",
+                        "value": [
+                            "Snack bar",
+                            "Bar"
+                        ]
+                    },
+                    {
+                        "type": "Internet",
+                        "value": [
+                            "Free! WiFi is available in all areas and is free of charge."
+                        ]
+                    },
+                    {
+                        "type": "Parking",
+                        "value": [
+                            "No parking available."
+                        ]
+                    },
+                    {
+                        "type": "Reception services",
+                        "value": [
+                            "Lockers",
+                            "Concierge service",
+                            "Luggage storage",
+                            "Ticket service",
+                            "Tour desk",
+                            "Currency exchange",
+                            "24-hour front desk"
+                        ]
+                    },
+                    {
+                        "type": "Entertainment and family services",
+                        "value": [
+                            "Board games/puzzles"
+                        ]
+                    },
+                    {
+                        "type": "Cleaning services",
+                        "value": [
+                            "Ironing service"
+                        ]
+                    },
+                    {
+                        "type": "Business facilities",
+                        "value": [
+                            "Fax/photocopying"
+                        ]
+                    },
+                    {
+                        "type": "Safety & security",
+                        "value": [
+                            "Fire extinguishers",
+                            "CCTV outside property",
+                            "CCTV in common areas",
+                            "Smoke alarms",
+                            "Security alarm",
+                            "Key card access",
+                            "24-hour security",
+                            "Safety deposit box"
+                        ]
+                    },
+                    {
+                        "type": "General",
+                        "value": [
+                            "Shared lounge/TV area",
+                            "Designated smoking area",
+                            "Non-smoking throughout",
+                            "Heating",
+                            "Lift",
+                            "Heating",
+                            "Fan",
+                            "Ironing facilities",
+                            "Non-smoking rooms"
+                        ]
+                    },
+                    {
+                        "type": "Accessibility",
+                        "value": [
+                            "Upper floors accessible by elevator"
+                        ]
+                    },
+                    {
+                        "type": "Safety features",
+                        "value": [
+                            "Face masks for guests available",
+                            "Thermometers for guests provided by property",
+                            "First aid kit available",
+                            "Process in place to check health of guests",
+                            "Hand sanitizer in guest accommodation and key areas",
+                            "Shared stationery such as printed menus, magazines, pens, and paper removed",
+                            "Staff follow all safety protocols as directed by local authorities"
+                        ]
+                    },
+                    {
+                        "type": "Physical distancing",
+                        "value": [
+                            "Screens or physical barriers placed between staff and guests in appropriate areas",
+                            "Physical distancing rules followed",
+                            "Cashless payment available",
+                            "Contactless check-in/check-out"
+                        ]
+                    },
+                    {
+                        "type": "Cleanliness & disinfecting",
+                        "value": [
+                            "Guests have the option to cancel any cleaning services for their accommodation during their stay",
+                            "Guest accommodation is disinfected between stays",
+                            "Linens, towels and laundry washed in accordance with local authority guidelines",
+                            "Use of cleaning chemicals that are effective against Coronavirus"
+                        ]
+                    },
+                    {
+                        "type": "Food & drink safety",
+                        "value": [
+                            "All plates, cutlery, glasses and other tableware have been sanitized",
+                            "Food can be delivered to guest accommodation",
+                            "Physical distancing in dining areas"
+                        ]
+                    },
+                    {
+                        "type": "Languages spoken",
+                        "value": [
+                            "Arabic",
+                            "English",
+                            "Spanish",
+                            "French",
+                            "Italian",
+                            "Lithuanian",
+                            "Russian"
+                        ]
+                    }
+                ]
+            },
+            "thumbnail_image": "https://cf.bstatic.com/xdata/images/hotel/square200/47595476.jpg?k=6337cef20f75f93d85abd1e93a0a94e2a282b0a119ed34fd23e8b52071f5f803&o="
+        },
+        {
+            "name": "The Birds Nest Guest House",
+            "score": "6.6",
+            "price": " 113",
+            "link": "/hotel/gb/the-birds-nest-guest-house.en-gb.html?label=gen173nr-1FCAQoggJCH3NlYXJjaF9sb25kb24sIGdyZWF0ZXIgbG9uZG9uLCBICVgEaOQBiAEBmAEJuAEZyAEM2AEB6AEB-AEDiAIBqAIDuALIjLz8BcACAdICJDJhNWRhY2JjLWFmNjItNDIzYi05OWFkLTdiNGM1NTVmMGJlZtgCBeACAQ&sid=57d883c8ba8c254a98daca17712bc6b2&all_sr_blocks=275576601_109627847_0_0_0&checkin=2020-10-20&checkout=2020-10-21&dest_id=-2601889&dest_type=city&group_adults=1&group_children=0&hapos=10&highlighted_blocks=275576601_109627847_0_0_0&hpos=10&no_rooms=1&req_adults=1&req_children=0&room1=A&sr_order=price&sr_pri_blocks=275576601_109627847_0_0_0__1105&srepoch=1603208777&srpvid=38036ee4ed9f0030&ucfs=1&from=searchresults;hptv=do;has_campaign_deals_traveloffer20_customer_label=1",
+            "details": {
+                "latitude": "51.47616610",
+                "longitude": "-0.02255610",
+                "important_facilities": [
+                    "Non-smoking rooms",
+                    "Restaurant",
+                    "Free WiFi",
+                    "Bar",
+                    "Laundry",
+                    "Tea/coffee maker in all rooms"
+                ],
+                "neighborhood_structures": [],
+                "services_offered": [
+                    {
+                        "type": "Bathroom",
+                        "value": [
+                            "Toilet paper",
+                            "Toilet",
+                            "Shared bathroom",
+                            "Shower"
+                        ]
+                    },
+                    {
+                        "type": "Bedroom",
+                        "value": [
+                            "Linen"
+                        ]
+                    },
+                    {
+                        "type": "View",
+                        "value": [
+                            "View"
+                        ]
+                    },
+                    {
+                        "type": "Outdoors",
+                        "value": [
+                            "Outdoor dining area",
+                            "Garden"
+                        ]
+                    },
+                    {
+                        "type": "Kitchen",
+                        "value": [
+                            "Shared kitchen",
+                            "Toaster",
+                            "Stovetop",
+                            "Microwave"
+                        ]
+                    },
+                    {
+                        "type": "Pets",
+                        "value": [
+                            "Pets are not allowed."
+                        ]
+                    },
+                    {
+                        "type": "Activities",
+                        "value": [
+                            "Live music/performance",
+                            "Happy hour",
+                            "Movie nights",
+                            "Stand-up comedy",
+                            "Pub crawls",
+                            "Temporary art galleries",
+                            "Public Bath",
+                            "Evening entertainment",
+                            "Nightclub/DJ",
+                            "Library",
+                            "Billiards",
+                            "Games room"
+                        ]
+                    },
+                    {
+                        "type": "Living Area",
+                        "value": [
+                            "Seating Area"
+                        ]
+                    },
+                    {
+                        "type": "Media & Technology",
+                        "value": [
+                            "TV"
+                        ]
+                    },
+                    {
+                        "type": "Food & Drink",
+                        "value": [
+                            "Bottle of water",
+                            "Wine/champagne",
+                            "Bar",
+                            "Restaurant",
+                            "Tea/Coffee maker"
+                        ]
+                    },
+                    {
+                        "type": "Internet",
+                        "value": [
+                            "Free! WiFi is available in public areas and is free of charge."
+                        ]
+                    },
+                    {
+                        "type": "Parking",
+                        "value": [
+                            "No parking available."
+                        ]
+                    },
+                    {
+                        "type": "Services",
+                        "value": [
+                            "Shared lounge/TV area",
+                            "Luggage storage",
+                            "Laundry"
+                        ]
+                    },
+                    {
+                        "type": "Reception services",
+                        "value": [
+                            "Invoice provided"
+                        ]
+                    },
+                    {
+                        "type": "Entertainment and family services",
+                        "value": [
+                            "Books, DVDs, music for children",
+                            "Board games/puzzles"
+                        ]
+                    },
+                    {
+                        "type": "Safety & security",
+                        "value": [
+                            "Fire extinguishers",
+                            "CCTV outside property",
+                            "CCTV in common areas",
+                            "Smoke alarms",
+                            "24-hour security"
+                        ]
+                    },
+                    {
+                        "type": "General",
+                        "value": [
+                            "Non-smoking throughout",
+                            "Heating",
+                            "Heating",
+                            "Non-smoking rooms"
+                        ]
+                    },
+                    {
+                        "type": "Accessibility",
+                        "value": [
+                            "Upper floors accessible by stairs only"
+                        ]
+                    }
+                ]
+            },
+            "thumbnail_image": "https://cf.bstatic.com/xdata/images/hotel/square200/199759902.jpg?k=8ca9a41f1f5e90a4d9d9dadbef80fc931bd1494759473c9c6c651708067e247d&o="
+        },
+        {
+            "name": "Smart Camden Inn Hostel",
+            "score": "7.0",
+            "price": " 115",
+            "link": "/hotel/gb/smart-camden-inn.en-gb.html?label=gen173nr-1FCAQoggJCH3NlYXJjaF9sb25kb24sIGdyZWF0ZXIgbG9uZG9uLCBICVgEaOQBiAEBmAEJuAEZyAEM2AEB6AEB-AEDiAIBqAIDuALIjLz8BcACAdICJDJhNWRhY2JjLWFmNjItNDIzYi05OWFkLTdiNGM1NTVmMGJlZtgCBeACAQ&sid=57d883c8ba8c254a98daca17712bc6b2&all_sr_blocks=26648503_119603330_0_2_0&checkin=2020-10-20&checkout=2020-10-21&dest_id=-2601889&dest_type=city&group_adults=1&group_children=0&hapos=11&highlighted_blocks=26648503_119603330_0_2_0&hpos=11&no_rooms=1&req_adults=1&req_children=0&room1=A&sr_order=price&sr_pri_blocks=26648503_119603330_0_2_0__1125&srepoch=1603208777&srpvid=38036ee4ed9f0030&ucfs=1&from=searchresults;hptv=do;has_campaign_deals_traveloffer20_customer_label=1",
+            "details": {
+                "latitude": "51.53683971",
+                "longitude": "-0.13944805",
+                "important_facilities": [
+                    "Non-smoking rooms",
+                    "Free WiFi",
+                    "24-hour front desk",
+                    "Terrace",
+                    "Laundry",
+                    "Breakfast"
+                ],
+                "neighborhood_structures": [],
+                "services_offered": [
+                    {
+                        "type": "Bathroom",
+                        "value": [
+                            "Toilet paper",
+                            "Towels/sheets (extra fee)",
+                            "Toilet",
+                            "Shower"
+                        ]
+                    },
+                    {
+                        "type": "Bedroom",
+                        "value": [
+                            "Linen"
+                        ]
+                    },
+                    {
+                        "type": "Outdoors",
+                        "value": [
+                            "Terrace",
+                            "Garden"
+                        ]
+                    },
+                    {
+                        "type": "Kitchen",
+                        "value": [
+                            "Shared kitchen"
+                        ]
+                    },
+                    {
+                        "type": "Room Amenities",
+                        "value": [
+                            "Socket near the bed"
+                        ]
+                    },
+                    {
+                        "type": "Pets",
+                        "value": [
+                            "Pets are not allowed."
+                        ]
+                    },
+                    {
+                        "type": "Activities",
+                        "value": [
+                            "Walking tours",
+                            "Pub crawls"
+                        ]
+                    },
+                    {
+                        "type": "Internet",
+                        "value": [
+                            "Free! WiFi is available in all areas and is free of charge."
+                        ]
+                    },
+                    {
+                        "type": "Parking",
+                        "value": [
+                            "No parking available."
+                        ]
+                    },
+                    {
+                        "type": "Reception services",
+                        "value": [
+                            "Lockers",
+                            "Concierge service",
+                            "Luggage storage",
+                            "Ticket service",
+                            "Tour desk",
+                            "Currency exchange",
+                            "24-hour front desk"
+                        ]
+                    },
+                    {
+                        "type": "Entertainment and family services",
+                        "value": [
+                            "Board games/puzzles"
+                        ]
+                    },
+                    {
+                        "type": "Cleaning services",
+                        "value": [
+                            "Laundry"
+                        ]
+                    },
+                    {
+                        "type": "Safety & security",
+                        "value": [
+                            "Fire extinguishers",
+                            "CCTV outside property",
+                            "CCTV in common areas",
+                            "Smoke alarms",
+                            "Key card access",
+                            "Safety deposit box"
+                        ]
+                    },
+                    {
+                        "type": "General",
+                        "value": [
+                            "Shared lounge/TV area",
+                            "Vending machine (snacks)",
+                            "Vending machine (drinks)",
+                            "Non-smoking throughout",
+                            "Heating",
+                            "Carpeted",
+                            "Heating",
+                            "Fan",
+                            "Ironing facilities",
+                            "Non-smoking rooms"
+                        ]
+                    },
+                    {
+                        "type": "Safety features",
+                        "value": [
+                            "Face masks for guests available",
+                            "Thermometers for guests provided by property",
+                            "First aid kit available",
+                            "Process in place to check health of guests",
+                            "Hand sanitizer in guest accommodation and key areas",
+                            "Shared stationery such as printed menus, magazines, pens, and paper removed",
+                            "Staff follow all safety protocols as directed by local authorities"
+                        ]
+                    },
+                    {
+                        "type": "Physical distancing",
+                        "value": [
+                            "Screens or physical barriers placed between staff and guests in appropriate areas",
+                            "Physical distancing rules followed",
+                            "Cashless payment available"
+                        ]
+                    },
+                    {
+                        "type": "Cleanliness & disinfecting",
+                        "value": [
+                            "Guests have the option to cancel any cleaning services for their accommodation during their stay",
+                            "Guest accommodation is disinfected between stays",
+                            "Linens, towels and laundry washed in accordance with local authority guidelines",
+                            "Use of cleaning chemicals that are effective against Coronavirus"
+                        ]
+                    },
+                    {
+                        "type": "Food & drink safety",
+                        "value": [
+                            "All plates, cutlery, glasses and other tableware have been sanitized",
+                            "Food can be delivered to guest accommodation",
+                            "Physical distancing in dining areas"
+                        ]
+                    }
+                ]
+            },
+            "thumbnail_image": "https://cf.bstatic.com/xdata/images/hotel/square200/22397798.jpg?k=8968721d309928263009719cf0a2adc5cb1fa0ec806950ee1aa8be2a50edfdce&o="
+        },
+        {
+            "name": "The Old GunPit",
+            "score": "5.3",
+            "price": " 122",
+            "link": "/hotel/gb/the-gun-pit.en-gb.html?label=gen173nr-1FCAQoggJCH3NlYXJjaF9sb25kb24sIGdyZWF0ZXIgbG9uZG9uLCBICVgEaOQBiAEBmAEJuAEZyAEM2AEB6AEB-AEDiAIBqAIDuALIjLz8BcACAdICJDJhNWRhY2JjLWFmNjItNDIzYi05OWFkLTdiNGM1NTVmMGJlZtgCBeACAQ&sid=57d883c8ba8c254a98daca17712bc6b2&all_sr_blocks=561026702_213530772_0_0_0&checkin=2020-10-20&checkout=2020-10-21&dest_id=-2601889&dest_type=city&group_adults=1&group_children=0&hapos=12&highlighted_blocks=561026702_213530772_0_0_0&hpos=12&no_rooms=1&req_adults=1&req_children=0&room1=A&sr_order=price&sr_pri_blocks=561026702_213530772_0_0_0__1190&srepoch=1603208777&srpvid=38036ee4ed9f0030&ucfs=1&from=searchresults;hptv=do;has_campaign_deals_traveloffer20_customer_label=1",
+            "details": {
+                "latitude": "51.49230200",
+                "longitude": "0.06778900",
+                "important_facilities": [
+                    "Non-smoking rooms",
+                    "Free WiFi",
+                    "Parking",
+                    "Bar",
+                    "Heating"
+                ],
+                "neighborhood_structures": [],
+                "services_offered": [
+                    {
+                        "type": "Kitchen",
+                        "value": [
+                            "Shared kitchen"
+                        ]
+                    },
+                    {
+                        "type": "Pets",
+                        "value": [
+                            "Pets are not allowed."
+                        ]
+                    },
+                    {
+                        "type": "Activities",
+                        "value": [
+                            "Live music/performance",
+                            "Happy hour",
+                            "Evening entertainment",
+                            "Nightclub/DJ",
+                            "Karaoke",
+                            "Billiards"
+                        ]
+                    },
+                    {
+                        "type": "Food & Drink",
+                        "value": [
+                            "Bar"
+                        ]
+                    },
+                    {
+                        "type": "Internet",
+                        "value": [
+                            "Free! WiFi is available in public areas and is free of charge."
+                        ]
+                    },
+                    {
+                        "type": "Parking",
+                        "value": [
+                            "Public parking is possible at a location nearby (reservation is not needed) and costs GBP 2 per hour.",
+                            "Street parking"
+                        ]
+                    },
+                    {
+                        "type": "Services",
+                        "value": [
+                            "Shared lounge/TV area",
+                            "Luggage storage",
+                            "Wake-up service",
+                            "Wake up service/Alarm clock"
+                        ]
+                    },
+                    {
+                        "type": "Entertainment and family services",
+                        "value": [
+                            "Board games/puzzles"
+                        ]
+                    },
+                    {
+                        "type": "Safety & security",
+                        "value": [
+                            "Fire extinguishers",
+                            "CCTV outside property",
+                            "CCTV in common areas",
+                            "Smoke alarms",
+                            "Security alarm",
+                            "24-hour security"
+                        ]
+                    },
+                    {
+                        "type": "General",
+                        "value": [
+                            "Non-smoking throughout",
+                            "Heating",
+                            "Soundproof rooms",
+                            "Non-smoking rooms"
+                        ]
+                    },
+                    {
+                        "type": "Safety features",
+                        "value": [
+                            "First aid kit available",
+                            "Process in place to check health of guests",
+                            "Hand sanitizer in guest accommodation and key areas",
+                            "Shared stationery such as printed menus, magazines, pens, and paper removed",
+                            "Staff follow all safety protocols as directed by local authorities"
+                        ]
+                    },
+                    {
+                        "type": "Physical distancing",
+                        "value": [
+                            "Screens or physical barriers placed between staff and guests in appropriate areas",
+                            "Physical distancing rules followed",
+                            "Cashless payment available"
+                        ]
+                    },
+                    {
+                        "type": "Cleanliness & disinfecting",
+                        "value": [
+                            "Guests have the option to cancel any cleaning services for their accommodation during their stay",
+                            "Guest accommodation sealed after cleaning",
+                            "Guest accommodation is disinfected between stays",
+                            "Linens, towels and laundry washed in accordance with local authority guidelines"
+                        ]
+                    },
+                    {
+                        "type": "Food & drink safety",
+                        "value": [
+                            "All plates, cutlery, glasses and other tableware have been sanitized",
+                            "Physical distancing in dining areas"
+                        ]
+                    }
+                ]
+            },
+            "thumbnail_image": "https://cf.bstatic.com/xdata/images/hotel/square200/219527069.jpg?k=c4f80c68369fe75cdb495cecf2231a4838d7230ec53d959115210943784acc4e&o="
+        },
+        {
+            "name": "Generator London",
+            "score": "7.5",
+            "price": " 123",
+            "link": "/hotel/gb/thegenerator.en-gb.html?label=gen173nr-1FCAQoggJCH3NlYXJjaF9sb25kb24sIGdyZWF0ZXIgbG9uZG9uLCBICVgEaOQBiAEBmAEJuAEZyAEM2AEB6AEB-AEDiAIBqAIDuALIjLz8BcACAdICJDJhNWRhY2JjLWFmNjItNDIzYi05OWFkLTdiNGM1NTVmMGJlZtgCBeACAQ&sid=57d883c8ba8c254a98daca17712bc6b2&all_sr_blocks=12723003_139595433_0_2_0&checkin=2020-10-20&checkout=2020-10-21&dest_id=-2601889&dest_type=city&group_adults=1&group_children=0&hapos=13&highlighted_blocks=12723003_139595433_0_2_0&hpos=13&no_rooms=1&req_adults=1&req_children=0&room1=A&sr_order=price&sr_pri_blocks=12723003_139595433_0_2_0__1200&srepoch=1603208777&srpvid=38036ee4ed9f0030&ucfs=1&from=searchresults;hptv=do",
+            "details": {
+                "latitude": "51.52592396",
+                "longitude": "-0.12476027",
+                "important_facilities": [
+                    "Non-smoking rooms",
+                    "WiFi available in all areas",
+                    "Pets allowed",
+                    "Free WiFi",
+                    "Family rooms",
+                    "Bar",
+                    "Breakfast"
+                ],
+                "neighborhood_structures": [],
+                "services_offered": [
+                    {
+                        "type": "Bedroom",
+                        "value": [
+                            "Linen"
+                        ]
+                    },
+                    {
+                        "type": "Room Amenities",
+                        "value": [
+                            "Socket near the bed"
+                        ]
+                    },
+                    {
+                        "type": "Services & Extras",
+                        "value": [
+                            "Tickets to attractions or shows"
+                        ]
+                    },
+                    {
+                        "type": "Pets",
+                        "value": [
+                            "Pets are allowed. Charges may be applicable."
+                        ]
+                    },
+                    {
+                        "type": "Activities",
+                        "value": [
+                            "Live music/performance",
+                            "Tour or class about local culture",
+                            "Happy hour",
+                            "Walking tours",
+                            "Pub crawls",
+                            "Evening entertainment",
+                            "Nightclub/DJ",
+                            "Karaoke",
+                            "Billiards",
+                            "Games room"
+                        ]
+                    },
+                    {
+                        "type": "Food & Drink",
+                        "value": [
+                            "On-site coffee house",
+                            "Chocolate or cookies",
+                            "Bottle of water",
+                            "Wine/champagne",
+                            "Special diet menus (on request)",
+                            "Bar"
+                        ]
+                    },
+                    {
+                        "type": "Internet",
+                        "value": [
+                            "Free! WiFi is available in all areas and is free of charge."
+                        ]
+                    },
+                    {
+                        "type": "Parking",
+                        "value": [
+                            "No parking available."
+                        ]
+                    },
+                    {
+                        "type": "Transport",
+                        "value": [
+                            "Public transport tickets"
+                        ]
+                    },
+                    {
+                        "type": "Reception services",
+                        "value": [
+                            "Lockers",
+                            "ATM/cash machine on site",
+                            "Luggage storage",
+                            "Tour desk",
+                            "Express check-in/check-out",
+                            "24-hour front desk"
+                        ]
+                    },
+                    {
+                        "type": "Entertainment and family services",
+                        "value": [
+                            "Board games/puzzles"
+                        ]
+                    },
+                    {
+                        "type": "Cleaning services",
+                        "value": [
+                            "Laundry"
+                        ]
+                    },
+                    {
+                        "type": "Business facilities",
+                        "value": [
+                            "Fax/photocopying",
+                            "Meeting/banquet facilities"
+                        ]
+                    },
+                    {
+                        "type": "Safety & security",
+                        "value": [
+                            "Key card access",
+                            "Safety deposit box"
+                        ]
+                    },
+                    {
+                        "type": "General",
+                        "value": [
+                            "Shuttle service",
+                            "Shared lounge/TV area",
+                            "Airport shuttle (additional charge)",
+                            "Vending machine (snacks)",
+                            "Vending machine (drinks)",
+                            "Shuttle service (additional charge)",
+                            "Designated smoking area",
+                            "Non-smoking throughout",
+                            "Heating",
+                            "Packed lunches",
+                            "Gift shop",
+                            "Lift",
+                            "Heating",
+                            "Family rooms",
+                            "Non-smoking rooms"
+                        ]
+                    },
+                    {
+                        "type": "Safety features",
+                        "value": [
+                            "First aid kit available",
+                            "Process in place to check health of guests",
+                            "Hand sanitizer in guest accommodation and key areas",
+                            "Shared stationery such as printed menus, magazines, pens, and paper removed",
+                            "Staff follow all safety protocols as directed by local authorities"
+                        ]
+                    },
+                    {
+                        "type": "Physical distancing",
+                        "value": [
+                            "Screens or physical barriers placed between staff and guests in appropriate areas",
+                            "Physical distancing rules followed",
+                            "Cashless payment available",
+                            "Contactless check-in/check-out"
+                        ]
+                    },
+                    {
+                        "type": "Cleanliness & disinfecting",
+                        "value": [
+                            "Property is cleaned by professional cleaning companies",
+                            "Guest accommodation sealed after cleaning",
+                            "Guest accommodation is disinfected between stays",
+                            "Linens, towels and laundry washed in accordance with local authority guidelines",
+                            "Use of cleaning chemicals that are effective against Coronavirus"
+                        ]
+                    },
+                    {
+                        "type": "Food & drink safety",
+                        "value": [
+                            "All plates, cutlery, glasses and other tableware have been sanitized",
+                            "Physical distancing in dining areas"
+                        ]
+                    },
+                    {
+                        "type": "Languages spoken",
+                        "value": [
+                            "German",
+                            "English",
+                            "Spanish",
+                            "Italian",
+                            "Portuguese",
+                            "Romanian"
+                        ]
+                    }
+                ]
+            },
+            "thumbnail_image": "https://cf.bstatic.com/xdata/images/hotel/square200/91731040.jpg?k=97ae90979f46026ea1d414dad8ea205ec35492e9de3484baba81fcd0b7074c96&o="
+        },
+        {
+            "name": "London Backpackers Youth Hostel",
+            "score": "7.7",
+            "price": " 123",
+            "link": "/hotel/gb/london-backpackers.en-gb.html?label=gen173nr-1FCAQoggJCH3NlYXJjaF9sb25kb24sIGdyZWF0ZXIgbG9uZG9uLCBICVgEaOQBiAEBmAEJuAEZyAEM2AEB6AEB-AEDiAIBqAIDuALIjLz8BcACAdICJDJhNWRhY2JjLWFmNjItNDIzYi05OWFkLTdiNGM1NTVmMGJlZtgCBeACAQ&sid=57d883c8ba8c254a98daca17712bc6b2&all_sr_blocks=168211433_278397252_0_0_0&checkin=2020-10-20&checkout=2020-10-21&dest_id=-2601889&dest_type=city&group_adults=1&group_children=0&hapos=14&highlighted_blocks=168211433_278397252_0_0_0&hpos=14&no_rooms=1&req_adults=1&req_children=0&room1=A&sr_order=price&sr_pri_blocks=168211433_278397252_0_0_0__1200&srepoch=1603208777&srpvid=38036ee4ed9f0030&ucfs=1&from=searchresults;hptv=do;has_campaign_deals_traveloffer20_customer_label=1",
+            "details": {
+                "latitude": "51.58264405",
+                "longitude": "-0.22622081",
+                "important_facilities": [
+                    "Non-smoking rooms",
+                    "Free WiFi",
+                    "Laundry",
+                    "Heating",
+                    "Luggage storage"
+                ],
+                "neighborhood_structures": [],
+                "services_offered": [
+                    {
+                        "type": "Bathroom",
+                        "value": [
+                            "Toilet",
+                            "Shared bathroom",
+                            "Shower"
+                        ]
+                    },
+                    {
+                        "type": "Kitchen",
+                        "value": [
+                            "Shared kitchen",
+                            "Washing machine"
+                        ]
+                    },
+                    {
+                        "type": "Room Amenities",
+                        "value": [
+                            "Socket near the bed"
+                        ]
+                    },
+                    {
+                        "type": "Pets",
+                        "value": [
+                            "Pets are not allowed."
+                        ]
+                    },
+                    {
+                        "type": "Activities",
+                        "value": [
+                            "Bike tours",
+                            "Walking tours",
+                            "Movie nights",
+                            "Pub crawls",
+                            "Tennis equipment",
+                            "Evening entertainment",
+                            "Karaoke",
+                            "Billiards",
+                            "Games room",
+                            "Tennis court"
+                        ]
+                    },
+                    {
+                        "type": "Internet",
+                        "value": [
+                            "Free! WiFi is available in the hotel rooms and is free of charge."
+                        ]
+                    },
+                    {
+                        "type": "Parking",
+                        "value": [
+                            "No parking available."
+                        ]
+                    },
+                    {
+                        "type": "Services",
+                        "value": [
+                            "Shared lounge/TV area",
+                            "Lockers",
+                            "Luggage storage",
+                            "Fax/photocopying",
+                            "Tour desk",
+                            "Laundry"
+                        ]
+                    },
+                    {
+                        "type": "Entertainment and family services",
+                        "value": [
+                            "Board games/puzzles"
+                        ]
+                    },
+                    {
+                        "type": "Safety & security",
+                        "value": [
+                            "Fire extinguishers",
+                            "CCTV in common areas",
+                            "Smoke alarms",
+                            "Security alarm",
+                            "Key card access",
+                            "24-hour security"
+                        ]
+                    },
+                    {
+                        "type": "General",
+                        "value": [
+                            "Adult only",
+                            "Non-smoking throughout",
+                            "Hardwood or parquet floors",
+                            "Heating",
+                            "Heating",
+                            "Fan",
+                            "Ironing facilities",
+                            "Non-smoking rooms"
+                        ]
+                    },
+                    {
+                        "type": "Accessibility",
+                        "value": [
+                            "Upper floors accessible by stairs only"
+                        ]
+                    },
+                    {
+                        "type": "Safety features",
+                        "value": [
+                            "Face masks for guests available",
+                            "Access to health care professionals",
+                            "First aid kit available",
+                            "Process in place to check health of guests",
+                            "Hand sanitizer in guest accommodation and key areas",
+                            "Shared stationery such as printed menus, magazines, pens, and paper removed",
+                            "Staff follow all safety protocols as directed by local authorities"
+                        ]
+                    },
+                    {
+                        "type": "Physical distancing",
+                        "value": [
+                            "Screens or physical barriers placed between staff and guests in appropriate areas",
+                            "Physical distancing rules followed",
+                            "Cashless payment available"
+                        ]
+                    },
+                    {
+                        "type": "Cleanliness & disinfecting",
+                        "value": [
+                            "Guests have the option to cancel any cleaning services for their accommodation during their stay",
+                            "Guest accommodation sealed after cleaning",
+                            "Guest accommodation is disinfected between stays",
+                            "Linens, towels and laundry washed in accordance with local authority guidelines",
+                            "Use of cleaning chemicals that are effective against Coronavirus"
+                        ]
+                    },
+                    {
+                        "type": "Food & drink safety",
+                        "value": [
+                            "Physical distancing in dining areas"
+                        ]
+                    },
+                    {
+                        "type": "Languages spoken",
+                        "value": [
+                            "English",
+                            "Spanish",
+                            "Finnish",
+                            "French",
+                            "Hindi",
+                            "Italian",
+                            "Portuguese"
+                        ]
+                    }
+                ]
+            },
+            "thumbnail_image": "https://cf.bstatic.com/xdata/images/hotel/square200/266973409.jpg?k=919a44b014c59d55daa49377c9ae84d05a3357ca1ad12b583d6a93e6f6101863&o="
+        },
+        {
+            "name": "Venture Hostel",
+            "score": "7.6",
+            "price": " 133",
+            "link": "/hotel/gb/journeys-greenwich-west-hostel.en-gb.html?label=gen173nr-1FCAQoggJCH3NlYXJjaF9sb25kb24sIGdyZWF0ZXIgbG9uZG9uLCBICVgEaOQBiAEBmAEJuAEZyAEM2AEB6AEB-AEDiAIBqAIDuALIjLz8BcACAdICJDJhNWRhY2JjLWFmNjItNDIzYi05OWFkLTdiNGM1NTVmMGJlZtgCBeACAQ&sid=57d883c8ba8c254a98daca17712bc6b2&all_sr_blocks=26867803_276452930_0_0_0&checkin=2020-10-20&checkout=2020-10-21&dest_id=-2601889&dest_type=city&group_adults=1&group_children=0&hapos=15&highlighted_blocks=26867803_276452930_0_0_0&hpos=15&no_rooms=1&req_adults=1&req_children=0&room1=A&sr_order=price&sr_pri_blocks=26867803_276452930_0_0_0__1298&srepoch=1603208777&srpvid=38036ee4ed9f0030&ucfs=1&from=searchresults;hptv=do",
+            "details": {
+                "latitude": "51.47358816",
+                "longitude": "-0.02721637",
+                "important_facilities": [
+                    "Non-smoking rooms",
+                    "Free parking",
+                    "WiFi available in all areas",
+                    "Free WiFi",
+                    "Bar"
+                ],
+                "neighborhood_structures": [],
+                "services_offered": [
+                    {
+                        "type": "Bathroom",
+                        "value": [
+                            "Toilet paper",
+                            "Toilet",
+                            "Shared bathroom",
+                            "Shower"
+                        ]
+                    },
+                    {
+                        "type": "Bedroom",
+                        "value": [
+                            "Linen"
+                        ]
+                    },
+                    {
+                        "type": "Room Amenities",
+                        "value": [
+                            "Socket near the bed"
+                        ]
+                    },
+                    {
+                        "type": "Pets",
+                        "value": [
+                            "Pets are not allowed."
+                        ]
+                    },
+                    {
+                        "type": "Activities",
+                        "value": [
+                            "Live sport events (broadcast)",
+                            "Happy hour",
+                            "Evening entertainment",
+                            "Library",
+                            "Golf course (within 3 km)"
+                        ]
+                    },
+                    {
+                        "type": "Food & Drink",
+                        "value": [
+                            "On-site coffee house",
+                            "Chocolate or cookies",
+                            "Bottle of water",
+                            "Bar"
+                        ]
+                    },
+                    {
+                        "type": "Internet",
+                        "value": [
+                            "Free! WiFi is available in all areas and is free of charge."
+                        ]
+                    },
+                    {
+                        "type": "Parking",
+                        "value": [
+                            "Free! Free private parking is possible at a location nearby (reservation is not needed).",
+                            "Street parking"
+                        ]
+                    },
+                    {
+                        "type": "Reception services",
+                        "value": [
+                            "Lockers",
+                            "Luggage storage"
+                        ]
+                    },
+                    {
+                        "type": "Entertainment and family services",
+                        "value": [
+                            "Books, DVDs, music for children",
+                            "Board games/puzzles"
+                        ]
+                    },
+                    {
+                        "type": "Cleaning services",
+                        "value": [
+                            "Daily housekeeping",
+                            "Ironing service",
+                            "Laundry"
+                        ]
+                    },
+                    {
+                        "type": "Business facilities",
+                        "value": [
+                            "Fax/photocopying"
+                        ]
+                    },
+                    {
+                        "type": "Safety & security",
+                        "value": [
+                            "Safety deposit box"
+                        ]
+                    },
+                    {
+                        "type": "General",
+                        "value": [
+                            "Adult only",
+                            "Shared lounge/TV area",
+                            "Designated smoking area",
+                            "Non-smoking throughout",
+                            "Hardwood or parquet floors",
+                            "Heating",
+                            "Packed lunches",
+                            "Heating",
+                            "Ironing facilities",
+                            "Non-smoking rooms"
+                        ]
+                    },
+                    {
+                        "type": "Safety features",
+                        "value": [
+                            "First aid kit available",
+                            "Process in place to check health of guests",
+                            "Hand sanitizer in guest accommodation and key areas",
+                            "Shared stationery such as printed menus, magazines, pens, and paper removed",
+                            "Staff follow all safety protocols as directed by local authorities"
+                        ]
+                    },
+                    {
+                        "type": "Physical distancing",
+                        "value": [
+                            "Screens or physical barriers placed between staff and guests in appropriate areas",
+                            "Physical distancing rules followed",
+                            "Cashless payment available",
+                            "Contactless check-in/check-out"
+                        ]
+                    },
+                    {
+                        "type": "Cleanliness & disinfecting",
+                        "value": [
+                            "Guests have the option to cancel any cleaning services for their accommodation during their stay",
+                            "Property is cleaned by professional cleaning companies",
+                            "Guest accommodation is disinfected between stays",
+                            "Linens, towels and laundry washed in accordance with local authority guidelines",
+                            "Use of cleaning chemicals that are effective against Coronavirus"
+                        ]
+                    },
+                    {
+                        "type": "Food & drink safety",
+                        "value": [
+                            "All plates, cutlery, glasses and other tableware have been sanitized",
+                            "Physical distancing in dining areas"
+                        ]
+                    },
+                    {
+                        "type": "Languages spoken",
+                        "value": [
+                            "English",
+                            "Spanish",
+                            "Italian",
+                            "Polish",
+                            "Portuguese"
+                        ]
+                    }
+                ]
+            },
+            "thumbnail_image": "https://cf.bstatic.com/xdata/images/hotel/square200/77606045.jpg?k=473fa93649f452415f998f3e438b6903a7ed30588227d7a0d853024bc59d712a&o="
+        },
+        {
+            "name": "Safestay London Elephant & Castle",
+            "score": "8.1",
+            "price": " 133",
+            "link": "/hotel/gb/safestay.en-gb.html?label=gen173nr-1FCAQoggJCH3NlYXJjaF9sb25kb24sIGdyZWF0ZXIgbG9uZG9uLCBICVgEaOQBiAEBmAEJuAEZyAEM2AEB6AEB-AEDiAIBqAIDuALIjLz8BcACAdICJDJhNWRhY2JjLWFmNjItNDIzYi05OWFkLTdiNGM1NTVmMGJlZtgCBeACAQ&sid=57d883c8ba8c254a98daca17712bc6b2&all_sr_blocks=53542909_91932252_0_2_0&checkin=2020-10-20&checkout=2020-10-21&dest_id=-2601889&dest_type=city&group_adults=1&group_children=0&hapos=16&highlighted_blocks=53542909_91932252_0_2_0&hpos=16&no_rooms=1&req_adults=1&req_children=0&room1=A&sr_order=price&sr_pri_blocks=53542909_91932252_0_2_0__1299&srepoch=1603208777&srpvid=38036ee4ed9f0030&ucfs=1&from=searchresults;hptv=do",
+            "details": {
+                "latitude": "51.49074991",
+                "longitude": "-0.09757675",
+                "important_facilities": [
+                    "Non-smoking rooms",
+                    "Facilities for disabled guests",
+                    "WiFi available in all areas",
+                    "Free WiFi",
+                    "24-hour front desk",
+                    "Bar",
+                    "Good breakfast"
+                ],
+                "neighborhood_structures": [],
+                "services_offered": [
+                    {
+                        "type": "Bathroom",
+                        "value": [
+                            "Toilet paper",
+                            "Toilet",
+                            "Shower"
+                        ]
+                    },
+                    {
+                        "type": "Bedroom",
+                        "value": [
+                            "Linen"
+                        ]
+                    },
+                    {
+                        "type": "Room Amenities",
+                        "value": [
+                            "Socket near the bed"
+                        ]
+                    },
+                    {
+                        "type": "Services & Extras",
+                        "value": [
+                            "Tickets to attractions or shows"
+                        ]
+                    },
+                    {
+                        "type": "Pets",
+                        "value": [
+                            "Pets are not allowed."
+                        ]
+                    },
+                    {
+                        "type": "Activities",
+                        "value": [
+                            "Live sport events (broadcast)",
+                            "Happy hour",
+                            "Walking tours",
+                            "Movie nights",
+                            "Pub crawls",
+                            "Evening entertainment",
+                            "Billiards",
+                            "Games room"
+                        ]
+                    },
+                    {
+                        "type": "Food & Drink",
+                        "value": [
+                            "Snack bar",
+                            "Bar"
+                        ]
+                    },
+                    {
+                        "type": "Internet",
+                        "value": [
+                            "Free! WiFi is available in all areas and is free of charge."
+                        ]
+                    },
+                    {
+                        "type": "Parking",
+                        "value": [
+                            "No parking available."
+                        ]
+                    },
+                    {
+                        "type": "Reception services",
+                        "value": [
+                            "Lockers",
+                            "ATM/cash machine on site",
+                            "Luggage storage",
+                            "24-hour front desk"
+                        ]
+                    },
+                    {
+                        "type": "Cleaning services",
+                        "value": [
+                            "Laundry"
+                        ]
+                    },
+                    {
+                        "type": "Business facilities",
+                        "value": [
+                            "Fax/photocopying",
+                            "Meeting/banquet facilities"
+                        ]
+                    },
+                    {
+                        "type": "Safety & security",
+                        "value": [
+                            "CCTV outside property",
+                            "CCTV in common areas",
+                            "Smoke alarms",
+                            "Security alarm",
+                            "Key card access",
+                            "Key access",
+                            "24-hour security"
+                        ]
+                    },
+                    {
+                        "type": "General",
+                        "value": [
+                            "Shared lounge/TV area",
+                            "Vending machine (snacks)",
+                            "Vending machine (drinks)",
+                            "Designated smoking area",
+                            "Non-smoking throughout",
+                            "Heating",
+                            "Packed lunches",
+                            "Soundproof rooms",
+                            "Lift",
+                            "Facilities for disabled guests",
+                            "Non-smoking rooms"
+                        ]
+                    },
+                    {
+                        "type": "Languages spoken",
+                        "value": [
+                            "German",
+                            "English",
+                            "Spanish",
+                            "French",
+                            "Italian",
+                            "Polish",
+                            "Portuguese"
+                        ]
+                    }
+                ]
+            },
+            "thumbnail_image": "https://cf.bstatic.com/xdata/images/hotel/square200/15862310.jpg?k=e51204761504fb8b52787e5dd69e2aa2758b0b614455cce2af9be43c36ed44e5&o="
+        },
+        {
+            "name": "London Waterloo Hostel",
+            "score": "6.4",
+            "price": " 138",
+            "link": "/hotel/gb/london-eye-hostel.en-gb.html?label=gen173nr-1FCAQoggJCH3NlYXJjaF9sb25kb24sIGdyZWF0ZXIgbG9uZG9uLCBICVgEaOQBiAEBmAEJuAEZyAEM2AEB6AEB-AEDiAIBqAIDuALIjLz8BcACAdICJDJhNWRhY2JjLWFmNjItNDIzYi05OWFkLTdiNGM1NTVmMGJlZtgCBeACAQ&sid=57d883c8ba8c254a98daca17712bc6b2&all_sr_blocks=27030602_270111200_0_1_0&checkin=2020-10-20&checkout=2020-10-21&dest_id=-2601889&dest_type=city&group_adults=1&group_children=0&hapos=17&highlighted_blocks=27030602_270111200_0_1_0&hpos=17&no_rooms=1&req_adults=1&req_children=0&room1=A&sr_order=price&sr_pri_blocks=27030602_270111200_0_1_0__1349&srepoch=1603208777&srpvid=38036ee4ed9f0030&ucfs=1&from=searchresults;hptv=do",
+            "details": {
+                "latitude": "51.49437756",
+                "longitude": "-0.11447668",
+                "important_facilities": [
+                    "Non-smoking rooms",
+                    "Free WiFi",
+                    "24-hour front desk",
+                    "Bar",
+                    "Heating",
+                    "Breakfast"
+                ],
+                "neighborhood_structures": [],
+                "services_offered": [
+                    {
+                        "type": "Bathroom",
+                        "value": [
+                            "Toilet"
+                        ]
+                    },
+                    {
+                        "type": "Kitchen",
+                        "value": [
+                            "Shared kitchen"
+                        ]
+                    },
+                    {
+                        "type": "Services & Extras",
+                        "value": [
+                            "Tickets to attractions or shows"
+                        ]
+                    },
+                    {
+                        "type": "Pets",
+                        "value": [
+                            "Pets are not allowed."
+                        ]
+                    },
+                    {
+                        "type": "Activities",
+                        "value": [
+                            "Walking tours",
+                            "Movie nights",
+                            "Pub crawls",
+                            "Billiards"
+                        ]
+                    },
+                    {
+                        "type": "Food & Drink",
+                        "value": [
+                            "Snack bar",
+                            "Bar"
+                        ]
+                    },
+                    {
+                        "type": "Internet",
+                        "value": [
+                            "Free! WiFi is available in all areas and is free of charge."
+                        ]
+                    },
+                    {
+                        "type": "Parking",
+                        "value": [
+                            "No parking available."
+                        ]
+                    },
+                    {
+                        "type": "Services",
+                        "value": [
+                            "Shared lounge/TV area",
+                            "Lockers",
+                            "Luggage storage",
+                            "Ticket service",
+                            "24-hour front desk"
+                        ]
+                    },
+                    {
+                        "type": "Entertainment and family services",
+                        "value": [
+                            "Board games/puzzles"
+                        ]
+                    },
+                    {
+                        "type": "General",
+                        "value": [
+                            "Heating",
+                            "Non-smoking rooms"
+                        ]
+                    },
+                    {
+                        "type": "Safety features",
+                        "value": [
+                            "Face masks for guests available",
+                            "Thermometers for guests provided by property",
+                            "Access to health care professionals",
+                            "First aid kit available",
+                            "Process in place to check health of guests",
+                            "Hand sanitizer in guest accommodation and key areas",
+                            "Shared stationery such as printed menus, magazines, pens, and paper removed",
+                            "Staff follow all safety protocols as directed by local authorities"
+                        ]
+                    },
+                    {
+                        "type": "Physical distancing",
+                        "value": [
+                            "Screens or physical barriers placed between staff and guests in appropriate areas",
+                            "Physical distancing rules followed",
+                            "Cashless payment available",
+                            "Contactless check-in/check-out"
+                        ]
+                    },
+                    {
+                        "type": "Cleanliness & disinfecting",
+                        "value": [
+                            "Guests have the option to cancel any cleaning services for their accommodation during their stay",
+                            "Guest accommodation is disinfected between stays",
+                            "Linens, towels and laundry washed in accordance with local authority guidelines",
+                            "Use of cleaning chemicals that are effective against Coronavirus"
+                        ]
+                    },
+                    {
+                        "type": "Languages spoken",
+                        "value": [
+                            "English",
+                            "Spanish",
+                            "French",
+                            "Hindi",
+                            "Hungarian",
+                            "Indonesian",
+                            "Italian",
+                            "Latvian",
+                            "Portuguese",
+                            "Russian"
+                        ]
+                    }
+                ]
+            },
+            "thumbnail_image": "https://cf.bstatic.com/xdata/images/hotel/square200/249435608.jpg?k=2b664bab0e361b5dd70ad13b7268331135e63c16bcf2e57c467386eb5fdd5954&o="
+        },
+        {
+            "name": "PubLove @ The Steam Engine,Waterloo",
+            "score": "8.2",
+            "price": " 138",
+            "link": "/hotel/gb/the-steam-engine-bestplace-inn-waterloo.en-gb.html?label=gen173nr-1FCAQoggJCH3NlYXJjaF9sb25kb24sIGdyZWF0ZXIgbG9uZG9uLCBICVgEaOQBiAEBmAEJuAEZyAEM2AEB6AEB-AEDiAIBqAIDuALIjLz8BcACAdICJDJhNWRhY2JjLWFmNjItNDIzYi05OWFkLTdiNGM1NTVmMGJlZtgCBeACAQ&sid=57d883c8ba8c254a98daca17712bc6b2&all_sr_blocks=43814602_258805561_0_40_0&checkin=2020-10-20&checkout=2020-10-21&dest_id=-2601889&dest_type=city&group_adults=1&group_children=0&hapos=18&highlighted_blocks=43814602_258805561_0_40_0&hpos=18&no_rooms=1&req_adults=1&req_children=0&room1=A&sr_order=price&sr_pri_blocks=43814602_258805561_0_40_0__1349&srepoch=1603208777&srpvid=38036ee4ed9f0030&ucfs=1&from=searchresults;hptv=do",
+            "details": {
+                "latitude": "51.49695112",
+                "longitude": "-0.11264965",
+                "important_facilities": [
+                    "Non-smoking rooms",
+                    "Restaurant",
+                    "WiFi available in all areas",
+                    "Free WiFi",
+                    "Parking",
+                    "Bar"
+                ],
+                "neighborhood_structures": [],
+                "services_offered": [
+                    {
+                        "type": "Bathroom",
+                        "value": [
+                            "Toilet paper",
+                            "Toilet",
+                            "Shared bathroom",
+                            "Shower"
+                        ]
+                    },
+                    {
+                        "type": "Bedroom",
+                        "value": [
+                            "Linen"
+                        ]
+                    },
+                    {
+                        "type": "View",
+                        "value": [
+                            "City view"
+                        ]
+                    },
+                    {
+                        "type": "Outdoors",
+                        "value": [
+                            "Outdoor furniture",
+                            "Terrace",
+                            "Garden"
+                        ]
+                    },
+                    {
+                        "type": "Room Amenities",
+                        "value": [
+                            "Socket near the bed"
+                        ]
+                    },
+                    {
+                        "type": "Services & Extras",
+                        "value": [
+                            "Tickets to attractions or shows"
+                        ]
+                    },
+                    {
+                        "type": "Pets",
+                        "value": [
+                            "Pets are not allowed."
+                        ]
+                    },
+                    {
+                        "type": "Activities",
+                        "value": [
+                            "Live sport events (broadcast)",
+                            "Walking tours",
+                            "Pub crawls"
+                        ]
+                    },
+                    {
+                        "type": "Food & Drink",
+                        "value": [
+                            "Bottle of water",
+                            "Wine/champagne",
+                            "Kid meals",
+                            "Bar",
+                            "Restaurant"
+                        ]
+                    },
+                    {
+                        "type": "Internet",
+                        "value": [
+                            "Free! WiFi is available in all areas and is free of charge."
+                        ]
+                    },
+                    {
+                        "type": "Parking",
+                        "value": [
+                            "Public parking is possible at a location nearby (reservation is not possible) and charges may be applicable.",
+                            "Street parking"
+                        ]
+                    },
+                    {
+                        "type": "Services",
+                        "value": [
+                            "Daily housekeeping",
+                            "Lockers",
+                            "Luggage storage",
+                            "Ticket service",
+                            "24-hour front desk"
+                        ]
+                    },
+                    {
+                        "type": "Entertainment and family services",
+                        "value": [
+                            "Board games/puzzles"
+                        ]
+                    },
+                    {
+                        "type": "Safety & security",
+                        "value": [
+                            "Fire extinguishers",
+                            "CCTV outside property",
+                            "CCTV in common areas",
+                            "Smoke alarms",
+                            "Security alarm",
+                            "Key card access",
+                            "24-hour security"
+                        ]
+                    },
+                    {
+                        "type": "General",
+                        "value": [
+                            "Adult only",
+                            "Designated smoking area",
+                            "Non-smoking throughout",
+                            "Heating",
+                            "Heating",
+                            "Fan",
+                            "Ironing facilities",
+                            "Non-smoking rooms"
+                        ]
+                    },
+                    {
+                        "type": "Accessibility",
+                        "value": [
+                            "Upper floors accessible by stairs only"
+                        ]
+                    },
+                    {
+                        "type": "Safety features",
+                        "value": [
+                            "First aid kit available",
+                            "Process in place to check health of guests",
+                            "Hand sanitizer in guest accommodation and key areas",
+                            "Shared stationery such as printed menus, magazines, pens, and paper removed",
+                            "Staff follow all safety protocols as directed by local authorities"
+                        ]
+                    },
+                    {
+                        "type": "Physical distancing",
+                        "value": [
+                            "Screens or physical barriers placed between staff and guests in appropriate areas",
+                            "Physical distancing rules followed",
+                            "Cashless payment available",
+                            "Contactless check-in/check-out"
+                        ]
+                    },
+                    {
+                        "type": "Cleanliness & disinfecting",
+                        "value": [
+                            "Guests have the option to cancel any cleaning services for their accommodation during their stay",
+                            "Property is cleaned by professional cleaning companies",
+                            "Guest accommodation sealed after cleaning",
+                            "Guest accommodation is disinfected between stays",
+                            "Linens, towels and laundry washed in accordance with local authority guidelines",
+                            "Use of cleaning chemicals that are effective against Coronavirus"
+                        ]
+                    },
+                    {
+                        "type": "Food & drink safety",
+                        "value": [
+                            "All plates, cutlery, glasses and other tableware have been sanitized",
+                            "Food can be delivered to guest accommodation",
+                            "Physical distancing in dining areas"
+                        ]
+                    },
+                    {
+                        "type": "Languages spoken",
+                        "value": [
+                            "English",
+                            "Estonian",
+                            "Italian",
+                            "Dutch",
+                            "Russian"
+                        ]
+                    }
+                ]
+            },
+            "thumbnail_image": "https://cf.bstatic.com/xdata/images/hotel/square200/208675230.jpg?k=9573335d6cce4a5c41a2b1a12a84aa04a6ef6d2fa5490a7b640fdb4c5b4d72ea&o="
+        },
+        {
+            "name": "Smart Russell Square Hostel",
+            "score": "7.1",
+            "price": " 143",
+            "link": "/hotel/gb/smart-russell-square.en-gb.html?label=gen173nr-1FCAQoggJCH3NlYXJjaF9sb25kb24sIGdyZWF0ZXIgbG9uZG9uLCBICVgEaOQBiAEBmAEJuAEZyAEM2AEB6AEB-AEDiAIBqAIDuALIjLz8BcACAdICJDJhNWRhY2JjLWFmNjItNDIzYi05OWFkLTdiNGM1NTVmMGJlZtgCBeACAQ&sid=57d883c8ba8c254a98daca17712bc6b2&all_sr_blocks=26649613_119603304_0_2_0&checkin=2020-10-20&checkout=2020-10-21&dest_id=-2601889&dest_type=city&group_adults=1&group_children=0&hapos=19&highlighted_blocks=26649613_119603304_0_2_0&hpos=19&no_rooms=1&req_adults=1&req_children=0&room1=A&sr_order=price&sr_pri_blocks=26649613_119603304_0_2_0__1398&srepoch=1603208777&srpvid=38036ee4ed9f0030&ucfs=1&from=searchresults;hptv=do;has_campaign_deals_traveloffer20_customer_label=1",
+            "details": {
+                "latitude": "51.52275987",
+                "longitude": "-0.12330920",
+                "important_facilities": [
+                    "Non-smoking rooms",
+                    "Free WiFi",
+                    "24-hour front desk",
+                    "Laundry",
+                    "Heating",
+                    "Breakfast"
+                ],
+                "neighborhood_structures": [],
+                "services_offered": [
+                    {
+                        "type": "Bathroom",
+                        "value": [
+                            "Toilet paper",
+                            "Towels/sheets (extra fee)",
+                            "Toilet",
+                            "Shower"
+                        ]
+                    },
+                    {
+                        "type": "Bedroom",
+                        "value": [
+                            "Linen"
+                        ]
+                    },
+                    {
+                        "type": "Kitchen",
+                        "value": [
+                            "Shared kitchen"
+                        ]
+                    },
+                    {
+                        "type": "Room Amenities",
+                        "value": [
+                            "Socket near the bed"
+                        ]
+                    },
+                    {
+                        "type": "Services & Extras",
+                        "value": [
+                            "Tickets to attractions or shows"
+                        ]
+                    },
+                    {
+                        "type": "Pets",
+                        "value": [
+                            "Pets are not allowed."
+                        ]
+                    },
+                    {
+                        "type": "Activities",
+                        "value": [
+                            "Walking tours",
+                            "Pub crawls",
+                            "Games room"
+                        ]
+                    },
+                    {
+                        "type": "Food & Drink",
+                        "value": [
+                            "Chocolate or cookies",
+                            "Bottle of water"
+                        ]
+                    },
+                    {
+                        "type": "Internet",
+                        "value": [
+                            "Free! WiFi is available in all areas and is free of charge."
+                        ]
+                    },
+                    {
+                        "type": "Parking",
+                        "value": [
+                            "No parking available."
+                        ]
+                    },
+                    {
+                        "type": "Transport",
+                        "value": [
+                            "Public transport tickets"
+                        ]
+                    },
+                    {
+                        "type": "Reception services",
+                        "value": [
+                            "Lockers",
+                            "Concierge service",
+                            "ATM/cash machine on site",
+                            "Luggage storage",
+                            "Ticket service",
+                            "Tour desk",
+                            "Currency exchange",
+                            "24-hour front desk"
+                        ]
+                    },
+                    {
+                        "type": "Entertainment and family services",
+                        "value": [
+                            "Board games/puzzles"
+                        ]
+                    },
+                    {
+                        "type": "Cleaning services",
+                        "value": [
+                            "Laundry"
+                        ]
+                    },
+                    {
+                        "type": "Safety & security",
+                        "value": [
+                            "Fire extinguishers",
+                            "CCTV outside property",
+                            "CCTV in common areas",
+                            "Smoke alarms",
+                            "Security alarm",
+                            "Key card access",
+                            "Safety deposit box"
+                        ]
+                    },
+                    {
+                        "type": "General",
+                        "value": [
+                            "Shared lounge/TV area",
+                            "Vending machine (snacks)",
+                            "Vending machine (drinks)",
+                            "Non-smoking throughout",
+                            "Heating",
+                            "Carpeted",
+                            "Heating",
+                            "Fan",
+                            "Non-smoking rooms"
+                        ]
+                    },
+                    {
+                        "type": "Accessibility",
+                        "value": [
+                            "Upper floors accessible by stairs only"
+                        ]
+                    },
+                    {
+                        "type": "Safety features",
+                        "value": [
+                            "Face masks for guests available",
+                            "Thermometers for guests provided by property",
+                            "First aid kit available",
+                            "Process in place to check health of guests",
+                            "Hand sanitizer in guest accommodation and key areas",
+                            "Shared stationery such as printed menus, magazines, pens, and paper removed",
+                            "Staff follow all safety protocols as directed by local authorities"
+                        ]
+                    },
+                    {
+                        "type": "Physical distancing",
+                        "value": [
+                            "Screens or physical barriers placed between staff and guests in appropriate areas",
+                            "Physical distancing rules followed",
+                            "Cashless payment available"
+                        ]
+                    },
+                    {
+                        "type": "Cleanliness & disinfecting",
+                        "value": [
+                            "Guests have the option to cancel any cleaning services for their accommodation during their stay",
+                            "Guest accommodation is disinfected between stays",
+                            "Linens, towels and laundry washed in accordance with local authority guidelines",
+                            "Use of cleaning chemicals that are effective against Coronavirus"
+                        ]
+                    },
+                    {
+                        "type": "Food & drink safety",
+                        "value": [
+                            "All plates, cutlery, glasses and other tableware have been sanitized",
+                            "Food can be delivered to guest accommodation",
+                            "Physical distancing in dining areas"
+                        ]
+                    },
+                    {
+                        "type": "Languages spoken",
+                        "value": [
+                            "Arabic",
+                            "English",
+                            "French",
+                            "Italian",
+                            "Polish"
+                        ]
+                    }
+                ]
+            },
+            "thumbnail_image": "https://cf.bstatic.com/xdata/images/hotel/square200/55863554.jpg?k=7b02db16b9532678b5e1ce30ec1c6512aecac5ccce5a9fee22de4ec1a6363930&o="
+        },
+        {
+            "name": "PubLove @ The White Ferry, Victoria",
+            "score": "8.4",
+            "price": " 154",
+            "link": "/hotel/gb/the-white-ferry-bestplace-inn-victoria.en-gb.html?label=gen173nr-1FCAQoggJCH3NlYXJjaF9sb25kb24sIGdyZWF0ZXIgbG9uZG9uLCBICVgEaOQBiAEBmAEJuAEZyAEM2AEB6AEB-AEDiAIBqAIDuALIjLz8BcACAdICJDJhNWRhY2JjLWFmNjItNDIzYi05OWFkLTdiNGM1NTVmMGJlZtgCBeACAQ&sid=57d883c8ba8c254a98daca17712bc6b2&all_sr_blocks=43821802_258805556_0_40_0&checkin=2020-10-20&checkout=2020-10-21&dest_id=-2601889&dest_type=city&group_adults=1&group_children=0&hapos=20&highlighted_blocks=43821802_258805556_0_40_0&hpos=20&no_rooms=1&req_adults=1&req_children=0&room1=A&sr_order=price&sr_pri_blocks=43821802_258805556_0_40_0__1499&srepoch=1603208777&srpvid=38036ee4ed9f0030&ucfs=1&from=searchresults;hptv=do",
+            "details": {
+                "latitude": "51.48883560",
+                "longitude": "-0.14626410",
+                "important_facilities": [
+                    "Non-smoking rooms",
+                    "Restaurant",
+                    "WiFi available in all areas",
+                    "Free WiFi",
+                    "Parking",
+                    "Bar"
+                ],
+                "neighborhood_structures": [],
+                "services_offered": [
+                    {
+                        "type": "Bathroom",
+                        "value": [
+                            "Toilet paper",
+                            "Toilet",
+                            "Shared bathroom",
+                            "Shower"
+                        ]
+                    },
+                    {
+                        "type": "Bedroom",
+                        "value": [
+                            "Linen"
+                        ]
+                    },
+                    {
+                        "type": "View",
+                        "value": [
+                            "City view"
+                        ]
+                    },
+                    {
+                        "type": "Outdoors",
+                        "value": [
+                            "Outdoor furniture"
+                        ]
+                    },
+                    {
+                        "type": "Room Amenities",
+                        "value": [
+                            "Socket near the bed"
+                        ]
+                    },
+                    {
+                        "type": "Services & Extras",
+                        "value": [
+                            "Tickets to attractions or shows"
+                        ]
+                    },
+                    {
+                        "type": "Pets",
+                        "value": [
+                            "Pets are not allowed."
+                        ]
+                    },
+                    {
+                        "type": "Activities",
+                        "value": [
+                            "Live sport events (broadcast)",
+                            "Happy hour",
+                            "Pub crawls"
+                        ]
+                    },
+                    {
+                        "type": "Food & Drink",
+                        "value": [
+                            "On-site coffee house",
+                            "Bottle of water",
+                            "Wine/champagne",
+                            "Kid meals",
+                            "Bar",
+                            "Restaurant"
+                        ]
+                    },
+                    {
+                        "type": "Internet",
+                        "value": [
+                            "Free! WiFi is available in all areas and is free of charge."
+                        ]
+                    },
+                    {
+                        "type": "Parking",
+                        "value": [
+                            "Public parking is possible at a location nearby (reservation is not possible) and charges may be applicable.",
+                            "Street parking"
+                        ]
+                    },
+                    {
+                        "type": "Services",
+                        "value": [
+                            "Daily housekeeping",
+                            "Lockers",
+                            "Luggage storage",
+                            "Ticket service",
+                            "Fax/photocopying",
+                            "24-hour front desk"
+                        ]
+                    },
+                    {
+                        "type": "Entertainment and family services",
+                        "value": [
+                            "Board games/puzzles"
+                        ]
+                    },
+                    {
+                        "type": "Safety & security",
+                        "value": [
+                            "Fire extinguishers",
+                            "CCTV outside property",
+                            "CCTV in common areas",
+                            "Smoke alarms",
+                            "Security alarm",
+                            "24-hour security"
+                        ]
+                    },
+                    {
+                        "type": "General",
+                        "value": [
+                            "Adult only",
+                            "Designated smoking area",
+                            "Non-smoking throughout",
+                            "Heating",
+                            "Heating",
+                            "Fan",
+                            "Ironing facilities",
+                            "Non-smoking rooms"
+                        ]
+                    },
+                    {
+                        "type": "Safety features",
+                        "value": [
+                            "First aid kit available",
+                            "Process in place to check health of guests",
+                            "Hand sanitizer in guest accommodation and key areas",
+                            "Shared stationery such as printed menus, magazines, pens, and paper removed",
+                            "Staff follow all safety protocols as directed by local authorities"
+                        ]
+                    },
+                    {
+                        "type": "Physical distancing",
+                        "value": [
+                            "Screens or physical barriers placed between staff and guests in appropriate areas",
+                            "Physical distancing rules followed",
+                            "Cashless payment available",
+                            "Contactless check-in/check-out"
+                        ]
+                    },
+                    {
+                        "type": "Cleanliness & disinfecting",
+                        "value": [
+                            "Guests have the option to cancel any cleaning services for their accommodation during their stay",
+                            "Property is cleaned by professional cleaning companies",
+                            "Guest accommodation sealed after cleaning",
+                            "Guest accommodation is disinfected between stays",
+                            "Linens, towels and laundry washed in accordance with local authority guidelines",
+                            "Use of cleaning chemicals that are effective against Coronavirus"
+                        ]
+                    },
+                    {
+                        "type": "Food & drink safety",
+                        "value": [
+                            "All plates, cutlery, glasses and other tableware have been sanitized",
+                            "Food can be delivered to guest accommodation",
+                            "Physical distancing in dining areas"
+                        ]
+                    },
+                    {
+                        "type": "Languages spoken",
+                        "value": [
+                            "English",
+                            "Spanish",
+                            "Italian",
+                            "Portuguese"
+                        ]
+                    }
+                ]
+            },
+            "thumbnail_image": "https://cf.bstatic.com/xdata/images/hotel/square200/194309218.jpg?k=1dbb58318461eb9860666b358fb7fcb6604df3c00059c06ed8f924d5e22efc56&o="
+        },
+        {
+            "name": "PubLove @ The Exmouth Arms, Euston",
+            "score": "7.2",
+            "price": " 154",
+            "link": "/hotel/gb/publove-the-exmouth-arms-euston.en-gb.html?label=gen173nr-1FCAQoggJCH3NlYXJjaF9sb25kb24sIGdyZWF0ZXIgbG9uZG9uLCBICVgEaOQBiAEBmAEJuAEZyAEM2AEB6AEB-AEDiAIBqAIDuALIjLz8BcACAdICJDJhNWRhY2JjLWFmNjItNDIzYi05OWFkLTdiNGM1NTVmMGJlZtgCBeACAQ&sid=57d883c8ba8c254a98daca17712bc6b2&all_sr_blocks=130805702_258805542_0_40_0&checkin=2020-10-20&checkout=2020-10-21&dest_id=-2601889&dest_type=city&group_adults=1&group_children=0&hapos=21&highlighted_blocks=130805702_258805542_0_40_0&hpos=21&no_rooms=1&req_adults=1&req_children=0&room1=A&sr_order=price&sr_pri_blocks=130805702_258805542_0_40_0__1499&srepoch=1603208777&srpvid=38036ee4ed9f0030&ucfs=1&from=searchresults;hptv=do",
+            "details": {
+                "latitude": "51.52789202",
+                "longitude": "-0.13657808",
+                "important_facilities": [
+                    "Non-smoking rooms",
+                    "Restaurant",
+                    "WiFi available in all areas",
+                    "Free WiFi",
+                    "24-hour front desk",
+                    "Bar"
+                ],
+                "neighborhood_structures": [],
+                "services_offered": [
+                    {
+                        "type": "Bathroom",
+                        "value": [
+                            "Toilet paper",
+                            "Shared toilet",
+                            "Toilet",
+                            "Shared bathroom",
+                            "Shower"
+                        ]
+                    },
+                    {
+                        "type": "Bedroom",
+                        "value": [
+                            "Linen"
+                        ]
+                    },
+                    {
+                        "type": "View",
+                        "value": [
+                            "City view"
+                        ]
+                    },
+                    {
+                        "type": "Outdoors",
+                        "value": [
+                            "Outdoor furniture",
+                            "Terrace"
+                        ]
+                    },
+                    {
+                        "type": "Room Amenities",
+                        "value": [
+                            "Socket near the bed"
+                        ]
+                    },
+                    {
+                        "type": "Services & Extras",
+                        "value": [
+                            "Tickets to attractions or shows"
+                        ]
+                    },
+                    {
+                        "type": "Pets",
+                        "value": [
+                            "Pets are not allowed."
+                        ]
+                    },
+                    {
+                        "type": "Activities",
+                        "value": [
+                            "Live sport events (broadcast)",
+                            "Walking tours",
+                            "Pub crawls"
+                        ]
+                    },
+                    {
+                        "type": "Food & Drink",
+                        "value": [
+                            "On-site coffee house",
+                            "Bottle of water",
+                            "Wine/champagne",
+                            "Kid meals",
+                            "Bar",
+                            "Restaurant"
+                        ]
+                    },
+                    {
+                        "type": "Internet",
+                        "value": [
+                            "Free! WiFi is available in all areas and is free of charge."
+                        ]
+                    },
+                    {
+                        "type": "Parking",
+                        "value": [
+                            "Parking options available",
+                            "Street parking"
+                        ]
+                    },
+                    {
+                        "type": "Services",
+                        "value": [
+                            "Daily housekeeping",
+                            "Lockers",
+                            "Luggage storage",
+                            "Ticket service",
+                            "24-hour front desk"
+                        ]
+                    },
+                    {
+                        "type": "Entertainment and family services",
+                        "value": [
+                            "Board games/puzzles"
+                        ]
+                    },
+                    {
+                        "type": "Safety & security",
+                        "value": [
+                            "Fire extinguishers",
+                            "CCTV outside property",
+                            "CCTV in common areas",
+                            "Smoke alarms",
+                            "Key card access",
+                            "24-hour security"
+                        ]
+                    },
+                    {
+                        "type": "General",
+                        "value": [
+                            "Adult only",
+                            "Designated smoking area",
+                            "Non-smoking throughout",
+                            "Heating",
+                            "Heating",
+                            "Fan",
+                            "Ironing facilities",
+                            "Non-smoking rooms"
+                        ]
+                    },
+                    {
+                        "type": "Accessibility",
+                        "value": [
+                            "Upper floors accessible by stairs only"
+                        ]
+                    },
+                    {
+                        "type": "Safety features",
+                        "value": [
+                            "First aid kit available",
+                            "Process in place to check health of guests",
+                            "Hand sanitizer in guest accommodation and key areas",
+                            "Shared stationery such as printed menus, magazines, pens, and paper removed",
+                            "Staff follow all safety protocols as directed by local authorities"
+                        ]
+                    },
+                    {
+                        "type": "Physical distancing",
+                        "value": [
+                            "Screens or physical barriers placed between staff and guests in appropriate areas",
+                            "Physical distancing rules followed",
+                            "Cashless payment available",
+                            "Contactless check-in/check-out"
+                        ]
+                    },
+                    {
+                        "type": "Cleanliness & disinfecting",
+                        "value": [
+                            "Guests have the option to cancel any cleaning services for their accommodation during their stay",
+                            "Property is cleaned by professional cleaning companies",
+                            "Guest accommodation sealed after cleaning",
+                            "Guest accommodation is disinfected between stays",
+                            "Linens, towels and laundry washed in accordance with local authority guidelines",
+                            "Use of cleaning chemicals that are effective against Coronavirus"
+                        ]
+                    },
+                    {
+                        "type": "Food & drink safety",
+                        "value": [
+                            "All plates, cutlery, glasses and other tableware have been sanitized",
+                            "Food can be delivered to guest accommodation",
+                            "Physical distancing in dining areas"
+                        ]
+                    },
+                    {
+                        "type": "Languages spoken",
+                        "value": [
+                            "English",
+                            "Estonian",
+                            "Italian"
+                        ]
+                    }
+                ]
+            },
+            "thumbnail_image": "https://cf.bstatic.com/xdata/images/hotel/square200/44484524.jpg?k=7bddd71ce1c7f81756f77e06763b9091b9383fb4c31aa7fd77d2cc8c8d66dac1&o="
+        },
+        {
+            "name": "PubLove @ The Rose & Crown",
+            "score": "8.0",
+            "price": " 154",
+            "link": "/hotel/gb/publove-the-rose-amp-crown.en-gb.html?label=gen173nr-1FCAQoggJCH3NlYXJjaF9sb25kb24sIGdyZWF0ZXIgbG9uZG9uLCBICVgEaOQBiAEBmAEJuAEZyAEM2AEB6AEB-AEDiAIBqAIDuALIjLz8BcACAdICJDJhNWRhY2JjLWFmNjItNDIzYi05OWFkLTdiNGM1NTVmMGJlZtgCBeACAQ&sid=57d883c8ba8c254a98daca17712bc6b2&all_sr_blocks=499162503_258805462_0_40_0&checkin=2020-10-20&checkout=2020-10-21&dest_id=-2601889&dest_type=city&group_adults=1&group_children=0&hapos=22&highlighted_blocks=499162503_258805462_0_40_0&hpos=22&no_rooms=1&req_adults=1&req_children=0&room1=A&sr_order=price&sr_pri_blocks=499162503_258805462_0_40_0__1499&srepoch=1603208777&srpvid=38036ee4ed9f0030&ucfs=1&from=searchresults;hptv=do",
+            "details": {
+                "latitude": "51.50384100",
+                "longitude": "-0.09479600",
+                "important_facilities": [
+                    "Non-smoking rooms",
+                    "Restaurant",
+                    "WiFi available in all areas",
+                    "Free WiFi",
+                    "24-hour front desk",
+                    "Bar"
+                ],
+                "neighborhood_structures": [],
+                "services_offered": [
+                    {
+                        "type": "Bathroom",
+                        "value": [
+                            "Toilet paper",
+                            "Toilet",
+                            "Shower"
+                        ]
+                    },
+                    {
+                        "type": "Bedroom",
+                        "value": [
+                            "Linen"
+                        ]
+                    },
+                    {
+                        "type": "View",
+                        "value": [
+                            "City view"
+                        ]
+                    },
+                    {
+                        "type": "Outdoors",
+                        "value": [
+                            "Outdoor furniture",
+                            "Terrace",
+                            "Garden"
+                        ]
+                    },
+                    {
+                        "type": "Room Amenities",
+                        "value": [
+                            "Socket near the bed"
+                        ]
+                    },
+                    {
+                        "type": "Services & Extras",
+                        "value": [
+                            "Tickets to attractions or shows"
+                        ]
+                    },
+                    {
+                        "type": "Pets",
+                        "value": [
+                            "Pets are not allowed."
+                        ]
+                    },
+                    {
+                        "type": "Activities",
+                        "value": [
+                            "Live sport events (broadcast)",
+                            "Walking tours",
+                            "Pub crawls"
+                        ]
+                    },
+                    {
+                        "type": "Food & Drink",
+                        "value": [
+                            "Bottle of water",
+                            "Wine/champagne",
+                            "Kid meals",
+                            "Bar",
+                            "Restaurant"
+                        ]
+                    },
+                    {
+                        "type": "Internet",
+                        "value": [
+                            "Free! WiFi is available in all areas and is free of charge."
+                        ]
+                    },
+                    {
+                        "type": "Parking",
+                        "value": [
+                            "Parking options available",
+                            "Street parking"
+                        ]
+                    },
+                    {
+                        "type": "Services",
+                        "value": [
+                            "Daily housekeeping",
+                            "Lockers",
+                            "Luggage storage",
+                            "Ticket service",
+                            "Tour desk",
+                            "24-hour front desk"
+                        ]
+                    },
+                    {
+                        "type": "Safety & security",
+                        "value": [
+                            "Fire extinguishers",
+                            "CCTV outside property",
+                            "CCTV in common areas",
+                            "Smoke alarms",
+                            "Security alarm",
+                            "Key card access",
+                            "24-hour security"
+                        ]
+                    },
+                    {
+                        "type": "General",
+                        "value": [
+                            "Adult only",
+                            "Designated smoking area",
+                            "Non-smoking throughout",
+                            "Heating",
+                            "Heating",
+                            "Fan",
+                            "Ironing facilities",
+                            "Non-smoking rooms"
+                        ]
+                    },
+                    {
+                        "type": "Accessibility",
+                        "value": [
+                            "Upper floors accessible by stairs only"
+                        ]
+                    },
+                    {
+                        "type": "Safety features",
+                        "value": [
+                            "First aid kit available",
+                            "Process in place to check health of guests",
+                            "Hand sanitizer in guest accommodation and key areas",
+                            "Shared stationery such as printed menus, magazines, pens, and paper removed",
+                            "Staff follow all safety protocols as directed by local authorities"
+                        ]
+                    },
+                    {
+                        "type": "Physical distancing",
+                        "value": [
+                            "Screens or physical barriers placed between staff and guests in appropriate areas",
+                            "Physical distancing rules followed",
+                            "Cashless payment available",
+                            "Contactless check-in/check-out"
+                        ]
+                    },
+                    {
+                        "type": "Cleanliness & disinfecting",
+                        "value": [
+                            "Guests have the option to cancel any cleaning services for their accommodation during their stay",
+                            "Property is cleaned by professional cleaning companies",
+                            "Guest accommodation sealed after cleaning",
+                            "Guest accommodation is disinfected between stays",
+                            "Linens, towels and laundry washed in accordance with local authority guidelines",
+                            "Use of cleaning chemicals that are effective against Coronavirus"
+                        ]
+                    },
+                    {
+                        "type": "Food & drink safety",
+                        "value": [
+                            "All plates, cutlery, glasses and other tableware have been sanitized",
+                            "Food can be delivered to guest accommodation",
+                            "Physical distancing in dining areas"
+                        ]
+                    },
+                    {
+                        "type": "Languages spoken",
+                        "value": [
+                            "English",
+                            "French"
+                        ]
+                    }
+                ]
+            },
+            "thumbnail_image": "https://cf.bstatic.com/xdata/images/hotel/square200/215206517.jpg?k=9f6e0491b46dfe3ccbcf29a013d32e406832093463158ca6b9dec602c34cb5aa&o="
+        },
+        {
+            "name": "Strand Continental",
+            "score": "6.5",
+            "price": " 166",
+            "link": "/hotel/gb/strand-continental.en-gb.html?label=gen173nr-1FCAQoggJCH3NlYXJjaF9sb25kb24sIGdyZWF0ZXIgbG9uZG9uLCBICVgEaOQBiAEBmAEJuAEZyAEM2AEB6AEB-AEDiAIBqAIDuALIjLz8BcACAdICJDJhNWRhY2JjLWFmNjItNDIzYi05OWFkLTdiNGM1NTVmMGJlZtgCBeACAQ&sid=57d883c8ba8c254a98daca17712bc6b2&all_sr_blocks=25202209_114954826_0_1_0&checkin=2020-10-20&checkout=2020-10-21&dest_id=-2601889&dest_type=city&group_adults=1&group_children=0&hapos=23&highlighted_blocks=25202209_114954826_0_1_0&hpos=23&no_rooms=1&req_adults=1&req_children=0&room1=A&sr_order=price&sr_pri_blocks=25202209_114954826_0_1_0__1620&srepoch=1603208777&srpvid=38036ee4ed9f0030&ucfs=1&from=searchresults;hptv=do",
+            "details": {
+                "latitude": "51.51146683",
+                "longitude": "-0.11835515",
+                "important_facilities": [
+                    "Non-smoking rooms",
+                    "Restaurant",
+                    "Free WiFi",
+                    "Family rooms",
+                    "24-hour front desk",
+                    "Bar",
+                    "Breakfast"
+                ],
+                "neighborhood_structures": [],
+                "services_offered": [
+                    {
+                        "type": "Bathroom",
+                        "value": [
+                            "Toilet paper",
+                            "Shared toilet",
+                            "Toilet",
+                            "Shared bathroom",
+                            "Shower"
+                        ]
+                    },
+                    {
+                        "type": "Pets",
+                        "value": [
+                            "Pets are not allowed."
+                        ]
+                    },
+                    {
+                        "type": "Activities",
+                        "value": [
+                            "Happy hour",
+                            "Walking tours"
+                        ]
+                    },
+                    {
+                        "type": "Food & Drink",
+                        "value": [
+                            "On-site coffee house",
+                            "Bottle of water",
+                            "Wine/champagne",
+                            "Bar",
+                            "Restaurant"
+                        ]
+                    },
+                    {
+                        "type": "Internet",
+                        "value": [
+                            "Free! WiFi is available in public areas and is free of charge."
+                        ]
+                    },
+                    {
+                        "type": "Parking",
+                        "value": [
+                            "Parking options available",
+                            "Street parking"
+                        ]
+                    },
+                    {
+                        "type": "Services",
+                        "value": [
+                            "Shared lounge/TV area",
+                            "Lockers",
+                            "Concierge service",
+                            "Luggage storage",
+                            "Fax/photocopying",
+                            "24-hour front desk",
+                            "Meeting/banquet facilities"
+                        ]
+                    },
+                    {
+                        "type": "Safety & security",
+                        "value": [
+                            "Fire extinguishers",
+                            "CCTV in common areas",
+                            "Smoke alarms",
+                            "Key access",
+                            "24-hour security",
+                            "Safety deposit box"
+                        ]
+                    },
+                    {
+                        "type": "General",
+                        "value": [
+                            "Non-smoking throughout",
+                            "Heating",
+                            "Heating",
+                            "Family rooms",
+                            "Non-smoking rooms"
+                        ]
+                    },
+                    {
+                        "type": "Safety features",
+                        "value": [
+                            "First aid kit available",
+                            "Process in place to check health of guests",
+                            "Hand sanitizer in guest accommodation and key areas",
+                            "Shared stationery such as printed menus, magazines, pens, and paper removed",
+                            "Staff follow all safety protocols as directed by local authorities"
+                        ]
+                    },
+                    {
+                        "type": "Physical distancing",
+                        "value": [
+                            "Physical distancing rules followed",
+                            "Cashless payment available",
+                            "Contactless check-in/check-out"
+                        ]
+                    },
+                    {
+                        "type": "Cleanliness & disinfecting",
+                        "value": [
+                            "Guests have the option to cancel any cleaning services for their accommodation during their stay",
+                            "Guest accommodation is disinfected between stays",
+                            "Linens, towels and laundry washed in accordance with local authority guidelines",
+                            "Use of cleaning chemicals that are effective against Coronavirus"
+                        ]
+                    },
+                    {
+                        "type": "Food & drink safety",
+                        "value": [
+                            "All plates, cutlery, glasses and other tableware have been sanitized",
+                            "Physical distancing in dining areas"
+                        ]
+                    },
+                    {
+                        "type": "Languages spoken",
+                        "value": [
+                            "English",
+                            "Spanish",
+                            "French",
+                            "Hindi",
+                            "Polish",
+                            "Urdu"
+                        ]
+                    }
+                ]
+            },
+            "thumbnail_image": "https://cf.bstatic.com/xdata/images/hotel/square200/258287436.jpg?k=274f8402312842b94a1066544719f05f85004fd25f9ddb47057195659142e9b1&o="
+        },
+        {
+            "name": "Burlington Residence",
+            "score": "8.8",
+            "price": " 173",
+            "link": "/hotel/gb/burlington-residence.en-gb.html?label=gen173nr-1FCAQoggJCH3NlYXJjaF9sb25kb24sIGdyZWF0ZXIgbG9uZG9uLCBICVgEaOQBiAEBmAEJuAEZyAEM2AEB6AEB-AEDiAIBqAIDuALIjLz8BcACAdICJDJhNWRhY2JjLWFmNjItNDIzYi05OWFkLTdiNGM1NTVmMGJlZtgCBeACAQ&sid=57d883c8ba8c254a98daca17712bc6b2&all_sr_blocks=638315607_274228313_1_1_0&checkin=2020-10-20&checkout=2020-10-21&dest_id=-2601889&dest_type=city&group_adults=1&group_children=0&hapos=24&highlighted_blocks=638315607_274228313_1_1_0&hpos=24&no_rooms=1&req_adults=1&req_children=0&room1=A&sr_order=price&sr_pri_blocks=638315607_274228313_1_1_0__1688&srepoch=1603208777&srpvid=38036ee4ed9f0030&ucfs=1&from=searchresults;hptv=do;has_campaign_deals_traveloffer20_customer_label=1",
+            "details": {
+                "latitude": "51.43888500",
+                "longitude": "-0.14770500",
+                "important_facilities": [
+                    "Free WiFi",
+                    "Pets allowed",
+                    "Lift",
+                    "Laundry",
+                    "Heating",
+                    "Good breakfast"
+                ],
+                "neighborhood_structures": [],
+                "services_offered": [
+                    {
+                        "type": "Pets",
+                        "value": [
+                            "Free! Pets are allowed on request. No extra charges."
+                        ]
+                    },
+                    {
+                        "type": "Activities",
+                        "value": [
+                            "Walking tours",
+                            "Movie nights",
+                            "Pub crawls",
+                            "Evening entertainment",
+                            "Table tennis",
+                            "Games room"
+                        ]
+                    },
+                    {
+                        "type": "Internet",
+                        "value": [
+                            "Free! WiFi is available in all areas and is free of charge."
+                        ]
+                    },
+                    {
+                        "type": "Parking",
+                        "value": [
+                            "No parking available."
+                        ]
+                    },
+                    {
+                        "type": "Services",
+                        "value": [
+                            "Pet bowls",
+                            "Shared lounge/TV area",
+                            "Luggage storage",
+                            "Laundry"
+                        ]
+                    },
+                    {
+                        "type": "Entertainment and family services",
+                        "value": [
+                            "Board games/puzzles"
+                        ]
+                    },
+                    {
+                        "type": "Safety & security",
+                        "value": [
+                            "Fire extinguishers",
+                            "CCTV outside property",
+                            "CCTV in common areas",
+                            "Smoke alarms",
+                            "Security alarm",
+                            "Key card access",
+                            "24-hour security"
+                        ]
+                    },
+                    {
+                        "type": "General",
+                        "value": [
+                            "Non-smoking throughout",
+                            "Heating",
+                            "Lift"
+                        ]
+                    },
+                    {
+                        "type": "Safety features",
+                        "value": [
+                            "First aid kit available",
+                            "Hand sanitizer in guest accommodation and key areas",
+                            "Staff follow all safety protocols as directed by local authorities"
+                        ]
+                    },
+                    {
+                        "type": "Physical distancing",
+                        "value": [
+                            "Physical distancing rules followed"
+                        ]
+                    },
+                    {
+                        "type": "Cleanliness & disinfecting",
+                        "value": [
+                            "Guest accommodation is disinfected between stays",
+                            "Linens, towels and laundry washed in accordance with local authority guidelines"
+                        ]
+                    },
+                    {
+                        "type": "Languages spoken",
+                        "value": [
+                            "English",
+                            "Spanish",
+                            "Italian",
+                            "Polish",
+                            "Russian",
+                            "Thai",
+                            "Ukrainian"
+                        ]
+                    }
+                ]
+            },
+            "thumbnail_image": "https://cf.bstatic.com/xdata/images/hotel/square200/264088565.jpg?k=35cd62013cf42766512b58379aeae726223cb9bbe6995b5d2a7dc03dd6a46446&o="
+        },
+        {
+            "name": "St Christopher's Inn Village - London Bridge",
+            "score": "7.8",
+            "price": " 176",
+            "link": "/hotel/gb/st-christoper-s-inn-village-london-bridge.en-gb.html?label=gen173nr-1FCAQoggJCH3NlYXJjaF9sb25kb24sIGdyZWF0ZXIgbG9uZG9uLCBICVgEaOQBiAEBmAEJuAEZyAEM2AEB6AEB-AEDiAIBqAIDuALIjLz8BcACAdICJDJhNWRhY2JjLWFmNjItNDIzYi05OWFkLTdiNGM1NTVmMGJlZtgCBeACAQ&sid=57d883c8ba8c254a98daca17712bc6b2&all_sr_blocks=48752310_93759709_1_2_0&checkin=2020-10-20&checkout=2020-10-21&dest_id=-2601889&dest_type=city&group_adults=1&group_children=0&hapos=25&highlighted_blocks=48752310_93759709_1_2_0&hpos=25&no_rooms=1&req_adults=1&req_children=0&room1=A&sr_order=price&sr_pri_blocks=48752310_93759709_1_2_0__1720&srepoch=1603208777&srpvid=38036ee4ed9f0030&ucfs=1&from=searchresults;hptv=do",
+            "details": {
+                "latitude": "51.50286581",
+                "longitude": "-0.09189248",
+                "important_facilities": [
+                    "Non-smoking rooms",
+                    "Restaurant",
+                    "Facilities for disabled guests",
+                    "Free WiFi",
+                    "24-hour front desk",
+                    "Bar",
+                    "Breakfast"
+                ],
+                "neighborhood_structures": [],
+                "services_offered": [
+                    {
+                        "type": "Bathroom",
+                        "value": [
+                            "Toilet paper",
+                            "Toilet",
+                            "Shared bathroom",
+                            "Shower"
+                        ]
+                    },
+                    {
+                        "type": "Bedroom",
+                        "value": [
+                            "Linen"
+                        ]
+                    },
+                    {
+                        "type": "View",
+                        "value": [
+                            "City view"
+                        ]
+                    },
+                    {
+                        "type": "Outdoors",
+                        "value": [
+                            "Outdoor furniture",
+                            "Sun terrace",
+                            "BBQ facilities",
+                            "Terrace"
+                        ]
+                    },
+                    {
+                        "type": "Room Amenities",
+                        "value": [
+                            "Socket near the bed"
+                        ]
+                    },
+                    {
+                        "type": "Services & Extras",
+                        "value": [
+                            "Tickets to attractions or shows"
+                        ]
+                    },
+                    {
+                        "type": "Pets",
+                        "value": [
+                            "Pets are not allowed."
+                        ]
+                    },
+                    {
+                        "type": "Activities",
+                        "value": [
+                            "Live sport events (broadcast)",
+                            "Live music/performance",
+                            "Happy hour",
+                            "Walking tours",
+                            "Pub crawls",
+                            "Evening entertainment",
+                            "Nightclub/DJ",
+                            "Karaoke"
+                        ]
+                    },
+                    {
+                        "type": "Food & Drink",
+                        "value": [
+                            "Bottle of water",
+                            "Bar",
+                            "Restaurant"
+                        ]
+                    },
+                    {
+                        "type": "Internet",
+                        "value": [
+                            "Free! WiFi is available in public areas and is free of charge."
+                        ]
+                    },
+                    {
+                        "type": "Parking",
+                        "value": [
+                            "No parking available."
+                        ]
+                    },
+                    {
+                        "type": "Services",
+                        "value": [
+                            "Shared lounge/TV area",
+                            "Lockers",
+                            "Vending machine (drinks)",
+                            "ATM/cash machine on site",
+                            "Luggage storage",
+                            "Packed lunches",
+                            "Express check-in/check-out",
+                            "24-hour front desk",
+                            "Meeting/banquet facilities"
+                        ]
+                    },
+                    {
+                        "type": "Safety & security",
+                        "value": [
+                            "Fire extinguishers",
+                            "CCTV outside property",
+                            "CCTV in common areas",
+                            "Smoke alarms",
+                            "Security alarm",
+                            "Key card access",
+                            "24-hour security"
+                        ]
+                    },
+                    {
+                        "type": "General",
+                        "value": [
+                            "Hypoallergenic",
+                            "Designated smoking area",
+                            "Air conditioning",
+                            "Non-smoking throughout",
+                            "Allergy-free room",
+                            "Heating",
+                            "Soundproofing",
+                            "Soundproof rooms",
+                            "Lift",
+                            "Heating",
+                            "Facilities for disabled guests",
+                            "Non-smoking rooms",
+                            "Air conditioning"
+                        ]
+                    },
+                    {
+                        "type": "Accessibility",
+                        "value": [
+                            "Toilet with grab rails",
+                            "Wheelchair accessible",
+                            "Upper floors accessible by elevator"
+                        ]
+                    },
+                    {
+                        "type": "Safety features",
+                        "value": [
+                            "First aid kit available",
+                            "Shared stationery such as printed menus, magazines, pens, and paper removed",
+                            "Staff follow all safety protocols as directed by local authorities"
+                        ]
+                    },
+                    {
+                        "type": "Physical distancing",
+                        "value": [
+                            "Physical distancing rules followed",
+                            "Cashless payment available"
+                        ]
+                    },
+                    {
+                        "type": "Cleanliness & disinfecting",
+                        "value": [
+                            "Guest accommodation is disinfected between stays",
+                            "Use of cleaning chemicals that are effective against Coronavirus"
+                        ]
+                    },
+                    {
+                        "type": "Food & drink safety",
+                        "value": [
+                            "All plates, cutlery, glasses and other tableware have been sanitized",
+                            "Physical distancing in dining areas"
+                        ]
+                    },
+                    {
+                        "type": "Languages spoken",
+                        "value": [
+                            "English",
+                            "Spanish",
+                            "French",
+                            "Italian",
+                            "Polish"
+                        ]
+                    }
+                ]
+            },
+            "thumbnail_image": "https://cf.bstatic.com/xdata/images/hotel/square200/164896255.jpg?k=4bb40c938008c099b9fcefa2da72fe3f3ef956e23008cca3923bf53c16777ff8&o="
+        }
+    ]
+]
