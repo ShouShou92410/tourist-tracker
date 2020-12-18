@@ -62,8 +62,11 @@ class Firebase {
 		if (id === null) {
 			id = this.db.ref('sites').push().key;
 			updates[`/ownedSites/${this.auth.currentUser.uid}/${id}`] = true;
+			updates[`/sites/${id}/numberOfVisits`] = 0;
 		}
-		updates[`/sites/${id}`] = newSite;
+		updates[`/sites/${id}/name`] = newSite.name;
+		updates[`/sites/${id}/address`] = newSite.address;
+		updates[`/sites/${id}/amenities`] = newSite.amenities;
 
 		await this.db.ref().update(updates);
 
