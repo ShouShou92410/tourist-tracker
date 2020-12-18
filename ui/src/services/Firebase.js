@@ -140,24 +140,54 @@ class Firebase {
 		let visitedSites = (
 			await this.db.ref(`/visitedSites/${currentUser.uid}`).once('value')
 		).val();
+		if (visitedSites != null) {
+			visitedSites = Object.entries(visitedSites).map(([key, value]) => ({
+				id: key,
+				numberOfVisits: value.numberOfVisits,
+				latestDateVisited: new Date(value.latestDateVisited),
+			}));
 
-		visitedSites = Object.entries(visitedSites).map(([key, value]) => ({
-			id: key,
-			numberOfVisits: value.numberOfVisits,
-			latestDateVisited: new Date(value.latestDateVisited),
-		}));
+			visitedSites = await Promise.all(
+				visitedSites.map(async (x) => {
+					const site = (await this.db.ref(`/sites/${x.id}`).once('value')).val();
+					return {
+						...x,
+						name: site.name,
+						address: site.address,
+					};
+				})
+			);
+		} else {
+			visitedSites = [];
+		}
 
-		visitedSites = await Promise.all(
-			visitedSites.map(async (x) => {
-				const site = (await this.db.ref(`/sites/${x.id}`).once('value')).val();
-				return {
-					...x,
-					name: site.name,
-					address: site.address,
-				};
-			})
-		);
 		return visitedSites;
+	}
+
+	async getOwnedSites() {
+		const currentUser = this.auth.currentUser;
+		let ownedSites = (await this.db.ref(`/ownedSites/${currentUser.uid}`).once('value')).val();
+		if (ownedSites != null) {
+			ownedSites = Object.entries(ownedSites).map(([key, value]) => ({
+				id: key,
+			}));
+
+			ownedSites = await Promise.all(
+				ownedSites.map(async (x) => {
+					const site = (await this.db.ref(`/sites/${x.id}`).once('value')).val();
+					return {
+						...x,
+						name: site.name,
+						address: site.address,
+						numberOfVisits: site.numberOfVisits,
+					};
+				})
+			);
+		} else {
+			ownedSites = [];
+		}
+
+		return ownedSites;
 	}
 }
 
