@@ -15,7 +15,11 @@ function TravellerDataEntry() {
 		const fetchData = async () => {
 			const sites = await firebase.getSite();
 			setSiteOptions(
-				Object.entries(sites).map(([key, value]) => ({ id: key, name: value.name }))
+				Object.entries(sites).map(([key, value]) => ({
+					id: key,
+					name: value.name,
+					address: value.address,
+				}))
 			);
 		};
 
@@ -42,7 +46,7 @@ function TravellerDataEntry() {
 					<Form.Control as="select" name="visitedSite">
 						{siteOptions.map((x) => (
 							<option key={x.id} value={x.id}>
-								{x.name}
+								{x.name} ({x.address})
 							</option>
 						))}
 					</Form.Control>
