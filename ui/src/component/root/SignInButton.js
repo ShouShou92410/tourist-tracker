@@ -1,5 +1,6 @@
 import React, { useState, useContext } from 'react';
 import Button from 'react-bootstrap/Button';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 import Spinnger from 'react-bootstrap/Spinner';
 import firebase from '../../services/Firebase';
 import { UserContext } from '../../utility/Context';
@@ -63,15 +64,23 @@ function SignInButton({ setCurrentUser }) {
 				handleSetCurrentUser={handleSetCurrentUser}
 			/>
 			{currentUser === null ? (
-				<Button variant="primary" disabled={authorizing} onClick={handleSignIn}>
+				<Button size="sm" variant="primary" disabled={authorizing} onClick={handleSignIn}>
 					{authorizing && <Spinnger animation="border" size="sm" />}
 					Sign In
 				</Button>
 			) : (
-				<Button variant="primary" disabled={authorizing} onClick={handleSignOut}>
-					{authorizing && <Spinnger animation="border" size="sm" />}
-					Sign Out
-				</Button>
+				<NavDropdown title={currentUser.name}>
+					<NavDropdown.Item
+						as={Button}
+						size="sm"
+						variant="primary"
+						disabled={authorizing}
+						onClick={handleSignOut}
+					>
+						{authorizing && <Spinnger animation="border" size="sm" />}
+						Sign Out
+					</NavDropdown.Item>
+				</NavDropdown>
 			)}
 		</>
 	);
