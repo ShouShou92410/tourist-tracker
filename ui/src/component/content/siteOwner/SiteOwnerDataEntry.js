@@ -31,9 +31,7 @@ function SiteOwnerDataEntry() {
 			const newAmenityForm = {
 				...Array(Object.values(Enumeration.Amenity).length).fill(null),
 			};
-			Array.from(site.amenities.replace(/,/gi, '')).forEach(
-				(x) => (newAmenityForm[x - 1] = x)
-			);
+			site.amenities.split(',').forEach((x) => (newAmenityForm[x - 1] = x));
 			setAmenityForm(newAmenityForm);
 		};
 
