@@ -56,6 +56,59 @@ class Firebase {
 		return newUser;
 	}
 
+	async updateSite(newSite, id = null) {
+		let updates = {};
+
+		if (id === null) {
+			id = this.db.ref('sites').push().key;
+			updates[`/ownedSites/${this.auth.currentUser.uid}/${id}`] = true;
+			updates[`/sites/${id}/numberOfVisits`] = 0;
+		}
+		updates[`/sites/${id}/name`] = newSite.name;
+		updates[`/sites/${id}/address`] = newSite.address;
+		updates[`/sites/${id}/amenities`] = newSite.amenities;
+
+		await this.db.ref().update(updates);
+
+		return newSite;
+	}
+
+	async updateVisitedSite(id, dateVisited) {
+		let updates = {};
+
+		let visitedSite = (
+			await this.db.ref(`/visitedSites/${this.auth.currentUser.uid}/${id}`).once('value')
+		).val();
+		const site = (await this.db.ref(`/sites/${id}`).once('value')).val();
+
+		if (visitedSite === null) {
+			updates[`/visitedSites/${this.auth.currentUser.uid}/${id}`] = {
+				latestDateVisited: dateVisited,
+				numberOfVisits: 1,
+			};
+		} else {
+			if (dateVisited > visitedSite.latestDateVisited) {
+				updates[
+					`/visitedSites/${this.auth.currentUser.uid}/${id}/latestDateVisited`
+				] = dateVisited;
+			}
+			updates[`/visitedSites/${this.auth.currentUser.uid}/${id}/numberOfVisits`] =
+				visitedSite.numberOfVisits + 1;
+		}
+
+		updates[`/sites/${id}/numberOfVisits`] = site.numberOfVisits + 1;
+
+		await this.db.ref().update(updates);
+	}
+
+	async getSite(id = null) {
+		const path = id !== null ? `/sites/${id}` : '/sites';
+		const res = await this.db.ref(path).once('value');
+		const site = res.val();
+
+		return site;
+	}
+
 	// Retrieves user information from the database, returns null if not found
 	async getUser(id = null) {
 		if (id === null) {
@@ -83,6 +136,61 @@ class Firebase {
 		});
 
 		return res.data;
+	}
+
+	async getVisitedSites() {
+		const currentUser = this.auth.currentUser;
+		let visitedSites = (
+			await this.db.ref(`/visitedSites/${currentUser.uid}`).once('value')
+		).val();
+		if (visitedSites != null) {
+			visitedSites = Object.entries(visitedSites).map(([key, value]) => ({
+				id: key,
+				numberOfVisits: value.numberOfVisits,
+				latestDateVisited: new Date(value.latestDateVisited),
+			}));
+
+			visitedSites = await Promise.all(
+				visitedSites.map(async (x) => {
+					const site = (await this.db.ref(`/sites/${x.id}`).once('value')).val();
+					return {
+						...x,
+						name: site.name,
+						address: site.address,
+					};
+				})
+			);
+		} else {
+			visitedSites = [];
+		}
+
+		return visitedSites;
+	}
+
+	async getOwnedSites() {
+		const currentUser = this.auth.currentUser;
+		let ownedSites = (await this.db.ref(`/ownedSites/${currentUser.uid}`).once('value')).val();
+		if (ownedSites != null) {
+			ownedSites = Object.entries(ownedSites).map(([key, value]) => ({
+				id: key,
+			}));
+
+			ownedSites = await Promise.all(
+				ownedSites.map(async (x) => {
+					const site = (await this.db.ref(`/sites/${x.id}`).once('value')).val();
+					return {
+						...x,
+						name: site.name,
+						address: site.address,
+						numberOfVisits: site.numberOfVisits,
+					};
+				})
+			);
+		} else {
+			ownedSites = [];
+		}
+
+		return ownedSites;
 	}
 }
 

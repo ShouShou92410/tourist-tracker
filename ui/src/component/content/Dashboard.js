@@ -12,56 +12,63 @@ import TravellerRecommendation from './traveller/TravellerRecommendation';
 import SiteOwnerRecommendation from './siteOwner/SiteOwnerRecommendation';
 import TravellerHistory from './traveller/TravellerHistory';
 import SiteOwnerHistory from './siteOwner/SiteOwnerHistory';
+import TravellerDefault from './traveller/TravellerDefault';
+import SiteOwnerDefault from './siteOwner/SiteOwnerDefault';
 
 function Dashboard() {
 	const currentUser = useContext(UserContext);
 
 	const getRouteElement = () => {
 		switch (currentUser.type) {
-			case Enumeration.UserType.TRAVELLER:
+			case Enumeration.UserType.TRAVELLER.value:
 				return (
 					<Switch>
-						<Route path="/recommendation">
+						<Route exact path="/recommendation">
 							<TravellerRecommendation />
 						</Route>
-						<Route path="/dataentry">
+						<Route exact path="/dataentry">
 							<TravellerDataEntry />
 						</Route>
-						<Route path="/history">
+						<Route exact path="/history">
 							<TravellerHistory />
 						</Route>
 						<Route path="/">
-							<TravellerDataEntry />
+							<TravellerDefault />
 						</Route>
 					</Switch>
 				);
-			case Enumeration.UserType.SITEOWNER:
+			case Enumeration.UserType.SITEOWNER.value:
 				return (
 					<Switch>
-						<Route path="/recommendation">
+						<Route exact path="/recommendation">
 							<SiteOwnerRecommendation />
 						</Route>
-						<Route path="/dataentry">
+						<Route exact path="/dataentry">
 							<SiteOwnerDataEntry />
 						</Route>
-						<Route path="/history">
+						<Route exact path="/dataentry/:ID">
+							<SiteOwnerDataEntry />
+						</Route>
+						<Route exact path="/history">
 							<SiteOwnerHistory />
 						</Route>
 						<Route path="/">
-							<SiteOwnerDataEntry />
+							<SiteOwnerDefault />
 						</Route>
 					</Switch>
 				);
+			default:
+				return;
 		}
 	};
 
 	return (
 		<Container>
 			<Row>
-				<Col>
+				<Col xs={3}>
 					<SideBar />
 				</Col>
-				<Col>{getRouteElement()}</Col>
+				<Col xs={9}>{getRouteElement()}</Col>
 			</Row>
 		</Container>
 	);

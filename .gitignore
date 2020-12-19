@@ -10,3 +10,4 @@
 ui/.eslintcache
 functions/firebase-debug.log
 functions/test.rest
+ui/debug.log
