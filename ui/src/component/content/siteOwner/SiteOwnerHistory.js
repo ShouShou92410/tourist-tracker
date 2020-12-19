@@ -17,7 +17,7 @@ function SiteOwnerHistory() {
 
 	return (
 		<Container>
-			<h3>Owned Sites</h3>
+			<h3>My Tourist Sites</h3>
 			<CardColumns style={{ columnCount: 2 }}>
 				{sites.map((site) => (
 					<Card key={site.id} as={Link} to={`/dataentry/${site.id}`}>
@@ -29,7 +29,6 @@ function SiteOwnerHistory() {
 							<Card.Title>{site.name}</Card.Title>
 							<Card.Text>
 								<i>{site.address}</i>
-								<br />
 							</Card.Text>
 						</Card.Body>
 						<Card.Footer>
