@@ -12,15 +12,15 @@ const Enumeration = Object.freeze({
 	Amenity: Object.freeze({
 		TOILETS: {
 			label: 'Toilets',
-			value: 1
+			value: 1,
 		},
-		FREE_TOILETRIES: { 
+		FREE_TOILETRIES: {
 			label: 'Free Toiletries',
-			value: 2
-		}
+			value: 2,
+		},
 		PETS: {
-			label: 'Pets Allowed'
-		}
+			label: 'Pets Allowed',
+		},
 		/*VIEW: {
 			label: 'View',
 			value: 1,

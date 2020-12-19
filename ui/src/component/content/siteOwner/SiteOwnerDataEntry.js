@@ -74,7 +74,7 @@ function SiteOwnerDataEntry() {
 	};
 	return (
 		<Container>
-			<h3>{siteId !== 'dataentry' ? 'Edit' : 'Add New'} Tourist Site</h3>
+			<h3>{siteId !== null ? 'Edit' : 'Add New'} Tourist Site</h3>
 
 			<Form onSubmit={handleSubmit}>
 				<Form.Group>

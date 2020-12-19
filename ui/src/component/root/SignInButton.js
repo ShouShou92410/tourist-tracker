@@ -21,7 +21,6 @@ function SignInButton({ setCurrentUser }) {
 			setCurrentUser(null);
 		} else {
 			setCurrentUser(user);
-			console.log(user);
 		}
 		setAuthorizing(false);
 	};
