@@ -125,13 +125,17 @@ class Firebase {
 		return user;
 	}
 
-	async getRecommendation() {
+	// Site owner should provide a site id
+	async getRecommendation(siteId = null) {
 		const currentUser = this.auth.currentUser;
 		const token = await currentUser.getIdToken();
 
 		const res = await axios.get('/recommendation', {
 			headers: {
 				Authorization: btoa(token),
+			},
+			params: {
+				siteId: siteId,
 			},
 		});
 

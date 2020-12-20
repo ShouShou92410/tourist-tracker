@@ -4,7 +4,7 @@ import firebase from '../../../services/Firebase';
 
 function SiteOwnerRecommendation() {
 	const handleSubmit = async () => {
-		const res = await firebase.getRecommendation();
+		const res = await firebase.getRecommendation('siteIdTest');
 		console.log(res);
 	};
 	return (

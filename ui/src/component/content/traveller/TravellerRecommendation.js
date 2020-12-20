@@ -6,7 +6,8 @@ import Container from 'react-bootstrap/esm/Container';
 import firebase from '../../../services/Firebase';
 
 function TravellerRecommendation() {
-	const handleSubmit = async () => {
+	const handleSubmit = async (e) => {
+		e.preventDefault();
 		const res = await firebase.getRecommendation();
 		console.log(res);
 	};
