@@ -26,3 +26,12 @@
 **:warning: Make sure you have set up your own Firebase project, or you are signed in as a contributor for one.**
 1. Navigate terminal the code you want to deploy. (`/ui` or `/functions`)
 2. Run the commend: `npm deploy`
+
+## Contributors
+[![Sean Wen](https://github.com/ShouShou92410.png?size=60)](https://github.com/ShouShou92410)
+<a href="https://github.com/AT41">
+  <img alt="Anthony Tang" src="https://avatars2.githubusercontent.com/u/18402976?v=4" width="60" />
+</a>
+<a href="https://github.com/GurneckJohal">
+  <img alt="Gurneck Johal" src="https://avatars2.githubusercontent.com/u/25068215?&v=4" width="60" />
+</a>
