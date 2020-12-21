@@ -89,14 +89,11 @@ class Recommendations {
      }]
      
 
+     /**
+      * returns form [{amenities: [item1, ...]}]
+      */
     convertSitesToData(sites) {
         sites = this.TEST
-        /*
-        "name":"HENX Inn Hostel",
-        "address":"Address Unknown",
-        "amenities":"3,5,27,28,38,50",
-        "numberOfVisits":99
-        */
         let data = []
         sites.forEach(site => {
             for (let i = 0; i < site.numberOfVisits; i++) {
@@ -117,7 +114,6 @@ class Recommendations {
         }, new Set())).map(el => [el])
 
         initialCombos = initialCombos.filter(combo => this.clearsSupportAndConfidence(combo, data))
-
         console.log(this.apriori(initialCombos, data, this.getUniqueItems(initialCombos)))
     }
 
@@ -131,19 +127,24 @@ class Recommendations {
     /**
      * Assumes itemCombos already fulfills MIN_CONFIDENCE and MIN_SUPPORT
      * @param itemCombos: [[item1, ...]...], each nested array must be the same size
-     * @returns List
      */
-    apriori(itemCombos, data, uniqueItems, test) {
+    apriori(itemCombos, data, uniqueItems) {
         let potentialRelations = []
         itemCombos.forEach(itemCombo1 => {
             uniqueItems.forEach(item=> {
                 let newCombo = Array.from(new Set([...itemCombo1, item]))
                 if (newCombo.length > itemCombo1.length)
-                potentialRelations.push(newCombo)
+                    potentialRelations.push(newCombo)
             })
         });
-
-        let filtered = potentialRelations.filter(itemCombo => this.clearsSupportAndConfidence(itemCombo, data));
+        
+        potentialRelations = potentialRelations.reduce((nonDuplicates, currentItem) => 
+            !nonDuplicates.find(itemCombo => 
+                itemCombo.every(item => !!currentItem.find(c => c == item))
+            ) ? [...nonDuplicates, currentItem] : nonDuplicates, [])
+        
+        let filtered = potentialRelations
+        .filter(itemCombo => this.clearsSupportAndConfidence(itemCombo, data));
         if (filtered.length > 1) {
             return this.apriori(filtered, data, this.getUniqueItems(filtered))
         } else if (filtered.length == 1) {
