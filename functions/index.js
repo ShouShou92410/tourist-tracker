@@ -11,8 +11,8 @@ app.use(cors({ origin: true }));
 admin.initializeApp();
 
 const fpmConstants = {
-  MIN_SUPPORT: 0.6,
-  MIN_CONF: 0.6,
+  MIN_SUPPORT: 0.5,
+  MIN_CONF: 0.5,
 };
 
 class Pointer {
@@ -92,6 +92,8 @@ function checkSupport([key, value], support, filteredOut) {
     return true;
   }
   filteredOut.add(key);
+  //console.log(key);
+  //console.log(value);
   return false;
 }
 
@@ -185,20 +187,26 @@ function generateCombinations(input, n) {
 }
 
 function prune(combo, filteredOut) {
+  //console.log("combo");
   //console.log(combo);
   let subSetList = new Set();
   const comboArray = combo.split(",");
   for (let x = 1; x < comboArray.length; x++) {
     let sizeXSubSet = generateCombinations(comboArray, x);
-    sizeXSubSet.forEach((x) => subSetList.add(x));
+    sizeXSubSet.forEach((y) => subSetList.add(y));
+    //console.log("subsetList");
     //console.log(subSetList);
   }
   let containsInfreqPair = false;
   subSetList.forEach((subSet) => {
+    //console.log("subset");
+    //console.log(subSet);
+    //console.log(`filteredOut.has(subSet): ${filteredOut.has(subSet)}`);
     if (filteredOut.has(subSet)) {
       containsInfreqPair = true;
     }
   });
+  //console.log(containsInfreqPair);
   return containsInfreqPair;
 }
 
@@ -217,9 +225,10 @@ function nSizeSetApriori(
     let combos = generateCombinations(uniqueValues, setSize);
     //console.log("pre pruning");
     //console.log(filteredOut);
+    //console.log(combos);
     if (setSize > 2) {
       combos.forEach((combo) => {
-        if (!prune(combo, filteredOut)) {
+        if (prune(combo, filteredOut)) {
           combos.delete(combo);
         }
       });
@@ -299,12 +308,10 @@ function FPM(input) {
     solutionCombos,
     2
   );
-  //console.log(previousSet);
+  //console.log(solutionCombos);
   //console.log(filteredOut);
   const rules = generateRules(solutionCombos, input);
 }
-
-function filterRule() {}
 
 function generateRules(combos, input) {
   const rules = new Set();
@@ -345,15 +352,19 @@ function generateRules(combos, input) {
       if (subSetSupport > 0) {
         subSetConf = comboSupport / subSetSupport >= fpmConstants.MIN_CONF;
       } else {
-        console.log(subSet);
+        //console.log(subSet);
       }
       if (subSetConf) {
         let comboMinusSubsetString = "";
         comboArray.forEach((element) => {
           if (!subSet.includes(element)) {
-            comboMinusSubsetString += element;
+            comboMinusSubsetString += element + ",";
           }
         });
+        comboMinusSubsetString = comboMinusSubsetString.slice(
+          0,
+          comboMinusSubsetString.length - 1
+        );
         rules.add(`(${subSet})->(${comboMinusSubsetString})`);
       }
     });
@@ -417,7 +428,13 @@ app.get("/recommendation", AuthorizationMiddleware, async (req, res) => {
       [1, 2, 3],
       [2, 3],
     ];
-    FPM(initInput);
+    const initInput3 = [
+      ["Alex", "Ken", "David"],
+      ["Bob", "Ken", "Mike"],
+      ["Alex", "Bob", "Ken", "Mike"],
+      ["Bob", "Mike"],
+    ];
+    FPM(initInput3);
   } else {
     visitedSites = [];
   }
