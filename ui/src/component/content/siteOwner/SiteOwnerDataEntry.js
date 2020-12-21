@@ -45,11 +45,11 @@ function SiteOwnerDataEntry() {
 		};
 
 		const id = window.location.pathname.split('/').pop();
-		if (id !== 'dataentry') {
+		if (id !== 'dataentry' && siteId === null) {
 			fetchData(id);
 			setSiteId(id);
 		}
-	}, []);
+	}, [amenityForm, recommendations, siteId]);
 
 	const handleFormChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
