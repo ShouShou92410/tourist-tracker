@@ -1,6 +1,6 @@
 class Recommendations {
     MIN_CONFIDENCE = 0.5
-    MIN_SUPPORT = 0.5
+    MIN_SUPPORT = 3/5
     constructor() {}
 
     TEST =  [/*{
@@ -54,38 +54,38 @@ class Recommendations {
      {
         "name":"Smart Hyde Park View Hostel",
         "address":"Address Unknown",
-        "amenities":"3,4,16,15,35,43,38,38,50",
+        "amenities":"1,2,4,5,6",
         "numberOfVisits":0
-     },
+     },*/
      {
         "name":"The Birds Nest Guest House",
         "address":"Address Unknown",
-        "amenities":"3,63,64,7,8,5,17,15,18,9,19,20,12,13,65,60,29,35,38,38",
-        "numberOfVisits":0
+        "amenities":"1,2,4,5,6",
+        "numberOfVisits":1
      },
      {
         "name":"Smart Camden Inn Hostel",
         "address":"Address Unknown",
-        "amenities":"3,64,16,15,38,39,38,50",
-        "numberOfVisits":0
+        "amenities":"1,3,4,5,7",
+        "numberOfVisits":1
      },
      {
         "name":"The Old GunPit",
         "address":"Address Unknown",
-        "amenities":"1,2,6",
-        "numberOfVisits":3
+        "amenities":"2,3,5,7",
+        "numberOfVisits":1
      },
      {
         "name":"Generator London",
         "address":"Address Unknown",
-        "amenities":"1,6",
-        "numberOfVisits":3
-     },*/
+        "amenities":"1,5,6,7",
+        "numberOfVisits":1
+     },
      {
         "name":"London Backpackers Youth Hostel",
         "address":"Address Unknown",
-        "amenities":"1,2,3",
-        "numberOfVisits":3
+        "amenities":"1,3,4,7,5",
+        "numberOfVisits":1
      }]
      
 
@@ -118,7 +118,14 @@ class Recommendations {
 
         initialCombos = initialCombos.filter(combo => this.clearsSupportAndConfidence(combo, data))
 
-        console.log(this.apriori(initialCombos, data))
+        console.log(this.apriori(initialCombos, data, this.getUniqueItems(initialCombos)))
+    }
+
+    getUniqueItems(itemCombos) {
+        return Array.from(itemCombos.reduce((items, itemCombo) => {
+            itemCombo.forEach(item => items.add(item))
+            return items
+        }, new Set()))
     }
 
     /**
@@ -126,19 +133,19 @@ class Recommendations {
      * @param itemCombos: [[item1, ...]...], each nested array must be the same size
      * @returns List
      */
-    apriori(itemCombos, data) {
+    apriori(itemCombos, data, uniqueItems, test) {
         let potentialRelations = []
         itemCombos.forEach(itemCombo1 => {
-            itemCombos.forEach(itemCombo2 => {
-                if (itemCombo1 != itemCombo2) {
-                    potentialRelations.push(Array.from(new Set([...itemCombo1, ...itemCombo2])))
-                }
+            uniqueItems.forEach(item=> {
+                let newCombo = Array.from(new Set([...itemCombo1, item]))
+                if (newCombo.length > itemCombo1.length)
+                potentialRelations.push(newCombo)
             })
         });
 
         let filtered = potentialRelations.filter(itemCombo => this.clearsSupportAndConfidence(itemCombo, data));
         if (filtered.length > 1) {
-            return this.apriori(filtered, data)
+            return this.apriori(filtered, data, this.getUniqueItems(filtered))
         } else if (filtered.length == 1) {
             return filtered
         } else {
