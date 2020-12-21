@@ -167,7 +167,6 @@ class Firebase {
 		} else {
 			visitedSites = [];
 		}
-
 		return visitedSites;
 	}
 
@@ -195,6 +194,50 @@ class Firebase {
 		}
 
 		return ownedSites;
+	}
+	async convertRecommendationOutput(rawRecs) {
+		const currentUser = this.auth.currentUser;
+		let recommendations = [];
+
+		if (rawRecs != null) {
+			recommendations = await Promise.all(
+				rawRecs.map(async (rawRec, i) => {
+					let previouslyVisitedObject = await Promise.all(
+						rawRec.previouslyVisited.map(async (prevSiteId) => {
+							//console.log(prevSiteId);
+							const site = (
+								await this.db.ref(`/sites/${prevSiteId}`).once('value')
+							).val();
+							return {
+								id: prevSiteId,
+								name: site.name,
+							};
+						})
+					);
+					//console.log(previouslyVisitedObject);
+					let recommendedSitesObjects = await Promise.all(
+						rawRec.recommendation.map(async (recSiteId) => {
+							const site = (
+								await this.db.ref(`/sites/${recSiteId}`).once('value')
+							).val();
+							return {
+								recID: i,
+								id: recSiteId,
+								name: site.name,
+								address: site.address,
+								previouslyVisited: previouslyVisitedObject,
+							};
+						})
+					);
+					//console.log(recommendedSitesObjects);
+					return recommendedSitesObjects;
+				})
+			);
+		}
+		//console.log(recommendations);
+		const flattened = [].concat.apply([], recommendations);
+		//console.log(flattened);
+		return flattened;
 	}
 }
 
