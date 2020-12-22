@@ -17,51 +17,34 @@ function TravellerRecommendation() {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		const res = await firebase.getRecommendation();
-		//console.log(res);
-		/*const exampleRecommendation = [
-			{
-				previouslyVisited: ['-MOite0SsPDh4MKsDJx0', '-MOnEb1BUGWHXo26ziFP'],
-				recommendation: ['-MOnK9CXgBaexcACfFgq', '-MOnTauTXrkV1VwP5-9w'],
-			},
-			{
-				previouslyVisited: ['-MOite0SsPDh4MKsDJx0', '-MOnEb1BUGWHXo26ziFP'],
-				recommendation: ['-MOnK9CXgBaexcACfFgq', '-MP2fsk9JvGR47zCDEA1'],
-			},
-		];*/
-		const recommendedSites = await firebase.convertRecommendationOutput(res);
-		/*const testData = [
-			{
-				address: 'none',
-				name: 'example1',
-				id: '1',
-				previouslyVisited: [
-					{
-						id: 'id1',
-						name: 'siteName',
-					},
-					{
-						id: 'id2',
-						name: 'siteName2',
-					},
+		/*const exampleRecommendation = {
+			highestConfidence: {
+				suggestion: [
+					'-MOite0SsPDh4MKsDJx0',
+					'-MOnCvxrlcK2MZHyrTeu',
+					'-MOnEb1BUGWHXo26ziFP',
 				],
+				value: 1,
 			},
-			{
-				address: 'none',
-				name: 'example2',
-				id: '2',
-				previouslyVisited: [
-					{
-						id: 'id1',
-						name: 'siteName',
-					},
-					{
-						id: 'id2',
-						name: 'siteName2',
-					},
+			highestSupport: {
+				suggestion: [
+					'-MOnGyXbvVg--B4r8x3j',
+					'-MOnK9CXgBaexcACfFgq',
+					'-MOnTauTXrkV1VwP5-9w',
 				],
+				value: 0.3333333333333333,
 			},
-		];
-		setSites(testData);*/
+			highestSupportConfidence: {
+				suggestion: [
+					'-MOxPtTFxa8IoLLTUVP7',
+					'-MOxoRHmIh0hHru5dAJ2',
+					'-MP2M1iJ6jMf6O39FneA',
+				],
+				value: 0.3333333333333333,
+			},
+		};*/
+		const recommendedSites = await firebase.convertRecommendationOutput2(res);
+		//console.log(recommendedSites);
 		setSites(recommendedSites);
 	};
 	return (
@@ -78,7 +61,10 @@ function TravellerRecommendation() {
 			<br />
 			<CardColumns style={{ columnCount: 2 }}>
 				{sites.map((site) => (
-					<Card key={`Rec${site.recID}:${site.id}`}>
+					<Card key={site.id}>
+						<Card.Header>
+							<small className="text-muted">{site.type}</small>
+						</Card.Header>
 						<Card.Img
 							variant="top"
 							src={`${process.env.PUBLIC_URL}/pexels-beach-tropical-scene-free-stock-photo.jpg`}
@@ -91,30 +77,9 @@ function TravellerRecommendation() {
 							</Card.Text>
 						</Card.Body>
 						<Card.Footer>
-							<OverlayTrigger
-								key="top"
-								placement="top"
-								overlay={
-									<Popover id={`popover-positioned-top`}>
-										<Popover.Title as="h3">
-											Recommended because you visited:
-										</Popover.Title>
-										<Popover.Content>
-											<ListGroup variant="flush">
-												{site.previouslyVisited.map((visitedSite) => (
-													<ListGroup.Item key={visitedSite.id}>
-														{visitedSite.name}
-													</ListGroup.Item>
-												))}
-											</ListGroup>
-										</Popover.Content>
-									</Popover>
-								}
-							>
-								<Button variant="secondary" size="sm" block>
-									Recommendation Info
-								</Button>
-							</OverlayTrigger>
+							<small className="text-muted">
+								This site has been visited <b>{site.numberOfVisits}</b> times.
+							</small>
 						</Card.Footer>
 					</Card>
 				))}
