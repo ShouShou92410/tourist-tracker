@@ -165,7 +165,7 @@ class Firebase {
 		let visitedSites = (
 			await this.db.ref(`/visitedSites/${currentUser.uid}`).once('value')
 		).val();
-		if (visitedSites != null) {
+		if (visitedSites !== null) {
 			visitedSites = Object.entries(visitedSites).map(([key, value]) => ({
 				id: key,
 				numberOfVisits: value.numberOfVisits,
@@ -191,7 +191,7 @@ class Firebase {
 	async getOwnedSites() {
 		const currentUser = this.auth.currentUser;
 		let ownedSites = (await this.db.ref(`/ownedSites/${currentUser.uid}`).once('value')).val();
-		if (ownedSites != null) {
+		if (ownedSites !== null) {
 			ownedSites = Object.entries(ownedSites).map(([key, value]) => ({
 				id: key,
 			}));
@@ -217,7 +217,7 @@ class Firebase {
 		const currentUser = this.auth.currentUser;
 		let recommendations = [];
 
-		if (rawRecs != null) {
+		if (rawRecs !== null) {
 			recommendations = await Promise.all(
 				rawRecs.map(async (rawRec, i) => {
 					let previouslyVisitedObject = await Promise.all(
@@ -257,61 +257,55 @@ class Firebase {
 		//console.log(flattened);
 		return flattened;
 	}
+	async produceSiteObjectFromRec(suggestion, typeString) {
+		let obj = await Promise.all(
+			suggestion.map(async (siteId) => {
+				const site = (await this.db.ref(`/sites/${siteId}`).once('value')).val();
+				return {
+					id: siteId,
+					name: site.name,
+					address: site.address,
+					numberOfVisits: site.numberOfVisits,
+					type: typeString,
+				};
+			})
+		);
+		return obj;
+	}
 	async convertRecommendationOutput2(rawRecs) {
 		const currentUser = this.auth.currentUser;
 		let recommendations = [];
-		if (rawRecs != null) {
-			if (rawRecs.highestConfidence != null) {
+		if (rawRecs !== null) {
+			if (rawRecs.highestConfidence !== null) {
 				let highestConfidenceObject = await Promise.all(
-					rawRecs.highestConfidence.suggestion.map(async (siteId) => {
-						const site = (await this.db.ref(`/sites/${siteId}`).once('value')).val();
-						return {
-							id: siteId,
-							name: site.name,
-							address: site.address,
-							numberOfVisits: site.numberOfVisits,
-							type: 'A Highest Confidence Site',
-						};
-					})
+					await this.produceSiteObjectFromRec(
+						rawRecs.highestConfidence.suggestion,
+						'A Highest Confidence Site'
+					)
 				);
-				//console.log(highestConfidenceObject);
+
 				recommendations.push(highestConfidenceObject);
 			}
-			if (rawRecs.highestSupport != null) {
+			if (rawRecs.highestSupport !== null) {
 				let highestSupportObject = await Promise.all(
-					rawRecs.highestSupport.suggestion.map(async (siteId) => {
-						const site = (await this.db.ref(`/sites/${siteId}`).once('value')).val();
-						return {
-							id: siteId,
-							name: site.name,
-							address: site.address,
-							numberOfVisits: site.numberOfVisits,
-							type: 'A Highest Support Site',
-						};
-					})
+					await this.produceSiteObjectFromRec(
+						rawRecs.highestSupport.suggestion,
+						'A Highest Support Site'
+					)
 				);
-				//console.log(highestSupportObject);
 				recommendations.push(highestSupportObject);
 			}
-			if (rawRecs.highestSupportConfidence != null) {
+			if (rawRecs.highestSupportConfidence !== null) {
 				let highestSupportConfidenceObject = await Promise.all(
-					rawRecs.highestSupportConfidence.suggestion.map(async (siteId) => {
-						const site = (await this.db.ref(`/sites/${siteId}`).once('value')).val();
-						return {
-							id: siteId,
-							name: site.name,
-							address: site.address,
-							numberOfVisits: site.numberOfVisits,
-							type: 'A Highest Support-Confidence Site',
-						};
-					})
+					await this.produceSiteObjectFromRec(
+						rawRecs.highestSupportConfidence.suggestion,
+						'A Highest Support-Confidence Site'
+					)
 				);
-				//console.log(highestSupportConfidenceObject);
 				recommendations.push(highestSupportConfidenceObject);
 			}
 			recommendations = [].concat.apply([], recommendations);
 		}
-		//console.log(recommendations);
 		return recommendations;
 	}
 }
