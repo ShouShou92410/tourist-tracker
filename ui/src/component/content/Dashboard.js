@@ -63,7 +63,7 @@ function Dashboard() {
 	};
 
 	return (
-		<Container>
+		<Container className="pt-2 pb-2">
 			<Row>
 				<Col xs={3}>
 					<SideBar />
