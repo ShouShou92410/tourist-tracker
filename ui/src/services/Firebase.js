@@ -257,6 +257,69 @@ class Firebase {
 		//console.log(flattened);
 		return flattened;
 	}
+	async convertRecommendationOutput2(rawRecs) {
+		const currentUser = this.auth.currentUser;
+		let recommendations = [];
+		if (rawRecs != null) {
+			if (rawRecs.highestConfidence != null) {
+				let highestConfidenceObject = await Promise.all(
+					rawRecs.highestConfidence.suggestion.map(async (siteId) => {
+						const site = (
+							await (await this.db.ref(`/sites/${siteId}`)).once('value')
+						).val();
+						return {
+							id: siteId,
+							name: site.name,
+							address: site.address,
+							numberOfVisits: site.numberOfVisits,
+							type: 'Highest Confidence Site',
+						};
+					})
+				);
+				//console.log(highestConfidenceObject);
+				recommendations.push(highestConfidenceObject);
+			}
+			if (rawRecs.highestSupport != null) {
+				let highestSupportObject = await Promise.all(
+					rawRecs.highestSupport.suggestion.map(async (siteId) => {
+						const site = (
+							await (await this.db.ref(`/sites/${siteId}`)).once('value')
+						).val();
+						return {
+							id: siteId,
+							name: site.name,
+							address: site.address,
+							numberOfVisits: site.numberOfVisits,
+							type: 'Highest Support Site',
+						};
+					})
+				);
+				//console.log(highestSupportObject);
+				recommendations.push(highestSupportObject);
+			}
+			if (rawRecs.highestSupportConfidence != null) {
+				let highestSupportConfidenceObject = await Promise.all(
+					rawRecs.highestSupportConfidence.suggestion.map(async (siteId) => {
+						const site = (
+							await (await this.db.ref(`/sites/${siteId}`)).once('value')
+						).val();
+						return {
+							id: siteId,
+							name: site.name,
+							address: site.address,
+							numberOfVisits: site.numberOfVisits,
+							type: 'Highest Support-Confidence Site',
+						};
+					})
+				);
+				//console.log(highestSupportConfidenceObject);
+				recommendations.push(highestSupportConfidenceObject);
+			}
+			recommendations = [].concat.apply([], recommendations);
+		}
+		//console.log(recommendations);
+		return recommendations;
+	}
 }
 
 export default new Firebase();
