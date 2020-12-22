@@ -8,6 +8,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
+import Spinnger from 'react-bootstrap/Spinner';
 import firebase from '../../../services/Firebase';
 import Enumeration from '../../../utility/Enumeration';
 
@@ -15,6 +16,7 @@ function SiteOwnerRecommendation() {
 	const [sites, setSites] = useState([]);
 	const [siteId, setSiteId] = useState(null);
 	const [recommendations, setRecommendations] = useState(null);
+	const [submitting, setSubmitting] = useState(false);
 
 	useEffect(() => {
 		const handleWait = async () => {
@@ -26,6 +28,7 @@ function SiteOwnerRecommendation() {
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
+		setSubmitting(true);
 
 		const formData = new FormData(e.target);
 		const recommendationForm = Object.fromEntries(formData.entries());
@@ -41,6 +44,7 @@ function SiteOwnerRecommendation() {
 		}));
 		setRecommendations(newRecommendations);
 		setSiteId(recommendationForm.siteToImprove);
+		setSubmitting(false);
 	};
 	return (
 		<Container>
@@ -59,7 +63,13 @@ function SiteOwnerRecommendation() {
 								))}
 							</Form.Control>
 						</Form.Group>
-						<Button variant="primary" type="submit" className="float-right">
+						<Button
+							variant="primary"
+							type="submit"
+							className="float-right"
+							disabled={submitting}
+						>
+							{submitting && <Spinnger animation="border" size="sm" />}
 							Submit
 						</Button>
 					</Form>
