@@ -1,4 +1,5 @@
 import React, { useState, useContext } from 'react';
+import { useHistory } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Spinnger from 'react-bootstrap/Spinner';
@@ -8,6 +9,7 @@ import RegistrationModal from './RegistrationModal';
 import Enumeration from '../../utility/Enumeration';
 
 function SignInButton({ setCurrentUser }) {
+	const history = useHistory();
 	const currentUser = useContext(UserContext);
 	const [authorizing, setAuthorizing] = useState(false);
 	const [showRegistrationModal, setShowRegistrationModal] = useState(false);
@@ -49,6 +51,7 @@ function SignInButton({ setCurrentUser }) {
 			.signOut()
 			.then((res) => {
 				handleSetCurrentUser(null);
+				history.push('/');
 			})
 			.catch((err) => {
 				setAuthorizing(false);
