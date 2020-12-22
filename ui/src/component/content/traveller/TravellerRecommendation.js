@@ -65,7 +65,7 @@ function TravellerRecommendation() {
 	};
 	return (
 		<Container>
-			<h3>TravellerRecommendation</h3>
+			<h3>Tourist Site Recommendation</h3>
 
 			<Form onSubmit={handleSubmit}>
 				<Button variant="primary" type="submit" block>
