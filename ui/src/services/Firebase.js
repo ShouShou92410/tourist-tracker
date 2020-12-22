@@ -1,6 +1,7 @@
 import app from 'firebase/app';
 import 'firebase/database';
 import 'firebase/auth';
+import Enumeration from '../utility/Enumeration';
 
 import axios from 'axios';
 
@@ -39,6 +40,23 @@ class Firebase {
 
 	signInWithGoogle() {
 		return this.auth.signInWithPopup(this.provider);
+	}
+
+	signInWithTester(userType) {
+		switch (userType) {
+			case Enumeration.UserType.TRAVELLER.value:
+				return this.auth.signInWithEmailAndPassword(
+					process.env.REACT_APP_FIREBASE_TRAVELLER_TESTER_EMAIL,
+					process.env.REACT_APP_FIREBASE_TESTER_PASSWORD
+				);
+			case Enumeration.UserType.SITEOWNER.value:
+				return this.auth.signInWithEmailAndPassword(
+					process.env.REACT_APP_FIREBASE_SITEOWNER_TESTER_EMAIL,
+					process.env.REACT_APP_FIREBASE_TESTER_PASSWORD
+				);
+			default:
+				break;
+		}
 	}
 
 	signOut() {
@@ -167,7 +185,6 @@ class Firebase {
 		} else {
 			visitedSites = [];
 		}
-
 		return visitedSites;
 	}
 
@@ -195,6 +212,50 @@ class Firebase {
 		}
 
 		return ownedSites;
+	}
+	async convertRecommendationOutput(rawRecs) {
+		const currentUser = this.auth.currentUser;
+		let recommendations = [];
+
+		if (rawRecs != null) {
+			recommendations = await Promise.all(
+				rawRecs.map(async (rawRec, i) => {
+					let previouslyVisitedObject = await Promise.all(
+						rawRec.previouslyVisited.map(async (prevSiteId) => {
+							//console.log(prevSiteId);
+							const site = (
+								await this.db.ref(`/sites/${prevSiteId}`).once('value')
+							).val();
+							return {
+								id: prevSiteId,
+								name: site.name,
+							};
+						})
+					);
+					//console.log(previouslyVisitedObject);
+					let recommendedSitesObjects = await Promise.all(
+						rawRec.recommendation.map(async (recSiteId) => {
+							const site = (
+								await this.db.ref(`/sites/${recSiteId}`).once('value')
+							).val();
+							return {
+								recID: i,
+								id: recSiteId,
+								name: site.name,
+								address: site.address,
+								previouslyVisited: previouslyVisitedObject,
+							};
+						})
+					);
+					//console.log(recommendedSitesObjects);
+					return recommendedSitesObjects;
+				})
+			);
+		}
+		//console.log(recommendations);
+		const flattened = [].concat.apply([], recommendations);
+		//console.log(flattened);
+		return flattened;
 	}
 }
 
