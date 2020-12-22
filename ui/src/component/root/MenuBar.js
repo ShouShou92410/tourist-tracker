@@ -8,6 +8,13 @@ function MenuBar({ setCurrentUser }) {
 	return (
 		<Navbar bg="dark" variant="dark" className="sticky-nav">
 			<Navbar.Brand as={Link} to="/">
+				<img
+					alt=""
+					src={`${process.env.PUBLIC_URL}/favicon.ico`}
+					width="30"
+					height="30"
+					className="d-inline-block align-top"
+				/>{' '}
 				Home
 			</Navbar.Brand>
 			<Navbar.Collapse className="justify-content-end">
