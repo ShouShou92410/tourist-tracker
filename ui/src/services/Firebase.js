@@ -270,7 +270,7 @@ class Firebase {
 							name: site.name,
 							address: site.address,
 							numberOfVisits: site.numberOfVisits,
-							type: 'Highest Confidence Site(s)',
+							type: 'A Highest Confidence Site',
 						};
 					})
 				);
@@ -286,7 +286,7 @@ class Firebase {
 							name: site.name,
 							address: site.address,
 							numberOfVisits: site.numberOfVisits,
-							type: 'Highest Support Site(s)',
+							type: 'A Highest Support Site',
 						};
 					})
 				);
@@ -302,7 +302,7 @@ class Firebase {
 							name: site.name,
 							address: site.address,
 							numberOfVisits: site.numberOfVisits,
-							type: 'Highest Support-Confidence Site(s)',
+							type: 'A Highest Support-Confidence Site',
 						};
 					})
 				);
