@@ -9,15 +9,16 @@ import CardColumns from 'react-bootstrap/CardColumns';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Popover from 'react-bootstrap/Popover';
 import ListGroup from 'react-bootstrap/ListGroup';
+import Firebase from '../../../services/Firebase';
 
 function TravellerRecommendation() {
 	const [sites, setSites] = useState([]);
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
-		//const res = await firebase.getRecommendation();
+		const res = await firebase.getRecommendation();
 		//console.log(res);
-		const exampleRecommendation = [
+		/*const exampleRecommendation = [
 			{
 				previouslyVisited: ['-MOite0SsPDh4MKsDJx0', '-MOnEb1BUGWHXo26ziFP'],
 				recommendation: ['-MOnK9CXgBaexcACfFgq', '-MOnTauTXrkV1VwP5-9w'],
@@ -26,8 +27,8 @@ function TravellerRecommendation() {
 				previouslyVisited: ['-MOite0SsPDh4MKsDJx0', '-MOnEb1BUGWHXo26ziFP'],
 				recommendation: ['-MOnK9CXgBaexcACfFgq', '-MP2fsk9JvGR47zCDEA1'],
 			},
-		];
-		const recommendedSites = await firebase.convertRecommendationOutput(exampleRecommendation);
+		];*/
+		const recommendedSites = await firebase.convertRecommendationOutput(res);
 		/*const testData = [
 			{
 				address: 'none',
