@@ -16,8 +16,8 @@ function TravellerRecommendation() {
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
-		//const res = await firebase.getRecommendation();
-		const exampleRecommendation = {
+		const res = await firebase.getRecommendation();
+		/*const exampleRecommendation = {
 			highestConfidence: {
 				suggestion: [
 					'-MOite0SsPDh4MKsDJx0',
@@ -42,8 +42,8 @@ function TravellerRecommendation() {
 				],
 				value: 0.3333333333333333,
 			},
-		};
-		const recommendedSites = await firebase.convertRecommendationOutput2(exampleRecommendation);
+		};*/
+		const recommendedSites = await firebase.convertRecommendationOutput2(res);
 		//console.log(recommendedSites);
 		setSites(recommendedSites);
 	};
