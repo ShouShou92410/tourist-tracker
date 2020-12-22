@@ -1,0 +1,22 @@
+[
+        
+            {"address": "Address 0", 
+            "amenities": "1,2,3,4",
+            "name": "MySite0",
+            "numberOfVisits": 3}
+        ,
+
+        
+            {"address": "Address 1", 
+            "amenities": "1,2,3,4",
+            "name": "MySite1",
+            "numberOfVisits": 3}
+        ,
+
+        
+            {"address": "Address 2", 
+            "amenities": "1,2,3,4",
+            "name": "MySite2",
+            "numberOfVisits": 3}
+        
+]

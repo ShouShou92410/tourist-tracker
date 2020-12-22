@@ -30,11 +30,14 @@ function SiteOwnerRecommendation() {
 		const formData = new FormData(e.target);
 		const recommendationForm = Object.fromEntries(formData.entries());
 
-		const res = [
+		/*const res = [
 			{ amenitiesToAdd: '1,2,3', newVisits: 45 },
 			{ amenitiesToAdd: '1,2,5', newVisits: 20 },
 			{ amenitiesToAdd: '1,5,10', newVisits: 36 },
-		]; //await firebase.getRecommendation(recommendationForm.siteToImprove);
+		];*/
+		const res = await firebase.getRecommendation(recommendationForm.siteToImprove);
+
+		console.log(res);
 		const amenityArray = Object.values(Enumeration.Amenity);
 		const newRecommendations = res.map((r) => ({
 			...r,
@@ -44,8 +47,6 @@ function SiteOwnerRecommendation() {
 		}));
 		setRecommendations(newRecommendations);
 		setSiteId(recommendationForm.siteToImprove);
-
-		console.log(newRecommendations);
 	};
 	return (
 		<Container>
