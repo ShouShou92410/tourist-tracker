@@ -9,6 +9,7 @@ import CardColumns from 'react-bootstrap/CardColumns';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Popover from 'react-bootstrap/Popover';
 import ListGroup from 'react-bootstrap/ListGroup';
+import Firebase from '../../../services/Firebase';
 
 function TravellerRecommendation() {
 	const [sites, setSites] = useState([]);
