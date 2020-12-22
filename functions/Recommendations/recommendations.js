@@ -1,5 +1,5 @@
 class Recommendations {
-    MIN_SUPPORT = 0 // TODO Honestly should be fluid but let's have it as a constant for now / for ease
+    MIN_SUPPORT = 0.01 // TODO Honestly should be fluid but let's have it as a constant for now / for ease
     constructor() {}
 
     /**
@@ -193,19 +193,20 @@ class OwnerRecommendations extends Recommendations {
         let allCombos = this.findRelations(data)
 
         let leastNewAmenities, bestSupportConfidence
-        let lowestMatch = 9999
+        let lowestMatch = 9999, highestMatchSupportConfidence = -1
         let currentSupportConfidence = -1
         allCombos.forEach(sizedCombos => {
             sizedCombos.forEach(combo => {
                 let differences = this.findDifferences(combo, ownerSite)
-                if (differences.length < lowestMatch && differences.length != 0) {
-                    lowestMatch = differences.length
-                    leastNewAmenities = combo
-                } else if (differences.length != 0) {
+                if (differences.length != 0) {
                     let support = this.calculateSupport(combo, data)
                     let confidence = this.calculateConfidence(combo,differences,data)
-
-                    if (support * confidence > currentSupportConfidence) {
+                    if ((differences.length < lowestMatch && differences.length != 0) 
+                        || (differences.length === lowestMatch && highestMatchSupportConfidence < support * confidence)) {
+                        lowestMatch = differences.length
+                        leastNewAmenities = combo
+                        highestMatchSupportConfidence = support * confidence
+                    } else if (support * confidence > currentSupportConfidence) {
                         currentSupportConfidence = support * confidence
                         bestSupportConfidence = {x: combo, y: differences}
                     }

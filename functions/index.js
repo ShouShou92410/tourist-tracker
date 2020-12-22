@@ -57,13 +57,13 @@ app.get("/recommendation", AuthorizationMiddleware, async (req, res) => {
       .ref(`/visitedSites`)
       .once("value")).val();
 
-      console.log(currentUser.uid)
-
       let userVisits = (await admin
       .database()
       .ref(`/visitedSites/${currentUser.uid}`)
       .once("value")).val();
       userVisits = Object.keys(userVisits)
+
+      console.log(currentUser.uid)
 
       let recommendations = travellerRecs.getTravellerRecommendations(allVisits, userVisits)
 
