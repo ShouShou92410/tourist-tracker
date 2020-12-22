@@ -1,6 +1,7 @@
 import app from 'firebase/app';
 import 'firebase/database';
 import 'firebase/auth';
+import Enumeration from '../utility/Enumeration';
 
 import axios from 'axios';
 
@@ -39,6 +40,23 @@ class Firebase {
 
 	signInWithGoogle() {
 		return this.auth.signInWithPopup(this.provider);
+	}
+
+	signInWithTester(userType) {
+		switch (userType) {
+			case Enumeration.UserType.TRAVELLER.value:
+				return this.auth.signInWithEmailAndPassword(
+					process.env.REACT_APP_FIREBASE_TRAVELLER_TESTER_EMAIL,
+					process.env.REACT_APP_FIREBASE_TESTER_PASSWORD
+				);
+			case Enumeration.UserType.SITEOWNER.value:
+				return this.auth.signInWithEmailAndPassword(
+					process.env.REACT_APP_FIREBASE_SITEOWNER_TESTER_EMAIL,
+					process.env.REACT_APP_FIREBASE_TESTER_PASSWORD
+				);
+			default:
+				break;
+		}
 	}
 
 	signOut() {
