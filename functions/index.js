@@ -29,7 +29,7 @@ function AuthorizationMiddleware(req, res, next) {
 }
 
 // Add 'recommendation' after '/' when testing the express server hosted locally
-app.get("/recommendation", AuthorizationMiddleware, async (req, res) => { // UNDO
+app.get("/recommendation", AuthorizationMiddleware, async (req, res) => {
   const currentUser = res.locals.currentUser;
 
   let dbUser = await admin
@@ -49,6 +49,8 @@ app.get("/recommendation", AuthorizationMiddleware, async (req, res) => { // UND
       break;
     case 2:
       result.message = "Generate recommendation for site owner";
+      const siteId = req.query.siteId;
+      console.log(siteId);
       break;
   }
 
@@ -56,8 +58,8 @@ app.get("/recommendation", AuthorizationMiddleware, async (req, res) => { // UND
 });
 
 // Used to test the express server hosted locally
- app.listen(8000, () => {
-   console.log("Server started at http://localhost:8000/");
- });
+app.listen(8000, () => {
+  console.log("Server started at http://localhost:8000/");
+});
 
 exports.recommendation = functions.https.onRequest(app);

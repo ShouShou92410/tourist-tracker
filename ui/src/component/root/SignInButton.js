@@ -1,12 +1,15 @@
 import React, { useState, useContext } from 'react';
+import { useHistory } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Spinnger from 'react-bootstrap/Spinner';
 import firebase from '../../services/Firebase';
 import { UserContext } from '../../utility/Context';
 import RegistrationModal from './RegistrationModal';
+import Enumeration from '../../utility/Enumeration';
 
 function SignInButton({ setCurrentUser }) {
+	const history = useHistory();
 	const currentUser = useContext(UserContext);
 	const [authorizing, setAuthorizing] = useState(false);
 	const [showRegistrationModal, setShowRegistrationModal] = useState(false);
@@ -48,6 +51,21 @@ function SignInButton({ setCurrentUser }) {
 			.signOut()
 			.then((res) => {
 				handleSetCurrentUser(null);
+				history.push('/');
+			})
+			.catch((err) => {
+				setAuthorizing(false);
+				console.error(err);
+			});
+	};
+
+	const handleTesterSignIn = (type) => {
+		setAuthorizing(true);
+		firebase
+			.signInWithTester(type)
+			.then(async (res) => {
+				const user = await firebase.getUser(); // do await here
+				handleSetCurrentUser(user);
 			})
 			.catch((err) => {
 				setAuthorizing(false);
@@ -62,13 +80,42 @@ function SignInButton({ setCurrentUser }) {
 				handleClose={handleClose}
 				handleSetCurrentUser={handleSetCurrentUser}
 			/>
-			{currentUser === null ? (
-				<Button size="sm" variant="primary" disabled={authorizing} onClick={handleSignIn}>
-					{authorizing && <Spinnger animation="border" size="sm" />}
-					Sign In
-				</Button>
-			) : (
-				<NavDropdown title={currentUser.name}>
+			<NavDropdown title={currentUser === null ? 'Sign In' : currentUser.name}>
+				{currentUser === null ? (
+					<>
+						<NavDropdown.Item
+							as={Button}
+							size="sm"
+							variant="primary"
+							disabled={authorizing}
+							onClick={handleSignIn}
+						>
+							{authorizing && <Spinnger animation="border" size="sm" />}
+							Google Account
+						</NavDropdown.Item>
+						<NavDropdown.Divider />
+						<NavDropdown.Item
+							as={Button}
+							size="sm"
+							variant="primary"
+							disabled={authorizing}
+							onClick={() => handleTesterSignIn(Enumeration.UserType.TRAVELLER.value)}
+						>
+							{authorizing && <Spinnger animation="border" size="sm" />}
+							Traveller Tester
+						</NavDropdown.Item>
+						<NavDropdown.Item
+							as={Button}
+							size="sm"
+							variant="primary"
+							disabled={authorizing}
+							onClick={() => handleTesterSignIn(Enumeration.UserType.SITEOWNER.value)}
+						>
+							{authorizing && <Spinnger animation="border" size="sm" />}
+							Site Owner Tester
+						</NavDropdown.Item>
+					</>
+				) : (
 					<NavDropdown.Item
 						as={Button}
 						size="sm"
@@ -79,8 +126,8 @@ function SignInButton({ setCurrentUser }) {
 						{authorizing && <Spinnger animation="border" size="sm" />}
 						Sign Out
 					</NavDropdown.Item>
-				</NavDropdown>
-			)}
+				)}
+			</NavDropdown>
 		</>
 	);
 }
