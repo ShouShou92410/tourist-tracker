@@ -12,7 +12,6 @@ class Recommendations {
             return set
         }, new Set())).map(el => [el])
         initialCombos = initialCombos.filter(combo => this.clearsSupport(combo, data))
-        console.log(initialCombos)
         
        return this.apriori(initialCombos, data, this.getUniqueItems(initialCombos))
     }
@@ -101,6 +100,11 @@ class Recommendations {
      * returns itemCombo-itemCombo2
      */
     findDifferences(itemCombo, itemCombo2) {
+        if (itemCombo == null) {
+            return itemCombo2
+        } else if (itemCombo2 == null) {
+            return itemCombo
+        }
         return itemCombo.reduce((differences, item) => {
             if (!itemCombo2.find(i => i == item)) {
                 differences.push(item)
@@ -116,13 +120,14 @@ class TravellerRecommendations extends Recommendations {
     convertVisitsToData(visitors) {
         let data = []
         Object.keys(visitors).forEach(visitorKey => {
-            data.push({amenities: visitors[visitorKey]})
+            data.push({amenities: Object.keys(visitors[visitorKey])})
         })
         return data
     }
 
     getTravellerRecommendations(rawFirebaseData, userVisitedPlaces) {
         let data = this.convertVisitsToData(rawFirebaseData)
+        console.log(userVisitedPlaces)
         let allCombos = this.findRelations(data)
 
         let highestConfidence = {suggestion: "", value: -1} // Most likely to like
@@ -148,6 +153,13 @@ class TravellerRecommendations extends Recommendations {
                 }
             })
         })
+
+        if (this.findDifferences(highestConfidence?.suggestion, highestSupport?.suggestion).length === 0) {
+            highestSupport = null
+        }
+        if (this.findDifferences(highestSupport?.suggestion, highestSupportConfidence?.suggestion).length === 0 || this.findDifferences(highestSupportConfidence?.suggestion, highestConfidence?.suggestion).length === 0) {
+            highestSupportConfidence = null
+        }
 
         return {highestConfidence: highestConfidence, highestSupport: highestSupport, highestSupportConfidence: highestSupportConfidence}
     }
@@ -179,8 +191,6 @@ class OwnerRecommendations extends Recommendations {
     getOwnerRecommendations(rawFirebaseData, ownerSite) {
         let data = this.convertSitesToData(rawFirebaseData)
         let allCombos = this.findRelations(data)
-
-        console.log(allCombos)
 
         let leastNewAmenities, bestSupportConfidence
         let lowestMatch = 9999
