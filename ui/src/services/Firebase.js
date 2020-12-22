@@ -214,7 +214,6 @@ class Firebase {
 		return ownedSites;
 	}
 	async convertRecommendationOutput(rawRecs) {
-		const currentUser = this.auth.currentUser;
 		let recommendations = [];
 
 		if (rawRecs !== null) {
@@ -222,7 +221,6 @@ class Firebase {
 				rawRecs.map(async (rawRec, i) => {
 					let previouslyVisitedObject = await Promise.all(
 						rawRec.previouslyVisited.map(async (prevSiteId) => {
-							//console.log(prevSiteId);
 							const site = (
 								await this.db.ref(`/sites/${prevSiteId}`).once('value')
 							).val();
@@ -232,7 +230,7 @@ class Firebase {
 							};
 						})
 					);
-					//console.log(previouslyVisitedObject);
+
 					let recommendedSitesObjects = await Promise.all(
 						rawRec.recommendation.map(async (recSiteId) => {
 							const site = (
@@ -247,14 +245,14 @@ class Firebase {
 							};
 						})
 					);
-					//console.log(recommendedSitesObjects);
+
 					return recommendedSitesObjects;
 				})
 			);
 		}
-		//console.log(recommendations);
+
 		const flattened = [].concat.apply([], recommendations);
-		//console.log(flattened);
+
 		return flattened;
 	}
 	async produceSiteObjectFromRec(suggestion, typeString) {
@@ -273,7 +271,6 @@ class Firebase {
 		return obj;
 	}
 	async convertRecommendationOutput2(rawRecs) {
-		const currentUser = this.auth.currentUser;
 		let recommendations = [];
 		if (rawRecs !== null) {
 			if (rawRecs.highestConfidence !== null) {
