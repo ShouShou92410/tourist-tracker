@@ -32,7 +32,7 @@ function AuthorizationMiddleware(req, res, next) {
 
 // Add 'recommendation' after '/' when testing the express server hosted locally
 // Make sure to remove it during exployment.
-app.get("/", AuthorizationMiddleware, async (req, res) => {
+app.get("/recommendation", AuthorizationMiddleware, async (req, res) => {
   const currentUser = res.locals.currentUser;
 
   let dbUser = await admin
@@ -83,8 +83,8 @@ app.get("/", AuthorizationMiddleware, async (req, res) => {
 });
 
 // Used to test the express server hosted locally
-//  app.listen(8000, () => {
-//    console.log("Server started at http://localhost:8000/");
-//  });
+  app.listen(8000, () => {
+    console.log("Server started at http://localhost:8000/");
+  });
 
 exports.recommendation = functions.https.onRequest(app);
