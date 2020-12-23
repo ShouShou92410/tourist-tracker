@@ -461,7 +461,10 @@ txtFiles.forEach(txtFile => {
 
     json = removeExtraData(json)
 
-    fs.writeFileSync("modified_" + txtFile, JSON.stringify(json))
+    let finalJson = {}
+    json.forEach((objs, i) => objs.forEach((obj, j) => finalJson[i + "," + j] = obj))
+
+    fs.writeFileSync("modified_" + txtFile, JSON.stringify(finalJson))
 })
 
 function removeExtraData(json) {

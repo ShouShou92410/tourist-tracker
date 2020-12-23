@@ -173,9 +173,9 @@ class TravellerRecommendations extends Recommendations {
     let data = this.convertVisitsToData(rawFirebaseData);
     let allCombos = this.findRelations(data);
 
-    let highestConfidence = { suggestion: "", value: -1 }; // Most likely to like
-    let highestSupport = { suggestion: "", value: -1 }; // Most populous
-    let highestSupportConfidence = { suggestion: "", value: -1 };
+    let highestConfidence = { suggestion: [], value: -1 }; // Most likely to like
+    let highestSupport = { suggestion: [], value: -1 }; // Most populous
+    let highestSupportConfidence = { suggestion: [], value: -1 };
     allCombos.forEach((sizedCombos) => {
       sizedCombos.forEach((combo) => {
         let differences = this.findDifferences(combo, userVisitedPlaces);
@@ -201,22 +201,24 @@ class TravellerRecommendations extends Recommendations {
     if (
       this.findDifferences(
         highestConfidence.suggestion,
-        highestSupport.suggestion
-      ).length === 0
-    ) {
-      highestSupport = null;
-    }
-    if (
-      this.findDifferences(
-        highestSupport.suggestion,
         highestSupportConfidence.suggestion
       ).length === 0 ||
       this.findDifferences(
-        highestSupportConfidence.suggestion,
+        highestSupport.suggestion,
         highestConfidence.suggestion
-      ).length === 0
+      ).length === 0 ||
+      highestConfidence.suggestion.length === 0
     ) {
-      highestSupportConfidence = null;
+      highestConfidence = null;
+    }
+    if (
+      this.findDifferences(
+        highestSupportConfidence.suggestion,
+        highestSupport.suggestion
+      ).length === 0 ||
+      highestSupport.suggestion.length === 0
+    ) {
+      highestSupport = null;
     }
 
     return {

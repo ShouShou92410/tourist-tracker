@@ -44,9 +44,6 @@ app.get("/", AuthorizationMiddleware, async (req, res) => {
   // Traveller type
   if (dbUser.type === 1) {
     const travellerRecs = new Recommendations.TravellerRecommendations();
-    const allVisits = (
-      await admin.database().ref(`/visitedSites`).once("value")
-    ).val();
 
     let userVisits = (
       await admin
@@ -55,6 +52,11 @@ app.get("/", AuthorizationMiddleware, async (req, res) => {
         .once("value")
     ).val();
     userVisits = Object.keys(userVisits);
+
+    let allVisits = (
+      await admin.database().ref(`/visitedSites`).once("value")
+    ).val();
+    delete allVisits[currentUser.uid];
 
     let recommendations = travellerRecs.getTravellerRecommendations(
       allVisits,
