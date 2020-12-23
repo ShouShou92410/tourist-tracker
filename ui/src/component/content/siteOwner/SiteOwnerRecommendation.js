@@ -30,14 +30,8 @@ function SiteOwnerRecommendation() {
 		const formData = new FormData(e.target);
 		const recommendationForm = Object.fromEntries(formData.entries());
 
-		/*const res = [
-			{ amenitiesToAdd: '1,2,3', newVisits: 45 },
-			{ amenitiesToAdd: '1,2,5', newVisits: 20 },
-			{ amenitiesToAdd: '1,5,10', newVisits: 36 },
-		];*/
 		const res = await firebase.getRecommendation(recommendationForm.siteToImprove);
 
-		console.log(res);
 		const amenityArray = Object.values(Enumeration.Amenity);
 		const newRecommendations = res.map((r) => ({
 			...r,
@@ -77,8 +71,8 @@ function SiteOwnerRecommendation() {
 						<Col xs={10}>
 							<Accordion>
 								<Accordion.Toggle as={Card.Header} eventKey="0">
-									Add the following <b>{r.amenitiesDisplay.length}</b> amenities
-									can provide <b>{r.newVisits}</b> visits.
+									We recommend adding the following{' '}
+									<b>{r.amenitiesDisplay.length}</b> amenities.
 								</Accordion.Toggle>
 								<Accordion.Collapse eventKey="0">
 									<ListGroup style={{ overflow: 'auto', maxHeight: '40vh' }}>
