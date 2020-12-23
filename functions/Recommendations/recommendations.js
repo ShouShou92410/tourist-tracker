@@ -1,7 +1,6 @@
 const MIN_SUPPORT = 0.01; // TODO Honestly should be fluid but let's have it as a constant for now / for ease
 class Recommendations {
-    MIN_SUPPORT = 0.01 // TODO Honestly should be fluid but let's have it as a constant for now / for ease
-    constructor() {}
+  constructor() {}
   /**
    * @param data: [{amenities: [item1, ...]}]
    * @param datumToGenerateConfidenceFrom: [item1, ...]
@@ -37,7 +36,13 @@ class Recommendations {
    * Assumes itemCombos already fulfills MIN_CONFIDENCE and MIN_SUPPORT
    * @param itemCombos: [[item1, ...]...], each nested array must be the same size
    */
-  apriori(itemCombos, data, uniqueItems, previousCombos = [], min_support = MIN_SUPPORT) {
+  apriori(
+    itemCombos,
+    data,
+    uniqueItems,
+    previousCombos = [],
+    min_support = MIN_SUPPORT
+  ) {
     let potentialRelations = [];
     itemCombos.forEach((itemCombo1) => {
       uniqueItems.forEach((item) => {
@@ -62,7 +67,13 @@ class Recommendations {
     );
     if (filtered.length > 1) {
       if (filtered.length > 50) {
-        return this.apriori(itemCombos, data, uniqueItems, previousCombos, min_support + 0.006);
+        return this.apriori(
+          itemCombos,
+          data,
+          uniqueItems,
+          previousCombos,
+          min_support + 0.02
+        );
       }
       previousCombos.push(filtered);
       return this.apriori(
@@ -243,27 +254,31 @@ class OwnerRecommendations extends Recommendations {
   getOwnerRecommendations(rawFirebaseData, ownerSite) {
     let data = this.convertSitesToData(rawFirebaseData);
     let allCombos = this.findRelations(data);
-    let leastNewAmenities, bestSupportConfidence
-    let lowestMatch = 9999, highestMatchSupportConfidence = -1
-    let currentSupportConfidence = -1
-    allCombos.forEach(sizedCombos => {
-        sizedCombos.forEach(combo => {
-            let differences = this.findDifferences(combo, ownerSite)
-            if (differences.length != 0) {
-                let support = this.calculateSupport(combo, data)
-                let confidence = this.calculateConfidence(combo,differences,data)
-                if ((differences.length < lowestMatch && differences.length != 0) 
-                    || (differences.length === lowestMatch && highestMatchSupportConfidence < support * confidence)) {
-                    lowestMatch = differences.length
-                    leastNewAmenities = combo
-                    highestMatchSupportConfidence = support * confidence
-                } else if (support * confidence > currentSupportConfidence) {
-                    currentSupportConfidence = support * confidence
-                    bestSupportConfidence = {x: combo, y: differences}
-                }
-            }
-        })
-    })
+    let leastNewAmenities, bestSupportConfidence;
+    let lowestMatch = 9999,
+      highestMatchSupportConfidence = -1;
+    let currentSupportConfidence = -1;
+    allCombos.forEach((sizedCombos) => {
+      sizedCombos.forEach((combo) => {
+        let differences = this.findDifferences(combo, ownerSite);
+        if (differences.length !== 0) {
+          let support = this.calculateSupport(combo, data);
+          let confidence = this.calculateConfidence(combo, differences, data);
+          if (
+            (differences.length < lowestMatch && differences.length !== 0) ||
+            (differences.length === lowestMatch &&
+              highestMatchSupportConfidence < support * confidence)
+          ) {
+            lowestMatch = differences.length;
+            leastNewAmenities = combo;
+            highestMatchSupportConfidence = support * confidence;
+          } else if (support * confidence > currentSupportConfidence) {
+            currentSupportConfidence = support * confidence;
+            bestSupportConfidence = { x: combo, y: differences };
+          }
+        }
+      });
+    });
     return [
       {
         amenitiesToAdd: this.findDifferences(
