@@ -58,8 +58,6 @@ app.get("/", AuthorizationMiddleware, async (req, res) => {
     ).val();
     delete allVisits[currentUser.uid];
 
-    console.log(allVisits)
-
     let recommendations = travellerRecs.getTravellerRecommendations(
       allVisits,
       userVisits
