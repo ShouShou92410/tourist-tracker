@@ -277,7 +277,7 @@ class Firebase {
 				let highestConfidenceObject = await Promise.all(
 					await this.produceSiteObjectFromRec(
 						rawRecs.highestConfidence.suggestion,
-						'A Highest Confidence Site'
+						'Highest Confidence Site(s)'
 					)
 				);
 
@@ -287,7 +287,7 @@ class Firebase {
 				let highestSupportObject = await Promise.all(
 					await this.produceSiteObjectFromRec(
 						rawRecs.highestSupport.suggestion,
-						'A Highest Support Site'
+						'Highest Support Site(s)'
 					)
 				);
 				recommendations.push(highestSupportObject);
@@ -296,12 +296,11 @@ class Firebase {
 				let highestSupportConfidenceObject = await Promise.all(
 					await this.produceSiteObjectFromRec(
 						rawRecs.highestSupportConfidence.suggestion,
-						'A Highest Support-Confidence Site'
+						'Highest Support-Confidence Site(s)'
 					)
 				);
 				recommendations.push(highestSupportConfidenceObject);
 			}
-			recommendations = [].concat.apply([], recommendations);
 		}
 		return recommendations;
 	}
