@@ -221,12 +221,6 @@ class TravellerRecommendations extends Recommendations {
       highestSupport = null;
     }
 
-    console.log({
-      highestConfidence: highestConfidence,
-      highestSupport: highestSupport,
-      highestSupportConfidence: highestSupportConfidence,
-    })
-
     return {
       highestConfidence: highestConfidence,
       highestSupport: highestSupport,
